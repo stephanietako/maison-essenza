@@ -1,0 +1,31 @@
+// /* styles.module.scss */
+
+// /* Styles pour le conteneur de sections */
+// .sections {
+//   display: flex; /* Utilisez Flexbox pour aligner les sections horizontalement */
+//   overflow-x: auto; /* Autorisez le défilement horizontal */
+//   scroll-snap-type: x mandatory; /* Assurez-vous que le défilement est aligné sur les sections */
+//   width: 100vw; /* Largeur du conteneur égale à la largeur de la fenêtre */
+//   height: 100vh; /* Hauteur du conteneur égale à la hauteur de la fenêtre */
+//   scroll-behavior: smooth; /* Défilement fluide */
+// }
+
+// /* Styles pour chaque section */
+// .section {
+//   flex: 0 0 100vw; /* Chaque section prend 100% de la largeur de la fenêtre */
+//   scroll-snap-align: start; /* Alignement des sections au début du conteneur lors du défilement */
+//   height: 100vh; /* Chaque section prend 100% de la hauteur de la fenêtre */
+// }
+
+// /* Styles spécifiques pour chaque section si nécessaire */
+// .section1 {
+//   background-color: #ff6347; /* Exemple de couleur pour Section 1 */
+// }
+
+// .section2 {
+//   background-color: #4682b4; /* Exemple de couleur pour Section 2 */
+// }
+
+// .section3 {
+//   background-color: #32cd32; /* Exemple de couleur pour Section 3 */
+// }

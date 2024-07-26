@@ -1,0 +1,40 @@
+.nav__item {
+  display: flex;
+  font-size: 18px;
+  padding: 8px 16px;
+  color: #333;
+  text-decoration: none;
+  position: relative;
+  border: 3px solid #fff;
+  width: 8rem;
+  text-align: center;
+
+  &:hover {
+    font-weight: bold;
+    color: red;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: gray;
+    transition: width 0.3s;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+.active {
+  font-weight: bold;
+  color: blue;
+
+  &::before {
+    width: 100%;
+  }
+}
