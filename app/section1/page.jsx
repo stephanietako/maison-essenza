@@ -1,11 +1,32 @@
 import React from "react";
-import Section1 from "../components/Section1/Section1";
+import GoogleMap from "../components/GoogleMap/GoogleMap";
 
 const section1 = () => {
   return (
-    <div id="section1">
-      <Section1 />
-    </div>
+    <>
+      <div
+        id="map_section"
+        style={{
+          display: "flex",
+          /* flex-direction: column; */
+          width: "100%",
+          height: "100%",
+          justifyContent: "center",
+          border: "4px solid red",
+        }}
+      >
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            width: "80%",
+            height: "auto",
+          }}
+        >
+          <GoogleMap />
+        </div>
+      </div>
+    </>
   );
 };
 

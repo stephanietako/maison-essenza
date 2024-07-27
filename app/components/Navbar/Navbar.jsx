@@ -7,11 +7,7 @@ import NavItem from "../NavItem/NavItem";
 import logo from "@/public/assets/essenza-logo.png";
 import styles from "./styles.module.scss";
 
-const MENU_LIST = [
-  { name: "home", href: "/" },
-  // { name: "section1", href: "/section1" },
-  // { name: "section2", href: "/section2" },
-];
+const MENU_LIST = [{ name: "Google Map", href: "/section1" }];
 
 const Navbar = () => {
   const [navActive, setNavActive] = useState(false);
