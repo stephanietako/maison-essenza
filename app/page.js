@@ -1,3 +1,5 @@
+// app/page.js
+
 "use client";
 
 import React, { useRef, useEffect } from "react";
@@ -11,13 +13,13 @@ import logo from "@/public/assets/essenza-logo.png";
 
 export default function Home() {
   const sectionWrapperRef = useRef(null);
-  const videoRef = useRef(null); // Reference for the video element
-  const section1Ref = useRef(null); // Reference for section 1
+  const videoRef = useRef(null); // Référence pour l'élément vidéo
+  const section1Ref = useRef(null); // Référence pour la section 1
 
   useEffect(() => {
     const videoElement = videoRef.current;
 
-    // Function to scroll to Section 1 after 12 seconds
+    // Fonction pour faire défiler vers la Section 1 après 8 secondes
     const scrollToSection1 = () => {
       if (section1Ref.current) {
         section1Ref.current.scrollIntoView({ behavior: "smooth" });
@@ -25,10 +27,10 @@ export default function Home() {
     };
 
     if (videoElement) {
-      // Set a timer for 10 seconds
+      // Définir un minuteur pour 8 secondes
       const timer = setTimeout(scrollToSection1, 8000);
 
-      // Clear the timer if the component unmounts
+      // Effacer le minuteur si le composant est démonté
       return () => {
         clearTimeout(timer);
       };
@@ -40,35 +42,35 @@ export default function Home() {
 
     if (!sectionWrapper) return;
 
-    // Function to handle horizontal scrolling with mouse wheel
+    // Fonction pour gérer le défilement horizontal avec la molette de la souris
     const handleScroll = (event) => {
-      // Compatibility check for mouse wheel events
-      const delta = Math.sign(event.deltaY); // 1 for down, -1 for up
+      // Vérification de compatibilité pour les événements de molette
+      const delta = Math.sign(event.deltaY); // 1 pour bas, -1 pour haut
       sectionWrapper.scrollBy({
-        left: delta * 70, // Multiply the increment by delta for direction
+        left: delta * 70, // Multiplier l'incrément par delta pour la direction
         behavior: "smooth",
       });
 
-      // Prevent vertical scrolling if we're inside the sectionWrapper
+      // Empêcher le défilement vertical si nous sommes dans le sectionWrapper
       event.preventDefault();
     };
 
-    // Add event listener for the wheel
+    // Ajouter un écouteur d'événement pour la molette
     sectionWrapper.addEventListener("wheel", handleScroll, { passive: false });
 
-    // Clean up the event listener
+    // Nettoyer l'écouteur d'événement
     return () => {
       sectionWrapper.removeEventListener("wheel", handleScroll);
     };
   }, []);
 
-  // Function to handle navigation click
+  // Fonction pour gérer le clic de navigation
   const handleNavClick = (sectionIndex) => {
     const sectionWrapper = sectionWrapperRef.current;
     if (sectionWrapper) {
-      const sectionWidth = window.innerWidth; // Use window width for scroll calculation
+      const sectionWidth = window.innerWidth; // Utiliser la largeur de la fenêtre pour le calcul du défilement
       sectionWrapper.scrollTo({
-        left: sectionIndex * sectionWidth, // Horizontal scroll to the target section
+        left: sectionIndex * sectionWidth, // Défilement horizontal vers la section cible
         behavior: "smooth",
       });
     }
@@ -103,6 +105,7 @@ export default function Home() {
             }}
           />
         </span>
+
         <button onClick={() => handleNavClick(1)}>
           <p>Section 1</p>
         </button>

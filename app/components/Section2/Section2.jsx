@@ -59,6 +59,7 @@ const Section2 = () => {
               objectFit: "contain",
               cursor: "pointer",
               //border: "2px solid blue",
+              cursor: "ponter",
             }}
             onClick={() => scrollToSection("section3")} // Défiler vers la section3
           />
@@ -67,10 +68,13 @@ const Section2 = () => {
             style={{
               display: "block",
               textAlign: "center",
-              //border: "2px solid pink",
+              position: "absolute",
+              position: "absolute",
+              marginTop: "4rem",
+              marginLeft: "1rem",
             }}
           >
-            <p>Un peu plus</p>
+            <p>Un peu moins</p>
           </span>
         </div>
         <div
@@ -101,8 +105,8 @@ const Section2 = () => {
               alt="toutes les marques de Maison Essenza"
               priority={false}
               placeholder="empty"
-              width={900}
-              height={600}
+              width={850}
+              height={550}
               style={{
                 display: "block",
                 objectFit: "cover",
@@ -128,7 +132,6 @@ const Section2 = () => {
                   display: "flex",
                   alignItems: "center",
                   marginBottom: "10px",
-                  paddingRight: "10px",
                 }}
               >
                 <span style={{ flex: 1 }}>Retrouvez-nous sur Instagram</span>
@@ -145,7 +148,6 @@ const Section2 = () => {
                   display: "flex",
                   alignItems: "center",
                   marginBottom: "10px",
-                  paddingRight: "10px",
                 }}
               >
                 <span style={{ flex: 1 }}>Ecrivez-nous quelques lignes</span>
@@ -162,7 +164,6 @@ const Section2 = () => {
                   display: "flex",
                   alignItems: "center",
                   marginBottom: "10px",
-                  paddingRight: "10px",
                 }}
               >
                 <span style={{ flex: 1 }}>
@@ -181,7 +182,6 @@ const Section2 = () => {
                   display: "flex",
                   alignItems: "center",
                   marginBottom: "10px",
-                  paddingRight: "10px",
                 }}
               >
                 <span style={{ flex: 1 }}>+3(0)45155164</span>
@@ -230,7 +230,9 @@ const Section2 = () => {
             style={{
               display: "block",
               textAlign: "center",
-              //border: "2px solid pink",
+              position: "absolute",
+              marginTop: "4rem",
+              marginLeft: "1rem",
             }}
           >
             <p>Un peu plus</p>

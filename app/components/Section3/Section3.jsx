@@ -1,28 +1,33 @@
-import React from "react";
+import InstagramFeed from "../InstagramFeed/InstagramFeed";
 
-// Assets
-//import GoogleMap from "../GoogleMap/GoogleMap";
-
-const Section3 = () => {
+export default function Home({ posts }) {
   return (
-    <>
-      <div
-        className="section3"
-        id="section3"
-        style={{
-          display: "flex",
-          width: "100%",
-          height: "100%",
-          //border: "4px solid red",
-          justifyContent: "center",
-          backgroundColor: "turquoise",
-          alignItem: "center",
-        }}
-      >
-        {/* <GoogleMap /> */}
-      </div>
-    </>
+    <div>
+      <main>
+        <h1>Instagram Feed</h1>
+        <InstagramFeed posts={posts} />
+      </main>
+    </div>
   );
-};
+}
 
-export default Section3;
+// Utilisation de getServerSideProps pour la récupération des données côté serveur
+export async function getServerSideProps() {
+  const accessToken = process.env.INSTAGRAM_KEY; // Utiliser la clé API de l'environnement
+  const response = await fetch(
+    `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,permalink,timestamp&access_token=${accessToken}`
+  );
+
+  if (!response.ok) {
+    console.error("Failed to fetch data from Instagram");
+    return { props: { posts: [] } };
+  }
+
+  const data = await response.json();
+
+  return {
+    props: {
+      posts: data.data || [],
+    },
+  };
+}

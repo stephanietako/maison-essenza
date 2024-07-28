@@ -145,10 +145,10 @@ import styles from "./styles.module.scss";
 const properties = [
   {
     title: "Maison Essenza",
-    description: "Single family house with modern design",
+    description: "Show Room Boutique",
     position: {
-      lat: 43.26997027608313,
-      lng: 6.644160284509654,
+      lat: 43.251496859869185,
+      lng: 6.532052481579163,
     },
   },
 ];
@@ -276,16 +276,17 @@ const GoogleMap = () => {
       <div className={styles.map__container} ref={mapRef} />
       <div className={styles.__btn_box}>
         <button className={styles.__btnPosition} onClick={centerMyLocation}>
-          ME LOCALISER
+          {" "}
+          <p>ME LOCALISER</p>
         </button>
 
         <a
-          href="https://www.google.fr/maps/dir//B%26B+Italia,+20+Av.+Foch,+83990+Saint-Tropez/@43.2691807,6.6441104,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x12cec73e4c7ba6b1:0x8d59750a547f25c!2m2!1d6.6441337!2d43.2692179"
+          href="https://www.google.fr/maps/place/33+Rue+Marceau,+83310+Cogolin/@43.2492463,6.4909396,13z/data=!4m19!1m12!4m11!1m3!2m2!1d6.5414939!2d43.2494963!1m6!1m2!1s0x12cec91ccd5111f7:0xc657b40441a90cad!2s33+Rue+Marceau,+Cogolin!2m2!1d6.5322249!2d43.2492537!3m5!1s0x12cec91ccd5111f7:0xc657b40441a90cad!8m2!3d43.2492537!4d6.5322249!16s%2Fg%2F11bw4jc0hd?entry=ttu"
           target="_blank"
           rel="noreferrer noopener"
         >
           <button className={styles.__btn_googlemap}>
-            OUVRIR DANS GOOGLE MAP
+            <p> OUVRIR DANS GOOGLE MAP</p>
           </button>
         </a>
       </div>

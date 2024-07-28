@@ -44,6 +44,7 @@ const Section1 = () => {
               width: "auto",
               height: "auto",
               justifyContent: "center",
+              marginTop: "5rem",
             }}
           >
             <Image
@@ -99,32 +100,52 @@ const Section1 = () => {
             className="__text_bloc_philo"
             style={{
               textAlign: "center",
-              // border: "3px solid green",
-              // padding: "2rem 3rem 1rem 3rem",
+              color: "gray",
             }}
           >
-            <p>
+            <p
+              style={{
+                fontSize: "15px",
+              }}
+            >
+              {" "}
               Bien au-delà de la simple vocation de boutique/showroom, nous
               aspirons à aider nos clients, amis et lecteurs à faire de leur
               espace de vie un véritable
             </p>
-            <p>
+            <p
+              style={{
+                fontSize: "15px",
+              }}
+            >
               sanctuaire pour une bonne qualité de vie, en proposant
               judicieusement des matériaux exceptionnels, agencements,
               sanitaires, cuisines, placards,
             </p>
-            <p>
+            <p
+              style={{
+                fontSize: "15px",
+              }}
+            >
               finitions décoratives uniques, mobilier, linge de maison, et bien
               plus; sans que le processus n’avale ni leurs économies, ni leur
               patience.
             </p>
             <br />
-            <p>
+            <p
+              style={{
+                fontSize: "15px",
+              }}
+            >
               Nous avons plus de 10.500 références diverses pour tous styles,
               envies et budgets.
             </p>
             <br />
-            <p>
+            <p
+              style={{
+                fontSize: "15px",
+              }}
+            >
               Osez donc être vous-même et nous vous aiderons à trouver tout ce
               qu&apos;il vous faut pour un projet qui vous ressemble.
             </p>
@@ -166,6 +187,9 @@ const Section1 = () => {
               display: "block",
               textAlign: "center",
               //border: "2px solid pink",
+              position: "absolute",
+              marginTop: "4rem",
+              marginLeft: "1rem",
             }}
           >
             {" "}

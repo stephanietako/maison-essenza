@@ -40,10 +40,15 @@ a {
 
 h1 {
   font-size: 1.7rem;
+  font-weight: lighter;
 }
-
+h2 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
 p {
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: lighter;
 }
 
 header {
@@ -161,7 +166,6 @@ header {
 
 .navigation p {
   color: #000;
-  font-size: 2rem;
 }
 
 .navigation p:hover {
