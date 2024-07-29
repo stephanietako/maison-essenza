@@ -81,9 +81,9 @@ const InstagramRecentPost = () => {
       try {
         const response = await fetch("/api/instagram", {
           method: "GET",
-          headers: {
-            "Cache-Control": "no-cache", // Empêche le cache du navigateur
-          },
+          // headers: {
+          //   "Cache-Control": "no-cache", // Empêche le cache du navigateur
+          // },
         });
 
         if (!response.ok) {
