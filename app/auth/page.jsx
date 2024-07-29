@@ -14,7 +14,7 @@ export default async function handler(req, res) {
           },
           body: new URLSearchParams({
             client_id: process.env.NEXT_PUBLIC_INSTAGRAM_CLIENT_ID,
-            client_secret: process.env.INSTAGRAM_CLIENT_SECRET,
+            // client_secret: process.env.INSTAGRAM_CLIENT_SECRET,
             grant_type: "authorization_code",
             redirect_uri:
               "https://maison-essenza-website.vercel.app/auth/callback",
