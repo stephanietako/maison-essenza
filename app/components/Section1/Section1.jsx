@@ -30,7 +30,7 @@ const Section1 = () => {
           className="section1__container"
           style={{
             display: "flex",
-            width: "80%",
+            width: "89%",
             height: "100%",
             //border: "4px solid turquoise",
             flexDirection: "column",
@@ -171,11 +171,11 @@ const Section1 = () => {
             alt="Maison Essenza"
             priority={false}
             placeholder="empty"
-            width={180}
-            height={100}
+            width={80}
+            height={80}
             style={{
               display: "block",
-              objectFit: "contain",
+              objectFit: "cover",
               cursor: "pointer",
               //border: "2px solid blue",
             }}
@@ -188,12 +188,18 @@ const Section1 = () => {
               textAlign: "center",
               //border: "2px solid pink",
               position: "absolute",
-              marginTop: "4rem",
-              marginLeft: "1rem",
+              marginTop: "3rem",
             }}
           >
             {" "}
-            <p>Un peu plus</p>
+            <p
+              style={{
+                fontSize: "11.5px",
+                fontWeight: "bold",
+              }}
+            >
+              Un peu plus
+            </p>
           </span>
         </div>
       </div>

@@ -94,8 +94,8 @@ export default function Home() {
             src={logo}
             alt="Palm trees affair la ferme des palmiers"
             priority={false}
-            width={140}
-            height={140}
+            width={120}
+            height={120}
             style={{
               display: "block",
               objectFit: "cover",
@@ -107,13 +107,13 @@ export default function Home() {
         </span>
 
         <button onClick={() => handleNavClick(1)}>
-          <p>Section 1</p>
+          <p>Notre Philosophie</p>
         </button>
         <button onClick={() => handleNavClick(2)}>
-          <p>Section 2</p>
+          <p>Les Marques</p>
         </button>
         <button onClick={() => handleNavClick(3)}>
-          <p>Section 3</p>
+          <p>Insta Galerie</p>
         </button>
       </nav>
       <div ref={sectionWrapperRef} className="section_wrapper">

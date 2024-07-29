@@ -23,8 +23,8 @@ const Navbar = () => {
               src={logo}
               alt="Palm trees affair la ferme des palmiers"
               priority={false}
-              width={140}
-              height={140}
+              width={120}
+              height={120}
               style={{
                 display: "block",
                 objectFit: "cover",
