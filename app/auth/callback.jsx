@@ -1,6 +1,10 @@
 // pages/api/auth/callback.js
 
 export default async function handler(req, res) {
+  if (!req || !res) {
+    console.error("Request or Response is undefined");
+    return;
+  }
   if (req.method === "GET") {
     const { code } = req.query;
 
