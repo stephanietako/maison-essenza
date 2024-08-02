@@ -1,8 +1,6 @@
-// app/page.js
-
 "use client";
 
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import Section1 from "./components/Section1/Section1";
 import Section2 from "./components/Section2/Section2";
 import Section3 from "./components/Section3/Section3";
@@ -13,13 +11,14 @@ import logo from "@/public/assets/essenza-logo.png";
 
 export default function Home() {
   const sectionWrapperRef = useRef(null);
-  const videoRef = useRef(null); // Référence pour l'élément vidéo
-  const section1Ref = useRef(null); // Référence pour la section 1
+  const videoRef = useRef(null);
+  const section1Ref = useRef(null);
+  const [activeSection, setActiveSection] = useState(0);
 
+  // Effet pour défiler vers la première section après 8 secondes
   useEffect(() => {
     const videoElement = videoRef.current;
 
-    // Fonction pour faire défiler vers la Section 1 après 8 secondes
     const scrollToSection1 = () => {
       if (section1Ref.current) {
         section1Ref.current.scrollIntoView({ behavior: "smooth" });
@@ -27,52 +26,58 @@ export default function Home() {
     };
 
     if (videoElement) {
-      // Définir un minuteur pour 8 secondes
       const timer = setTimeout(scrollToSection1, 8000);
-
-      // Effacer le minuteur si le composant est démonté
-      return () => {
-        clearTimeout(timer);
-      };
+      return () => clearTimeout(timer);
     }
   }, []);
 
+  // Effet pour gérer le défilement horizontal
   useEffect(() => {
     const sectionWrapper = sectionWrapperRef.current;
 
     if (!sectionWrapper) return;
 
-    // Fonction pour gérer le défilement horizontal avec la molette de la souris
     const handleScroll = (event) => {
-      // Vérification de compatibilité pour les événements de molette
-      const delta = Math.sign(event.deltaY); // 1 pour bas, -1 pour haut
+      const delta = Math.sign(event.deltaY);
       sectionWrapper.scrollBy({
-        left: delta * 70, // Multiplier l'incrément par delta pour la direction
+        left: delta * 70,
         behavior: "smooth",
       });
-
-      // Empêcher le défilement vertical si nous sommes dans le sectionWrapper
       event.preventDefault();
     };
 
-    // Ajouter un écouteur d'événement pour la molette
     sectionWrapper.addEventListener("wheel", handleScroll, { passive: false });
 
-    // Nettoyer l'écouteur d'événement
     return () => {
       sectionWrapper.removeEventListener("wheel", handleScroll);
     };
   }, []);
 
-  // Fonction pour gérer le clic de navigation
+  // Effet pour gérer les transitions de fondu
+  useEffect(() => {
+    const sectionWrapper = sectionWrapperRef.current;
+    if (sectionWrapper) {
+      const sections = sectionWrapper.querySelectorAll(".item");
+      sections.forEach((section, index) => {
+        if (index === activeSection) {
+          section.classList.add("active");
+          section.classList.remove("inactive");
+        } else {
+          section.classList.remove("active");
+        }
+      });
+    }
+  }, [activeSection]);
+
   const handleNavClick = (sectionIndex) => {
     const sectionWrapper = sectionWrapperRef.current;
     if (sectionWrapper) {
-      const sectionWidth = window.innerWidth; // Utiliser la largeur de la fenêtre pour le calcul du défilement
+      const sectionWidth = window.innerWidth;
       sectionWrapper.scrollTo({
-        left: sectionIndex * sectionWidth, // Défilement horizontal vers la section cible
+        left: sectionIndex * sectionWidth,
         behavior: "smooth",
       });
+      setActiveSection(sectionIndex);
     }
   };
 
@@ -86,7 +91,6 @@ export default function Home() {
             width: "100%",
             height: "auto",
             display: "flex",
-            // border: "3px solid blue",
           }}
         >
           <Image
@@ -117,10 +121,8 @@ export default function Home() {
         </button>
       </nav>
       <div ref={sectionWrapperRef} className="section_wrapper">
-        <div className="item">
-          <Link href="/" ref={videoRef}>
-            <Hero />
-          </Link>
+        <div className="item" ref={videoRef}>
+          <Hero />
         </div>
         <div className="item" ref={section1Ref}>
           <Section1 />

@@ -1,31 +1,119 @@
-// /* styles.module.scss */
+.section2 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: space-between; // Positions arrows at the ends
+  align-items: center;
+  padding-top: 80px;
+  overflow: hidden;
 
-// /* Styles pour le conteneur de sections */
-// .sections {
-//   display: flex; /* Utilisez Flexbox pour aligner les sections horizontalement */
-//   overflow-x: auto; /* Autorisez le défilement horizontal */
-//   scroll-snap-type: x mandatory; /* Assurez-vous que le défilement est aligné sur les sections */
-//   width: 100vw; /* Largeur du conteneur égale à la largeur de la fenêtre */
-//   height: 100vh; /* Hauteur du conteneur égale à la hauteur de la fenêtre */
-//   scroll-behavior: smooth; /* Défilement fluide */
-// }
+  .section2__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
 
-// /* Styles pour chaque section */
-// .section {
-//   flex: 0 0 100vw; /* Chaque section prend 100% de la largeur de la fenêtre */
-//   scroll-snap-align: start; /* Alignement des sections au début du conteneur lors du défilement */
-//   height: 100vh; /* Chaque section prend 100% de la hauteur de la fenêtre */
-// }
+  .section2__bloc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    h1 {
+      font-size: 3rem;
+    }
+    .section2__image_logo {
+      display: flex;
+      justify-content: center;
 
-// /* Styles spécifiques pour chaque section si nécessaire */
-// .section1 {
-//   background-color: #ff6347; /* Exemple de couleur pour Section 1 */
-// }
+      .__img {
+        display: block;
+        object-fit: cover;
+      }
+    }
 
-// .section2 {
-//   background-color: #4682b4; /* Exemple de couleur pour Section 2 */
-// }
+    .link_infos {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2rem;
 
-// .section3 {
-//   background-color: #32cd32; /* Exemple de couleur pour Section 3 */
-// }
+      .link_list {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: 10px;
+
+          span {
+            flex: 1;
+          }
+
+          a {
+            text-decoration: none;
+          }
+
+          .link_icon {
+            object-fit: cover;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+
+  .arrow_see_more {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: 100%;
+    position: relative;
+    top: 4rem;
+    cursor: pointer;
+    transition: transform 0.3s ease; // Animation on hover
+
+    &.left {
+      margin-left: 2rem;
+    }
+
+    &.right {
+      margin-right: 2rem;
+    }
+
+    .__arrow_left,
+    .__arrow_right {
+      display: block;
+      object-fit: cover;
+      transform-origin: center;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .__arrow_left__text,
+    .__arrow_right__text {
+      display: block;
+      text-align: center;
+      position: absolute;
+      margin-top: 3.8rem;
+      p {
+        font-size: 11.5px;
+        font-weight: bold;
+        width: 6rem;
+      }
+    }
+  }
+}

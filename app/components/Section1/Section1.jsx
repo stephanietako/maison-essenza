@@ -3,6 +3,8 @@ import Image from "next/image";
 // Assets
 import logo from "@/public/assets/essenza-logo.png";
 import arrowRight from "@/public/assets/arrow-right.png";
+// Style
+import styles from "./styles.module.scss";
 
 const Section1 = () => {
   // Fonction pour faire défiler vers une section spécifique
@@ -15,158 +17,115 @@ const Section1 = () => {
 
   return (
     <>
-      <div
-        className="section1"
-        id="section1"
-        style={{
-          display: "flex",
-          width: "100%",
-          height: "100%",
-          //border: "4px solid red",
-          justifyContent: "flex-end",
-        }}
-      >
-        <div
-          className="section1__container"
-          style={{
-            display: "flex",
-            width: "89%",
-            height: "100%",
-            //border: "4px solid turquoise",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
-          <div
-            className="section1__image_logo"
-            style={{
-              display: "flex",
-              width: "auto",
-              height: "auto",
-              justifyContent: "center",
-              marginTop: "5rem",
-            }}
-          >
-            <Image
-              className="__img"
-              src={logo}
-              alt="Maison Essenza"
-              priority={false}
-              placeholder="empty"
-              width={550}
-              height={400}
+      <div className={styles.section1} id="section1">
+        <div className={styles.section1__container}>
+          <div className={styles.section1__bloc}>
+            <div className={styles.section1__image_logo}>
+              <Image
+                className={styles.__img}
+                src={logo}
+                alt="Maison Essenza"
+                priority={false}
+                placeholder="empty"
+                width={470}
+                height={393}
+                style={{
+                  display: "block",
+                  objectFit: "cover",
+                }}
+              />
+            </div>
+            <div className={styles.section1__text_header}>
+              <h1>BIENTÔT EN LIGNE</h1>
+
+              <span className={styles.__text_bloc__info_subtitle}>
+                <p
+                  style={{
+                    fontSize: "36px",
+                    fontFamily: "var(--cormorant_garamond)",
+                  }}
+                >
+                  Dans l&apos;intervalle retrouvez-nous dans notre
+                  Showroom/Boutique
+                </p>
+              </span>
+            </div>
+            <span
+              className={styles.__text_bloc__info}
               style={{
-                display: "block",
-                objectFit: "cover",
-                // width: "100%",
-                // height: "100%",
+                textAlign: "center",
               }}
-            />
-          </div>
-          <div
-            className="section1__text_header"
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              width: "100%",
-              height: "auto",
-              // border: "3px solid green",
-              fontWeight: "bold",
-              textAlign: "center",
-            }}
-          >
-            <h1>MAISON ESSENZA BIENTÔT EN LIGNE</h1>
-          </div>
-          <span
-            className="__text_bloc__info"
-            style={{
-              textAlign: "center",
-            }}
-          >
-            <span className="__text_bloc__info_subtitle">
-              Dans l&apos;intervalle retrouvez-nous dans notre boutique
-              Showroom/Boutique
+            >
+              {/* <span className={styles.__text_bloc__info_subtitle}>
+                <p
+                  style={{
+                    fontSize: "36px",
+                    fontFamily: "var(--cormorant_garamond)",
+                  }}
+                >
+                  Dans l&apos;intervalle retrouvez-nous dans notre
+                  Showroom/Boutique
+                </p>
+              </span> */}
+
+              <p
+                style={{
+                  fontFamily: "var(--courier-prime)",
+                }}
+              >
+                du <strong>Mardi au Samedi </strong>de <strong>10.00</strong> à{" "}
+                <strong>19.00</strong>
+              </p>
+
+              <p
+                style={{
+                  fontFamily: "var(--courier-prime)",
+                }}
+              >
+                <strong>33 Rue Marceau - Cogolin</strong>
+              </p>
             </span>
-            <p>
-              du <strong>Mardi</strong> au <strong>Samedi</strong> de{" "}
-              <strong>10.00</strong> à <strong>19.00</strong>
-            </p>
-            <p>
-              <strong>33 Rue Marceau - Cogolin</strong>
-            </p>
-          </span>
-          <br />
-          <span
-            className="__text_bloc_philo"
-            style={{
-              textAlign: "center",
-              color: "gray",
-            }}
-          >
-            <p
-              style={{
-                fontSize: "15px",
-              }}
-            >
-              {" "}
-              Bien au-delà de la simple vocation de boutique/showroom, nous
-              aspirons à aider nos clients, amis et lecteurs à faire de leur
-              espace de vie un véritable
-            </p>
-            <p
-              style={{
-                fontSize: "15px",
-              }}
-            >
-              sanctuaire pour une bonne qualité de vie, en proposant
-              judicieusement des matériaux exceptionnels, agencements,
-              sanitaires, cuisines, placards,
-            </p>
-            <p
-              style={{
-                fontSize: "15px",
-              }}
-            >
-              finitions décoratives uniques, mobilier, linge de maison, et bien
-              plus; sans que le processus n’avale ni leurs économies, ni leur
-              patience.
-            </p>
             <br />
-            <p
+            <span
+              className={styles.__text_bloc_philo}
               style={{
-                fontSize: "15px",
+                textAlign: "center",
               }}
             >
-              Nous avons plus de 10.500 références diverses pour tous styles,
-              envies et budgets.
-            </p>
-            <br />
-            <p
-              style={{
-                fontSize: "15px",
-              }}
-            >
-              Osez donc être vous-même et nous vous aiderons à trouver tout ce
-              qu&apos;il vous faut pour un projet qui vous ressemble.
-            </p>
-          </span>
+              <p>
+                {" "}
+                Bien au-delà de la simple vocation de boutique/showroom, nous
+                aspirons à aider nos clients, amis et lecteurs à faire de leur
+                espace de vie un véritable
+              </p>
+              <p>
+                sanctuaire pour une bonne qualité de vie, en proposant
+                judicieusement des matériaux exceptionnels, agencements,
+                sanitaires, cuisines, placards,
+              </p>
+              <p>
+                finitions décoratives uniques, mobilier, linge de maison, et
+                bien plus; sans que le processus n’avale ni leurs économies, ni
+                leur patience.
+              </p>
+              <br />
+              <p>
+                Nous avons plus de 10.500 références diverses pour tous styles,
+                envies et budgets.
+              </p>
+              <br />
+              <p>
+                Osez donc être vous-même et nous vous aiderons à trouver tout ce
+                qu&apos;il vous faut pour un projet qui vous ressemble.
+              </p>
+            </span>
+          </div>
         </div>
-        <div
-          className="arrow_see_more"
-          style={{
-            display: "flex",
-            width: "auto",
-            height: "50%",
-            //border: "4px solid blue",
-            position: "relative",
-            alignContent: "center",
-            flexDirection: "column",
-            justifyContent: "center",
-          }}
-        >
+        {/* Flèche droite */}
+        <div className={styles.arrow_see_more}>
           {" "}
           <Image
-            className="__arrow_right"
+            className={styles.__arrow_right}
             src={arrowRight}
             alt="Maison Essenza"
             priority={false}
@@ -177,20 +136,10 @@ const Section1 = () => {
               display: "block",
               objectFit: "cover",
               cursor: "pointer",
-              //border: "2px solid blue",
             }}
             onClick={() => scrollToSection("section2")} // Défiler vers la section
           />
-          <span
-            className="__arrow_right__text"
-            style={{
-              display: "block",
-              textAlign: "center",
-              //border: "2px solid pink",
-              position: "absolute",
-              marginTop: "3rem",
-            }}
-          >
+          <span className={styles.__arrow_right__text}>
             {" "}
             <p
               style={{
@@ -208,3 +157,4 @@ const Section1 = () => {
 };
 
 export default Section1;
+// Courier Prime, Old Typewriter Font, and Special Elite are the best American typewriter fonts on Google Docs as their font weight, size, and overall style all resemble the characters generated by old American typewriters.
