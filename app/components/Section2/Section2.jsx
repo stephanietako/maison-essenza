@@ -22,7 +22,7 @@ const Section2 = () => {
 
   return (
     <div className={styles.section2} id="section2">
-      {/* Left Arrow */}
+      {/* Flèche gauche */}
       <div className={`${styles.arrow_see_more} ${styles.left}`}>
         <Image
           className={styles.__arrow_left}
@@ -45,7 +45,7 @@ const Section2 = () => {
       </div>
       <div className={styles.section2__container}>
         <div className={styles.section2__bloc}>
-          <h1>Quelques-unes de nosmarques</h1>
+          <h1>Quelques-unes de nos marques</h1>
           <div className={styles.section2__image_logo}>
             <Image
               className={styles.__img}
