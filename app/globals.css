@@ -45,14 +45,15 @@ h1 {
   color: #000;
   /* border: 2px solid black; */
   height: 4.5rem;
-  font-family: "--courier-prime";
+  /* font-family: "--courier_prime"; */
   /* font-family: var(--nixie_one); */
+  font-family: var(--cormorant_garamond);
 }
 h2 {
   font-size: 1.7rem;
   font-weight: lighter;
   color: #161616;
-  font-family: "--nixie_one";
+  font-family: var(--nixie_one);
 }
 p {
   font-size: 2rem;

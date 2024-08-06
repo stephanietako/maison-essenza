@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 const courier_prime_init = Courier_Prime({
   weight: ["400", "700"],
   subsets: ["latin"],
-  variable: "--courier-prime",
+  variable: "--courier_prime",
 });
 const cormorant_garamond_init = Cormorant_Garamond({
   weight: ["300"],

@@ -47,8 +47,10 @@ const Section1 = () => {
                 src={logo}
                 alt="Maison Essenza"
                 placeholder="empty"
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                width={700}
+                height={500}
+                // fill
+                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className={styles.section1__text_header}>
@@ -70,7 +72,7 @@ const Section1 = () => {
               <p
                 style={{
                   paddingRight: "4px",
-                  fontSize: "2rem",
+                  fontSize: "1.7rem",
                 }}
               >
                 du
@@ -87,7 +89,7 @@ const Section1 = () => {
                 style={{
                   paddingLeft: "4px",
                   paddingRight: "4px",
-                  fontSize: "2rem",
+                  fontSize: "1.7rem",
                 }}
               >
                 de
@@ -106,7 +108,7 @@ const Section1 = () => {
                 style={{
                   paddingRight: "4px",
                   paddingLeft: "4px",
-                  fontSize: "2rem",
+                  fontSize: "1.7rem",
                 }}
               >
                 à
@@ -124,6 +126,7 @@ const Section1 = () => {
               <p
                 style={{
                   fontFamily: " var(--cormorant_garamond)",
+                  fontSize: "1.5rem",
                   //fontFamily: "var(--nixie_one)",
                   //fontFamily: "var(--courier-prime); ",
                 }}
