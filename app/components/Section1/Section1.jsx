@@ -7,31 +7,48 @@ import arrowRight from "@/public/assets/arrow-right.png";
 import styles from "./styles.module.scss";
 
 const Section1 = () => {
-  // Function to scroll to a specific section
+  // FONCTION POUR SCROLLER SUR LA SECTION SUIVANTE
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the target section
     }
   };
-
+  ///////////////
   return (
     <>
       <div className={styles.section1} id="section1">
         <div className={styles.section1__container}>
           <div className={styles.section1__bloc}>
+            <div className={`${styles.arrow_see_more} ${styles.right}`}>
+              <Image
+                className={styles.__arrow_right}
+                src={arrowRight}
+                alt="Next Section"
+                priority={false}
+                placeholder="empty"
+                width={150}
+                height={150}
+                style={{
+                  display: "block",
+                  objectFit: "cover",
+                  cursor: "pointer",
+                  padding: "1rem",
+                }}
+                onClick={() => scrollToSection("section2")}
+              />
+              <span className={styles.__arrow_right__text}>
+                <p>Un peu plus</p>
+              </span>
+            </div>
             <div className={styles.section1__image_logo}>
               <Image
                 className={styles.__img}
                 src={logo}
                 alt="Maison Essenza"
                 placeholder="empty"
-                // width={620}
-                // height={520}
-                // priority={false}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                // layout="responsive"
               />
             </div>
             <div className={styles.section1__text_header}>
@@ -44,13 +61,73 @@ const Section1 = () => {
                 </p>
               </span>
             </div>
-            <span className={styles.__text_bloc__info}>
-              <p>
-                du <strong>Mardi au Samedi </strong>de <strong>10.00</strong> à{" "}
-                <strong>19.00</strong>
+            <span
+              className={styles.__text_bloc__info}
+              style={{
+                display: "flex",
+              }}
+            >
+              <p
+                style={{
+                  paddingRight: "4px",
+                  fontSize: "2rem",
+                }}
+              >
+                du
               </p>
 
-              <p>
+              <p
+                style={{
+                  fontFamily: " var(--cormorant_garamond)",
+                }}
+              >
+                <strong>Mardi au Samedi </strong>
+              </p>
+              <p
+                style={{
+                  paddingLeft: "4px",
+                  paddingRight: "4px",
+                  fontSize: "2rem",
+                }}
+              >
+                de
+              </p>
+              <p
+                style={{
+                  paddingLeft: "4px",
+                  paddingRight: "4px",
+                  fontSize: "2rem",
+                  fontFamily: " var(--cormorant_garamond)",
+                }}
+              >
+                <strong>10.00</strong>
+              </p>
+              <p
+                style={{
+                  paddingRight: "4px",
+                  paddingLeft: "4px",
+                  fontSize: "2rem",
+                }}
+              >
+                à
+              </p>
+              <p
+                style={{
+                  fontSize: "2rem",
+                  fontFamily: " var(--cormorant_garamond)",
+                }}
+              >
+                <strong>19.00</strong>
+              </p>
+            </span>
+            <span className={styles.__text_bloc__info_adress}>
+              <p
+                style={{
+                  fontFamily: " var(--cormorant_garamond)",
+                  //fontFamily: "var(--nixie_one)",
+                  //fontFamily: "var(--courier-prime); ",
+                }}
+              >
                 <strong>33 Rue Marceau - Cogolin</strong>
               </p>
             </span>
@@ -84,13 +161,12 @@ const Section1 = () => {
             </span>
           </div>
         </div>
-        {/* Flèche droite */}
-        <div className={styles.arrow_see_more}>
-          {" "}
+        {/* Right Arrow */}
+        {/* <div className={`${styles.arrow_see_more} ${styles.right}`}>
           <Image
             className={styles.__arrow_right}
             src={arrowRight}
-            alt="Maison Essenza"
+            alt="Next Section"
             priority={false}
             placeholder="empty"
             width={80}
@@ -100,20 +176,12 @@ const Section1 = () => {
               objectFit: "cover",
               cursor: "pointer",
             }}
-            onClick={() => scrollToSection("section2")} // Défiler vers la section
+            onClick={() => scrollToSection("section2")}
           />
           <span className={styles.__arrow_right__text}>
-            {" "}
-            <p
-              style={{
-                fontSize: "11.5px",
-                fontWeight: "bold",
-              }}
-            >
-              Un peu plus
-            </p>
+            <p>Un peu plus</p>
           </span>
-        </div>
+        </div> */}
       </div>
     </>
   );

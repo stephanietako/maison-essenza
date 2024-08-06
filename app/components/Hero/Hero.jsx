@@ -1,14 +1,31 @@
 "use client";
 import React from "react";
+import Video from "next-video";
+import teaser from "/videos/teaser.mp4";
 
 const Hero = () => {
   return (
-    <div className="hero" id="home">
+    <div
+      className="hero"
+      id="hero"
+      style={{
+        display: "flex",
+        width: "100vw",
+        height: "100vh",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
       {/* Ajoutez la vidéo comme arrière-plan */}
-      <video autoPlay muted loop id="myVideo">
-        <source src="/videos/teaser.mp4" type="video/mp4" />
-        Votre navigateur ne supporte pas la vidéo HTML5.
-      </video>
+      <Video
+        src={teaser}
+        autoPlay
+        muted
+        loop
+        PlayInline
+        id="myVideo"
+        controls={false}
+      ></Video>
     </div>
   );
 };

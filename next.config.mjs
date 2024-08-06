@@ -1,10 +1,7 @@
-// next.config.js
+import { withNextVideo } from "next-video/process";
+// next.config.mjs
 
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    domains: ["scontent-mrs2-3.cdninstagram.com"],
-  },
-};
+const nextConfig = {};
 
-export default nextConfig;
+export default withNextVideo(nextConfig);

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import InstagramRecentPost from "../InstagramRecentPost/InstagramRecentPost";
+//import InstagramRecentPost from "../InstagramRecentPost/InstagramRecentPost";
 // Assets
 //import arrowRight from "@/public/assets/arrow-right.png";
 import arrowLeft from "@/public/assets/arrow-left.png";
@@ -43,7 +43,8 @@ const Section3 = () => {
         <main className={styles.section3__main}>
           <h1>Maison Essenza Instagram galerie</h1>
           <span className={styles.section3__post}>
-            <InstagramRecentPost />
+            {/* <InstagramRecentPost /> */}
+            HELLO WORLD
           </span>
         </main>
       </div>

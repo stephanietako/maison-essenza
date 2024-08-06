@@ -1,0 +1,38 @@
+$footer-height: 800px; // Variable pour la hauteur du footer
+$footer-color: aqua; // Variable pour la couleur du texte
+$background-color: black; // Variable pour la couleur de fond
+
+.footer__container {
+  display: block;
+  position: relative;
+  height: $footer-height;
+  clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%); // rectangle
+
+  .footer__bloc {
+    position: fixed;
+    height: $footer-height;
+    width: 100%;
+    bottom: 0;
+    color: $footer-color;
+    background-color: $background-color;
+    color: $footer-color;
+
+    .footer_list {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin: 5px 0;
+      }
+
+      a {
+        color: #fff;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

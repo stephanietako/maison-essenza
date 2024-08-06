@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import NavItem from "../NavItem/NavItem";
 import logo from "@/public/assets/essenza-logo.png";
+//Styles
 import styles from "./styles.module.scss";
 
 const MENU_LIST = [{ name: "Google Map", href: "/section1" }];
