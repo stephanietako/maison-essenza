@@ -20,6 +20,7 @@ const Section1 = () => {
       <div className={styles.section1} id="section1">
         <div className={styles.section1__container}>
           <div className={styles.section1__bloc}>
+            {/* Flèche droite */}
             <div className={`${styles.arrow_see_more} ${styles.right}`}>
               <Image
                 className={styles.__arrow_right}
@@ -27,13 +28,12 @@ const Section1 = () => {
                 alt="Next Section"
                 priority={false}
                 placeholder="empty"
-                width={150}
-                height={150}
+                width={140}
+                height={110}
                 style={{
                   display: "block",
                   objectFit: "cover",
                   cursor: "pointer",
-                  padding: "1rem",
                 }}
                 onClick={() => scrollToSection("section2")}
               />
@@ -48,7 +48,7 @@ const Section1 = () => {
                 alt="Maison Essenza"
                 placeholder="empty"
                 width={700}
-                height={500}
+                height={450}
                 // fill
                 // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               />
@@ -71,8 +71,8 @@ const Section1 = () => {
             >
               <p
                 style={{
-                  paddingRight: "4px",
-                  fontSize: "1.7rem",
+                  paddingRight: "7px",
+                  fontSize: "2rem",
                 }}
               >
                 du
@@ -81,57 +81,58 @@ const Section1 = () => {
               <p
                 style={{
                   fontFamily: " var(--cormorant_garamond)",
+                  fontSize: "2.2rem",
+                  wordSpacing: "-0.7ch",
                 }}
               >
-                <strong>Mardi au Samedi </strong>
+                Mardi au Samedi
               </p>
               <p
                 style={{
-                  paddingLeft: "4px",
+                  paddingLeft: "7px",
                   paddingRight: "4px",
-                  fontSize: "1.7rem",
+                  fontSize: "2.1rem",
                 }}
               >
                 de
               </p>
               <p
                 style={{
-                  paddingLeft: "4px",
-                  paddingRight: "4px",
-                  fontSize: "2rem",
+                  fontSize: "2.5rem",
                   fontFamily: " var(--cormorant_garamond)",
+                  letterSpacing: "-5px",
                 }}
               >
-                <strong>10.00</strong>
+                10.00
               </p>
               <p
                 style={{
-                  paddingRight: "4px",
-                  paddingLeft: "4px",
-                  fontSize: "1.7rem",
+                  paddingRight: "5px",
+                  paddingLeft: "8px",
+                  fontsize: "2rem",
                 }}
               >
                 à
               </p>
               <p
                 style={{
-                  fontSize: "2rem",
+                  fontSize: "2.5rem",
                   fontFamily: " var(--cormorant_garamond)",
+                  letterSpacing: "-5px",
                 }}
               >
-                <strong>19.00</strong>
+                19.00
               </p>
             </span>
             <span className={styles.__text_bloc__info_adress}>
               <p
                 style={{
                   fontFamily: " var(--cormorant_garamond)",
-                  fontSize: "1.5rem",
-                  //fontFamily: "var(--nixie_one)",
-                  //fontFamily: "var(--courier-prime); ",
+                  fontSize: "2rem",
+                  wordSpacing: "-0.5ch",
                 }}
               >
-                <strong>33 Rue Marceau - Cogolin</strong>
+                33 Rue Marceau - Cogolin
               </p>
             </span>
             <br />
@@ -152,6 +153,7 @@ const Section1 = () => {
                 leur patience.
               </p>
               <br />
+
               <p>
                 Nous avons plus de 10.500 références diverses pour tous styles,
                 envies et budgets.
@@ -164,32 +166,9 @@ const Section1 = () => {
             </span>
           </div>
         </div>
-        {/* Right Arrow */}
-        {/* <div className={`${styles.arrow_see_more} ${styles.right}`}>
-          <Image
-            className={styles.__arrow_right}
-            src={arrowRight}
-            alt="Next Section"
-            priority={false}
-            placeholder="empty"
-            width={80}
-            height={80}
-            style={{
-              display: "block",
-              objectFit: "cover",
-              cursor: "pointer",
-            }}
-            onClick={() => scrollToSection("section2")}
-          />
-          <span className={styles.__arrow_right__text}>
-            <p>Un peu plus</p>
-          </span>
-        </div> */}
       </div>
     </>
   );
 };
 
 export default Section1;
-
-// Courier Prime, Old Typewriter Font, and Special Elite are the best American typewriter fonts on Google Docs as their font weight, size, and overall style all resemble the characters generated by old American typewriters.

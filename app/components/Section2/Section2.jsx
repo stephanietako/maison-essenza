@@ -1,4 +1,5 @@
 "use client";
+
 import React from "react";
 import Image from "next/image";
 // Styles
@@ -9,7 +10,6 @@ import insta from "@/public/assets/insta.png";
 import mail from "@/public/assets/mail.png";
 import gps from "@/public/assets/gps.png";
 import phone from "@/public/assets/phone.png";
-import arrowRight from "@/public/assets/arrow-right.png";
 import arrowLeft from "@/public/assets/arrow-left.png";
 
 const Section2 = () => {
@@ -22,29 +22,29 @@ const Section2 = () => {
 
   return (
     <div className={styles.section2} id="section2">
-      {/* Flèche gauche */}
-      <div className={`${styles.arrow_see_more} ${styles.left}`}>
-        <Image
-          className={styles.__arrow_left}
-          src={arrowLeft}
-          alt="Previous Section"
-          priority={false}
-          placeholder="empty"
-          width={80}
-          height={80}
-          style={{
-            display: "block",
-            objectFit: "cover",
-            cursor: "pointer",
-          }}
-          onClick={() => scrollToSection("section1")}
-        />
-        <span className={styles.__arrow_left__text}>
-          <p>Un peu moins</p>
-        </span>
-      </div>
       <div className={styles.section2__container}>
         <div className={styles.section2__bloc}>
+          {/* Flèche gauche */}
+          <div className={`${styles.arrow_see_more} ${styles.left}`}>
+            <Image
+              className={styles.__arrow_left}
+              src={arrowLeft}
+              alt="Previous Section"
+              priority={false}
+              placeholder="empty"
+              width={140}
+              height={110}
+              style={{
+                display: "block",
+                objectFit: "cover",
+                cursor: "pointer",
+              }}
+              onClick={() => scrollToSection("section1")}
+            />
+            <span className={styles.__arrow_left__text}>
+              <p>Un peu moins</p>
+            </span>
+          </div>
           <h1>Quelques-unes de nos marques</h1>
           <div className={styles.section2__image_logo}>
             <Image
@@ -53,26 +53,19 @@ const Section2 = () => {
               alt="toutes les marques de Maison Essenza"
               priority={false}
               placeholder="empty"
-              width={800}
-              height={510}
+              width={1200}
+              height={850}
             />
           </div>
-          <div
-            className="link_infos"
-            style={{
-              display: "flex",
-              width: "100%",
-              height: "auto",
-              justifyContent: "center",
-              marginBottom: "2rem",
-            }}
-          >
-            <ul style={{ listStyleType: "none", padding: 0, display: "flex" }}>
+          <div className={styles.link_infos}>
+            <ul
+              className={styles.link_list}
+              style={{ listStyleType: "none", padding: 0, display: "flex" }}
+            >
               <li
                 style={{
                   display: "flex",
                   alignItems: "center",
-                  marginBottom: "10px",
                 }}
               >
                 <span style={{ flex: 1 }}>Retrouvez-nous sur Instagram</span>
@@ -83,9 +76,13 @@ const Section2 = () => {
                   <Image
                     src={insta}
                     alt="Instagram Icon"
-                    width={54}
-                    height={54}
-                    style={{ objectFit: "cover", cursor: "pointer" }}
+                    width={74}
+                    height={74}
+                    style={{
+                      objectFit: "cover",
+                      cursor: "pointer",
+                      marginRight: "1.5rem",
+                    }}
                   />
                 </a>
               </li>
@@ -100,9 +97,13 @@ const Section2 = () => {
                 <Image
                   src={mail}
                   alt="Mail Icon"
-                  width={54}
-                  height={54}
-                  style={{ objectFit: "cover" }}
+                  width={74}
+                  height={74}
+                  style={{
+                    objectFit: "cover",
+                    cursor: "pointer",
+                    marginRight: "1.5rem",
+                  }}
                 />
               </li>
               <li
@@ -122,9 +123,13 @@ const Section2 = () => {
                   <Image
                     src={gps}
                     alt="GPS Icon"
-                    width={54}
-                    height={54}
-                    style={{ objectFit: "cover", cursor: "pointer" }}
+                    width={74}
+                    height={74}
+                    style={{
+                      objectFit: "cover",
+                      cursor: "pointer",
+                      marginRight: "1.5rem",
+                    }}
                   />
                 </a>
               </li>
@@ -139,36 +144,18 @@ const Section2 = () => {
                 <Image
                   src={phone}
                   alt="Phone Icon"
-                  width={54}
-                  height={54}
-                  style={{ objectFit: "cover" }}
+                  width={74}
+                  height={74}
+                  style={{
+                    objectFit: "cover",
+                    cursor: "pointer",
+                    marginRight: "1.5rem",
+                  }}
                 />
               </li>
             </ul>
           </div>
         </div>
-      </div>
-
-      {/* Right Arrow */}
-      <div className={`${styles.arrow_see_more} ${styles.right}`}>
-        <Image
-          className={styles.__arrow_right}
-          src={arrowRight}
-          alt="Next Section"
-          priority={false}
-          placeholder="empty"
-          width={80}
-          height={80}
-          style={{
-            display: "block",
-            objectFit: "cover",
-            cursor: "pointer",
-          }}
-          onClick={() => scrollToSection("section3")}
-        />
-        <span className={styles.__arrow_right__text}>
-          <p>Un peu plus</p>
-        </span>
       </div>
     </div>
   );
