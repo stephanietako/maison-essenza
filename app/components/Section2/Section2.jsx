@@ -86,8 +86,8 @@ const Section2 = () => {
                   <Image
                     src={mail}
                     alt="Mail Icon"
-                    width={100}
-                    height={100}
+                    width={125}
+                    height={125}
                     className={styles.__icon}
                   />
                 </span>
@@ -102,8 +102,8 @@ const Section2 = () => {
                     <Image
                       src={gps}
                       alt="GPS Icon"
-                      width={100}
-                      height={100}
+                      width={120}
+                      height={120}
                       className={styles.__icon}
                     />
                   </a>
