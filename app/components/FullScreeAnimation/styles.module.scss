@@ -1,0 +1,16 @@
+.fullScreenAnimation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rebeccapurple; // ou une autre couleur
+  z-index: 20;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: white;
+  font-size: 2rem;
+}
