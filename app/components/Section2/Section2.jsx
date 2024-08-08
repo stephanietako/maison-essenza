@@ -32,7 +32,7 @@ const Section2 = () => {
               alt="Previous Section"
               priority={false}
               placeholder="empty"
-              width={140}
+              width={160}
               height={110}
               style={{
                 display: "block",
@@ -53,105 +53,76 @@ const Section2 = () => {
               alt="toutes les marques de Maison Essenza"
               priority={false}
               placeholder="empty"
-              width={1200}
-              height={850}
+              width={1100}
+              height={780}
             />
           </div>
+          {/* Links infos */}
           <div className={styles.link_infos}>
-            <ul
-              className={styles.link_list}
-              style={{ listStyleType: "none", padding: 0, display: "flex" }}
-            >
-              <li
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                }}
-              >
-                <span style={{ flex: 1 }}>Retrouvez-nous sur Instagram</span>
-                <a
-                  href="#section3" // Lien vers la section3
-                  style={{ textDecoration: "none" }}
-                >
-                  <Image
-                    src={insta}
-                    alt="Instagram Icon"
-                    width={74}
-                    height={74}
-                    style={{
-                      objectFit: "cover",
-                      cursor: "pointer",
-                      marginRight: "1.5rem",
-                    }}
-                  />
-                </a>
-              </li>
-              <li
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  marginBottom: "10px",
-                }}
-              >
-                <span style={{ flex: 1 }}>Ecrivez-nous quelques lignes</span>
-                <Image
-                  src={mail}
-                  alt="Mail Icon"
-                  width={74}
-                  height={74}
-                  style={{
-                    objectFit: "cover",
-                    cursor: "pointer",
-                    marginRight: "1.5rem",
-                  }}
-                />
-              </li>
-              <li
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  marginBottom: "10px",
-                }}
-              >
-                <span style={{ flex: 1 }}>
-                  Nous visiter sans perdre le Nord
+            <ul className={styles.link_list}>
+              <li className={styles.link}>
+                <span className={styles.link__txt}>
+                  {" "}
+                  <p>Retrouvez-nous sur Instagram</p>
                 </span>
-                <a
-                  href="/section1" // Lien vers la page /section1
-                  style={{ textDecoration: "none" }}
-                >
-                  <Image
-                    src={gps}
-                    alt="GPS Icon"
-                    width={74}
-                    height={74}
-                    style={{
-                      objectFit: "cover",
-                      cursor: "pointer",
-                      marginRight: "1.5rem",
-                    }}
-                  />
-                </a>
+                <span className={`${styles.link__img} `} id={`${styles.insta}`}>
+                  <a href="#section3">
+                    <Image
+                      src={insta}
+                      alt="Instagram Icon"
+                      width={100}
+                      height={100}
+                      className={styles.__icon}
+                    />
+                  </a>
+                </span>
               </li>
-              <li
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  marginBottom: "10px",
-                }}
-              >
-                <span style={{ flex: 1 }}>+3(0)45155164</span>
-                <Image
-                  src={phone}
-                  alt="Phone Icon"
-                  width={74}
-                  height={74}
-                  style={{
-                    objectFit: "cover",
-                    cursor: "pointer",
-                    marginRight: "1.5rem",
-                  }}
-                />
+              <li className={styles.link}>
+                <span className={styles.link__txt}>
+                  {" "}
+                  <p>Ecrivez-nous quelques lignes</p>
+                </span>
+                <span className={`${styles.link__img} `} id={`${styles.mail}`}>
+                  <Image
+                    src={mail}
+                    alt="Mail Icon"
+                    width={100}
+                    height={100}
+                    className={styles.__icon}
+                  />
+                </span>
+              </li>
+              <li className={styles.link}>
+                <span className={styles.link__txt}>
+                  {" "}
+                  <p>Nous visiter sans perdre le Nord</p>
+                </span>
+                <span className={`${styles.link__img} `} id={`${styles.gps}`}>
+                  <a href="/section1">
+                    <Image
+                      src={gps}
+                      alt="GPS Icon"
+                      width={100}
+                      height={100}
+                      className={styles.__icon}
+                    />
+                  </a>
+                </span>
+              </li>
+              <li className={styles.link}>
+                <span className={styles.link__txt}>
+                  {" "}
+                  <p>+33(0)45155164</p>
+                </span>
+                <span className={`${styles.link__img} `} id={`${styles.phone}`}>
+                  <Image
+                    src={phone}
+                    alt="Phone Icon"
+                    width={55}
+                    height={55}
+                    className={styles.__icon}
+                  />
+                </span>
               </li>
             </ul>
           </div>
