@@ -15,7 +15,7 @@ export default function ComponentHorztl() {
   }, []);
 
   return (
-    <div className={styles.content_horizontal}>
+    <div className={styles.content_horizontal} id="content">
       <div ref={sectionWrapperRef} className={styles.section_wrapper}>
         <div className={styles.item}>
           <Section1 />

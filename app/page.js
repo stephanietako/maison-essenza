@@ -1,28 +1,3 @@
-// "use client";
-
-// import Footer from "./components/Footer/Footer";
-// import Header from "./components/Header/Header";
-// import ContentHorztl from "./components/ContentHorztl/ContentHorztl";
-// export default function Home() {
-//   return (
-//     <main>
-//       <div div className="home">
-//         <div className="header">
-//           <Header />
-//         </div>
-//         <div className="content_horizontal">
-//           <ContentHorztl />
-//         </div>
-//       </div>
-//       <div className="footer">
-//         {" "}
-//         <Footer />
-//       </div>
-//     </main>
-//   );
-// }
-// app/Home.js
-// app/page.js
 "use client";
 
 import { useState, useEffect } from "react";

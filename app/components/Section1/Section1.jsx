@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 // Assets
 import logo from "@/public/assets/essenza-logo.png";
 import arrowRight from "@/public/assets/arrow-right.png";
 // Style
 import styles from "./styles.module.scss";
 
-const Section1 = () => {
+const Section1 = ({ resetAnimation }) => {
   // FONCTION POUR SCROLLER SUR LA SECTION SUIVANTE
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
@@ -14,7 +15,14 @@ const Section1 = () => {
       section.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the target section
     }
   };
-  ///////////////
+
+  // Fonction pour déclencher le reset de l'animation
+  const handleLogoClick = () => {
+    if (resetAnimation) {
+      resetAnimation(); // Appelle la fonction de reset pour redémarrer l'animation
+    }
+  };
+
   return (
     <>
       <div className={styles.section1} id="section1">
@@ -42,16 +50,16 @@ const Section1 = () => {
               </span>
             </div>
             <div className={styles.section1__image_logo}>
-              <Image
-                className={styles.__img}
-                src={logo}
-                alt="Maison Essenza"
-                placeholder="empty"
-                width={700}
-                height={450}
-                // fill
-                // sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              />
+              <Link href="/" onClick={handleLogoClick}>
+                <Image
+                  className={styles.__img}
+                  src={logo}
+                  alt="Maison Essenza"
+                  placeholder="empty"
+                  width={700}
+                  height={450}
+                />
+              </Link>
             </div>
             <div className={styles.section1__text_header}>
               <h1>BIENTÔT EN LIGNE</h1>
