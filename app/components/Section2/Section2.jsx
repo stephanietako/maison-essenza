@@ -54,7 +54,7 @@ const Section2 = () => {
               priority={false}
               placeholder="empty"
               width={1100}
-              height={780}
+              height={710}
             />
           </div>
           {/* Links infos */}
@@ -112,7 +112,7 @@ const Section2 = () => {
               <li className={styles.link}>
                 <span className={styles.link__txt}>
                   {" "}
-                  <p>+33(0)45155164</p>
+                  <p>+33(0)4 51 55 51 64</p>
                 </span>
                 <span className={`${styles.link__img} `} id={`${styles.phone}`}>
                   <Image
