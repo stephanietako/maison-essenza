@@ -19,7 +19,7 @@ const Section2 = () => {
       section.scrollIntoView({ behavior: "smooth" }); // Smooth scroll to the target section
     }
   };
-
+  console.log("scrollToSection", scrollToSection);
   return (
     <div className={styles.section2} id="section2">
       <div className={styles.section2__container}>

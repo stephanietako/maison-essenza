@@ -1,74 +1,3 @@
-// "use client";
-
-// import { useEffect, useState } from "react";
-// import { motion } from "framer-motion";
-// import styles from "./styles.module.scss";
-
-// const FullScreenAnimation = ({ onComplete }) => {
-//   const [isVisible, setIsVisible] = useState(true); // Gère la visibilité du header
-
-//   const variants = {
-//     initial: { x: "-100%", y: 0, width: "100%", height: "100%" },
-//     animate: {
-//       x: 0,
-//       y: 0,
-//       width: "100%",
-//       height: "100%",
-//       transition: { duration: 1.5, ease: [0.76, 0, 0.24, 1] },
-//     },
-//     exit: {
-//       x: 0,
-//       y: "-100%",
-//       width: "100%",
-//       height: "0%",
-//       opacity: 0,
-//       transition: { duration: 1.5, ease: [0.76, 0, 0.24, 1] },
-//     },
-//   };
-
-//   // Timer
-//   useEffect(() => {
-//     const timer = setTimeout(() => {
-//       setIsVisible(false); // La sortie
-//     }, 12000);
-
-//     return () => clearTimeout(timer);
-//   }, []);
-
-//   return (
-//     <div id="full_screen_animation">
-//       {isVisible && (
-//         <motion.div
-//           className={styles.fullScreenAnimation}
-//           variants={variants}
-//           initial="initial"
-//           animate="animate"
-//           exit="exit"
-//           onAnimationComplete={onComplete}
-//           style={{
-//             position: "fixed",
-//             top: 0,
-//             left: 0,
-//             width: "100vw",
-//             height: "100vh",
-//             backgroundColor: "rebeccapurple",
-//             zIndex: 10,
-//             display: "flex",
-//             justifyContent: "center",
-//             alignItems: "center",
-//           }}
-//         >
-//           <div className={styles.content}>
-//             {/* Vous pouvez ajouter du contenu ici si nécessaire */}
-//             <p>Animation Complete</p>
-//           </div>
-//         </motion.div>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default FullScreenAnimation;
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -96,7 +25,7 @@ const FullScreenAnimation = ({ onComplete }) => {
     //  Set Timer to trigger la sortie del'animation après 12 seconds
     const timer = setTimeout(() => {
       setIsAnimatingOut(true); // Start l'animation de sortie
-    }, 12000);
+    }, 2000); //ne pas oublier de remettre 12000s
 
     return () => clearTimeout(timer);
   }, []);

@@ -69,3 +69,18 @@ p {
   display: flex;
   border: 3px solid red;
 }
+.content_horizontal {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.section1,
+.section2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
