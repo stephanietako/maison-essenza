@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+// Styles
 import styles from "./styles.module.scss";
 
 const FullScreenAnimation = ({ onComplete }) => {
