@@ -105,7 +105,7 @@ const TransitionRight = ({ onComplete, keyTrigger }) => {
     if (isAnimatingOut && onComplete) {
       const timer = setTimeout(() => {
         onComplete();
-      }, 2000); // Durée de l'animation
+      }, 1000);
       return () => clearTimeout(timer);
     }
   }, [isAnimatingOut, onComplete]);
