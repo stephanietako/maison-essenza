@@ -1,6 +1,7 @@
 import { Courier_Prime, Cormorant_Garamond, Nixie_One } from "next/font/google";
 import "./globals.css";
 //import { motion } from "framer-motion";
+
 export const dynamic = "force-dynamic";
 
 const courier_prime_init = Courier_Prime({

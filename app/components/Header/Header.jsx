@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Hero from "../Hero/Hero";
 
 export default function Header() {
   const [isVisible, setIsVisible] = useState(true); // Gère la visibilité du header
@@ -18,24 +19,17 @@ export default function Header() {
     },
     exit: {
       y: "-100%", // Sort vers le haut
-      opacity: 0,
+      opacity: 1,
       transition: { duration: 2, ease: [0.76, 0, 0.24, 1] }, // Animation de sortie
     },
   };
 
-  // Déclenchement de l'Animation
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setIsAnimatingOut(true); // Start l'animation de sortie
-  //   }, 2000);
-
-  //   return () => clearTimeout(timer);
-  // }, []);
-  // La sortie
   useEffect(() => {
+    //  Set Timer to trigger la sortie del'animation après 12 seconds
     const timer = setTimeout(() => {
-      setIsVisible(false);
-    }, 2000);
+      setIsAnimatingOut(true); // Start l'animation de sortie
+    }, 12000); //ne pas oublier de remettre 12000s
+
     return () => clearTimeout(timer);
   }, []);
 
@@ -52,52 +46,15 @@ export default function Header() {
           left: 0,
           width: "100vw",
           height: "100vh",
-          backgroundColor: "rebeccapurple",
+          backgroundColor: "purple",
           zIndex: 10,
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
         }}
       >
-        <h1 style={{ color: "white", textAlign: "center" }}>Header</h1>
+        <Hero />
       </motion.div>
     </div>
   );
 }
-
-///////////////
-// "use client";
-
-// import { motion } from "framer-motion";
-
-// export default function Header() {
-//   const variants = {
-//     hidden: { x: "-100%", y: 0 },
-//     transition: { duration: 0.75, delay: 0.35, ease: [0.76, 0, 0.24, 1] },
-//     visible: { x: 0, y: 0 },
-//     exit: { x: 0, y: "-100%" }, // Remonte et disparaît vers le haut
-//   };
-
-//   return (
-//     <motion.div
-//       initial="hidden"
-//       animate="visible"
-//       exit="exit"
-//       variants={variants}
-//       transition={{ duration: 1, ease: "easeInOut" }}
-//       style={{
-//         position: "fixed",
-//         top: 0,
-//         left: 0,
-//         width: "100vw",
-//         height: "100vh",
-//         backgroundColor: "rebeccapurple",
-//         zIndex: 10, // Assurez-vous qu'il est au-dessus des autres éléments
-//       }}
-//     >
-//       <h1 style={{ color: "white", textAlign: "center", paddingTop: "50vh" }}>
-//         Header
-//       </h1>
-//     </motion.div>
-//   );
-// }

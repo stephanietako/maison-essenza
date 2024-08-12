@@ -140,7 +140,7 @@ const GoogleMap = () => {
       <div className={styles.__btn_box}>
         <button className={styles.__btnPosition} onClick={centerMyLocation}>
           {" "}
-          <p>ME LOCALISER</p>
+          <p>Me localiser sur la carte</p>
         </button>
 
         <a
@@ -149,7 +149,7 @@ const GoogleMap = () => {
           rel="noreferrer noopener"
         >
           <button className={styles.__btn_googlemap}>
-            <p> OUVRIR DANS GOOGLE MAP</p>
+            <p> Ouvrir un lien vers google Map</p>
           </button>
         </a>
       </div>

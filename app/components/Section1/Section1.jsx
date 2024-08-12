@@ -51,8 +51,8 @@ const Section1 = () => {
                 alt="Next Section"
                 priority={false}
                 placeholder="empty"
-                width={140}
-                height={110}
+                width={130}
+                height={100}
                 style={{
                   display: "block",
                   objectFit: "cover",
@@ -71,12 +71,12 @@ const Section1 = () => {
                   src={logo}
                   alt="Maison Essenza"
                   placeholder="empty"
-                  width={650}
-                  height={410}
+                  width={600}
+                  height={450}
                 />
               </Link>
             </div>
-            {/* ... reste du contenu ... */}
+
             <div className={styles.section1__text_header}>
               <h1>BIENTÔT EN LIGNE</h1>
               <span className={styles.__text_bloc__info_subtitle}>
@@ -88,13 +88,13 @@ const Section1 = () => {
             </div>
             <span
               className={styles.__text_bloc__info}
-              style={{ display: "flex" }}
+              // style={{ display: "flex" }}
             >
-              <p style={{ paddingRight: "7px", fontSize: "2rem" }}>du</p>
+              <p style={{ paddingRight: "7px", fontSize: "1.5rem" }}>du</p>
               <p
                 style={{
                   fontFamily: "var(--cormorant_garamond)",
-                  fontSize: "2.2rem",
+                  fontSize: "1.5rem",
                   wordSpacing: "-0.7ch",
                 }}
               >
@@ -104,14 +104,14 @@ const Section1 = () => {
                 style={{
                   paddingLeft: "7px",
                   paddingRight: "4px",
-                  fontSize: "2.1rem",
+                  fontSize: "1.5rem",
                 }}
               >
                 de
               </p>
               <p
                 style={{
-                  fontSize: "2.5rem",
+                  fontSize: "1.5rem",
                   fontFamily: "var(--cormorant_garamond)",
                   letterSpacing: "-5px",
                 }}
@@ -122,14 +122,14 @@ const Section1 = () => {
                 style={{
                   paddingRight: "5px",
                   paddingLeft: "8px",
-                  fontsize: "2rem",
+                  fontSize: "1.3rem",
                 }}
               >
                 à
               </p>
               <p
                 style={{
-                  fontSize: "2.5rem",
+                  fontSize: "1.5rem",
                   fontFamily: "var(--cormorant_garamond)",
                   letterSpacing: "-5px",
                 }}
@@ -138,15 +138,7 @@ const Section1 = () => {
               </p>
             </span>
             <span className={styles.__text_bloc__info_adress}>
-              <p
-                style={{
-                  fontFamily: "var(--cormorant_garamond)",
-                  fontSize: "2rem",
-                  wordSpacing: "-0.5ch",
-                }}
-              >
-                33 Rue Marceau - Cogolin
-              </p>
+              <p>33 Rue Marceau - Cogolin</p>
             </span>
             <br />
             <span className={styles.__text_bloc__philo}>

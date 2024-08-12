@@ -105,7 +105,7 @@ const TransitionRight = ({ onComplete, keyTrigger }) => {
     if (isAnimatingOut && onComplete) {
       const timer = setTimeout(() => {
         onComplete();
-      }, 1000); // Durée de l'animation
+      }, 2000); // Durée de l'animation
       return () => clearTimeout(timer);
     }
   }, [isAnimatingOut, onComplete]);
@@ -122,7 +122,7 @@ const TransitionRight = ({ onComplete, keyTrigger }) => {
             variants={variants}
             transition={{ duration: 1, ease: "easeInOut" }}
             style={{
-              position: "fixed",
+              position: "absolute",
               top: 0,
               left: 0,
               width: "100vw",

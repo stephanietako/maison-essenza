@@ -1,7 +1,6 @@
 "use client";
+
 import React from "react";
-import Video from "next-video";
-import teaser from "/videos/teaser.mp4";
 
 const Hero = () => {
   return (
@@ -14,18 +13,27 @@ const Hero = () => {
         height: "100vh",
         justifyContent: "center",
         alignItems: "center",
+        overflow: "hidden",
+        position: "relative",
       }}
     >
       {/* Ajoutez la vidéo comme arrière-plan */}
-      <Video
-        src={teaser}
+      <video
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+        src="/video/herovideo.mp4"
+        type="video/mp4"
         autoPlay
-        muted
         loop
-        PlayInline
-        id="myVideo"
-        controls={false}
-      ></Video>
+        muted
+        playsInline
+      />
     </div>
   );
 };

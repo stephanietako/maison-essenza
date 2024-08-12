@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import Hero from "../Hero/Hero";
 // Styles
 import styles from "./styles.module.scss";
 
@@ -16,9 +17,9 @@ const FullScreenAnimation = ({ onComplete }) => {
       x: 0,
       y: "-100%",
       width: "100%",
-      height: "0%",
-      opacity: 0,
-      transition: { duration: 1.5, ease: [0.76, 0, 0.24, 1] },
+
+      opacity: 1,
+      transition: { duration: 2, ease: [0.76, 0, 0.24, 1] },
     },
   };
 
@@ -26,7 +27,7 @@ const FullScreenAnimation = ({ onComplete }) => {
     //  Set Timer to trigger la sortie del'animation après 12 seconds
     const timer = setTimeout(() => {
       setIsAnimatingOut(true); // Start l'animation de sortie
-    }, 2000); //ne pas oublier de remettre 12000s
+    }, 8000); //ne pas oublier de remettre 12000s
 
     return () => clearTimeout(timer);
   }, []);
@@ -62,16 +63,7 @@ const FullScreenAnimation = ({ onComplete }) => {
           }}
         >
           <div className={styles.content}>
-            <h1
-              style={{
-                color: "white",
-                textAlign: "center",
-                display: "flex",
-                justifyContent: "center",
-              }}
-            >
-              FULL SCREEN ANIMATION
-            </h1>
+            <Hero />
           </div>
         </motion.div>
       )}
