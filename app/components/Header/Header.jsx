@@ -46,7 +46,7 @@ export default function Header() {
           left: 0,
           width: "100vw",
           height: "100vh",
-          backgroundColor: "purple",
+          backgroundColor: "#fff",
           zIndex: 10,
           display: "flex",
           justifyContent: "center",
