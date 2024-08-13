@@ -7,8 +7,8 @@
   align-items: center;
 
   .map__container {
-    height: 35rem;
-    width: 81%;
+    height: 25rem;
+    width: 61%;
     position: relative;
     overflow: hidden;
     justify-content: center;
@@ -19,12 +19,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
+    width: 50%;
     height: auto;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 17px;
     p {
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
     button {
       &.__btnPosition,

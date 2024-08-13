@@ -1,21 +1,19 @@
 import React from "react";
+import GoogleMap from "../GoogleMap/GoogleMap";
+import Link from "next/link";
 //Styles
 import styles from "./styles.module.scss";
-import GoogleMap from "../GoogleMap/GoogleMap";
 
 const Footer = () => {
+  const date = new Date();
+  const currentYear = date.getFullYear();
   return (
     <>
-      <h1
-        style={{
-          width: "100%",
-          display: "flex",
-          justifyContent: "center",
-          margin: "2rem",
-        }}
-      >
-        MAISON ESSENZA
-      </h1>
+      <div className={styles.footer__header}>
+        <Link href="/">
+          <h1>MAISON ESSENZA</h1>
+        </Link>
+      </div>
       <div className={styles.footer__container} id="footer">
         <div className={styles.footer__bloc}>
           <div className={styles.google}>
@@ -33,7 +31,7 @@ const Footer = () => {
             <li>
               <p>
                 {" "}
-                Téléphone: <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                Téléphone: <a href="tel:+33123456789">+33(0)4 51 55 51 64</a>
               </p>
             </li>
             <li>
@@ -46,6 +44,56 @@ const Footer = () => {
               </p>
             </li>
           </ul>
+
+          <span
+            className={styles.infos}
+            style={{
+              display: "flex",
+              width: "100%",
+              height: "2rem",
+              position: "absolute",
+              bottom: 0,
+              paddingLeft: "2rem",
+              alignItems: "center",
+            }}
+          >
+            <Link href="/">
+              <p
+                style={{
+                  fontSize: "0.5rem",
+                  display: "flex",
+                  width: "6rem",
+                }}
+              >
+                Mentions Légales
+              </p>
+            </Link>
+            <Link href="/">
+              <p
+                style={{
+                  display: "flex",
+                  fontSize: "0.5rem",
+                  width: "4rem",
+                }}
+              >
+                RGPD
+              </p>
+            </Link>
+            <div
+              className={styles.__copyright}
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                color: "#000",
+                fontSize: "10px",
+                width: "100%",
+                // border: "3px solid blue",
+                alignItems: "center",
+              }}
+            >
+              &#169; Copyright {currentYear} | Tako Dev
+            </div>
+          </span>
         </div>
       </div>
     </>
