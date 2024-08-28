@@ -126,7 +126,7 @@ const TransitionRight = ({ onComplete, keyTrigger }) => {
               top: 0,
               left: 0,
               width: "100vw",
-              height: "100vh",
+              height: "90vh",
               backgroundColor: "rebeccapurple",
               zIndex: 10,
             }}

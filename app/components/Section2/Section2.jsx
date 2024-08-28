@@ -5,10 +5,10 @@ import Link from "next/link";
 import styles from "./styles.module.scss";
 // Assets
 import trade from "@/public/assets/trade.png";
-import insta from "@/public/assets/insta.png";
-import mail from "@/public/assets/mail.png";
-import gps from "@/public/assets/gps.png";
-import phone from "@/public/assets/phone.png";
+// import insta from "@/public/assets/insta.png";
+// import mail from "@/public/assets/mail.png";
+// import gps from "@/public/assets/gps.png";
+// import phone from "@/public/assets/phone.png";
 import arrowLeft from "@/public/assets/arrow-left.png";
 
 const Section2 = ({ handleExitClick }) => {
@@ -52,7 +52,7 @@ const Section2 = ({ handleExitClick }) => {
               />
             </div>
             {/* Links infos */}
-            <div className={styles.link_infos}>
+            {/* <div className={styles.link_infos}>
               <ul className={styles.link_list}>
                 <li className={styles.link}>
                   <div className={styles.link__txt} id={styles.insta}>
@@ -79,7 +79,7 @@ const Section2 = ({ handleExitClick }) => {
                     <p>Ecrivez-nous quelques lignes</p>
                   </div>
                   <span className={styles.link__img}>
-                    <a href="mailto:m.lehmann@maison-essenza.com">
+                    <a href="mailto:hello@maison-essenza.com">
                       <Image
                         src={mail}
                         alt="Mail Icon"
@@ -108,7 +108,7 @@ const Section2 = ({ handleExitClick }) => {
                 </li>
                 <li className={styles.link}>
                   <div className={styles.link__txt} id={styles.phone}>
-                    <p>+33(0)4 51 55 51 64</p>
+                    <p>+33(0)4 51 55 51 60</p>
                   </div>
                   <span className={styles.link__img}>
                     <a href="tel:+33451555164">
@@ -123,7 +123,7 @@ const Section2 = ({ handleExitClick }) => {
                   </span>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

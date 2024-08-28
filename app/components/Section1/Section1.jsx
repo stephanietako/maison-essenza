@@ -91,7 +91,7 @@ const Section1 = () => {
               className={styles.__text_bloc__info}
               // style={{ display: "flex" }}
             >
-              <p style={{ paddingRight: "7px", fontSize: "1.5rem" }}>du</p>
+              <p style={{ paddingRight: "7px", fontSize: "1.3rem" }}>du</p>
               <p
                 style={{
                   fontFamily: "var(--cormorant_garamond)",
@@ -99,13 +99,13 @@ const Section1 = () => {
                   wordSpacing: "-0.7ch",
                 }}
               >
-                Mardi au Samedi
+                Mardi au Vendredi
               </p>
               <p
                 style={{
                   paddingLeft: "7px",
                   paddingRight: "4px",
-                  fontSize: "1.5rem",
+                  fontSize: "1.3rem",
                 }}
               >
                 de
@@ -138,6 +138,53 @@ const Section1 = () => {
                 19.00
               </p>
             </span>
+            <span className={styles.__text_bloc__info}>
+              <p
+                style={{
+                  fontFamily: "var(--cormorant_garamond)",
+                  fontSize: "1.5rem",
+                  wordSpacing: "-0.7ch",
+                }}
+              >
+                et le Samedi
+              </p>
+              <p
+                style={{
+                  paddingLeft: "7px",
+                  paddingRight: "4px",
+                  fontSize: "1.3rem",
+                }}
+              >
+                de
+              </p>
+              <p
+                style={{
+                  fontSize: "1.5rem",
+                  fontFamily: "var(--cormorant_garamond)",
+                  letterSpacing: "-5px",
+                }}
+              >
+                10.00
+              </p>
+              <p
+                style={{
+                  paddingRight: "5px",
+                  paddingLeft: "8px",
+                  fontSize: "1.3rem",
+                }}
+              >
+                à
+              </p>
+              <p
+                style={{
+                  fontSize: "1.5rem",
+                  fontFamily: "var(--cormorant_garamond)",
+                  letterSpacing: "-5px",
+                }}
+              >
+                16.00
+              </p>
+            </span>
             <span className={styles.__text_bloc__info_adress}>
               <p>33 Rue Marceau - Cogolin</p>
             </span>
@@ -167,6 +214,14 @@ const Section1 = () => {
               <p>
                 Osez donc être vous-même et nous vous aiderons à trouver tout ce
                 qu&apos;il vous faut pour un projet qui vous ressemble.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+                mollitia
+              </p>
+              <p>
+                molestiae quas vel sint commodi repudiandae consequuntur
+                voluptatum laborum numquam blanditiis harum
               </p>
             </span>
           </div>
