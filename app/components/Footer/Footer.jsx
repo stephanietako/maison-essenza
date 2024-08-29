@@ -7,6 +7,7 @@ import insta from "@/public/assets/insta.png";
 import mail from "@/public/assets/mail.png";
 import gps from "@/public/assets/gps.png";
 import phone from "@/public/assets/phone.png";
+import bulle from "@/public/assets/bulle.png";
 // Styles
 import styles from "./styles.module.scss";
 
@@ -16,9 +17,6 @@ const Footer = () => {
   return (
     <>
       <div className={styles.footer__header}>
-        {/* <Link href="/">
-          <h1>MAISON ESSENZA</h1>
-        </Link> */}
         <div className={styles.link_infos}>
           <ul className={styles.link_list}>
             <li className={styles.link}>
@@ -104,7 +102,7 @@ const Footer = () => {
               <p>Maison Essenza</p>
             </li>
             <li>
-              <p>Adresse: 33 Rue Marceau, 830110, Cogolin</p>
+              <p>Adresse: 33 Rue Marceau, 83110, Cogolin</p>
             </li>
             <li>
               <p>
@@ -123,105 +121,125 @@ const Footer = () => {
             </li>
           </ul>
 
-          {/* <span
-            className={styles.infos}
-            style={{
-              display: "flex",
-              width: "100%",
-              height: "2rem",
-              position: "absolute",
-              bottom: 0,
-              paddingLeft: "2rem",
-              alignItems: "center",
-            }}
-          >
-            <Link href="/">
-              <p
-                style={{
-                  fontSize: "0.5rem",
-                  display: "flex",
-                  width: "6rem",
-                }}
-              >
-                Mentions Légales
-              </p>
-            </Link>
-            <Link href="/">
-              <p
-                style={{
-                  display: "flex",
-                  fontSize: "0.5rem",
-                  width: "4rem",
-                }}
-              >
-                RGPD
-              </p>
-            </Link>
-            <div
-              className={styles.__copyright}
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                color: "#000",
-                fontSize: "10px",
-                width: "100%",
-                // border: "3px solid blue",
-                alignItems: "center",
-              }}
-            >
-              &#169; Copyright {currentYear} | Tako Dev
+          {/* infos */}
+          <span className={styles.footer_infos}>
+            <div className={styles.column}>
+              <h3>RESTONS CONNECTÉS</h3>
+              <ul>
+                <li className={styles.__info}>
+                  <a
+                    href="https://www.instagram.com/maison_essenza/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.__link} // Ajoute une classe pour styliser le lien
+                  >
+                    <span className={styles.__img}>
+                      <Image
+                        src={insta}
+                        alt="Instagram Icon"
+                        width={60}
+                        height={60}
+                        className={styles.__icon}
+                      />
+                    </span>
+                    <div className={styles.__txt}>
+                      <p>Instagram</p>
+                    </div>
+                  </a>
+                </li>
+                <li className={styles.__info}>
+                  <a href="mailto:hello@maison-essenza.com">
+                    <span className={styles.__img}>
+                      <Image
+                        src={mail}
+                        alt="Mail Icon"
+                        width={60}
+                        height={60}
+                        className={styles.__icon}
+                      />
+                    </span>
+
+                    <div className={styles.__txt}>
+                      <p>Mail</p>
+                    </div>
+                  </a>
+                </li>
+                <li className={styles.__info}>
+                  <a href="/">
+                    <span className={styles.__img}>
+                      <Image
+                        src={bulle}
+                        alt="bubble conversation Icon"
+                        width={23}
+                        height={23}
+                        className={styles.__icon}
+                        id={styles.bubble}
+                      />
+                    </span>
+
+                    <div className={styles.__txt}>
+                      <p>Chat</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
             </div>
-          </span> */}
+            <div className={styles.column}>
+              <h3>LIENS UTILES</h3>
+              <ul>
+                <li>
+                  <Link href="/lien4">
+                    <p>Lien 4</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/lien5">
+                    <p>Lien 5</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/lien6">
+                    <p>Lien 6</p>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.column}>
+              <h3>CONTACT</h3>
+              <ul>
+                <li>
+                  <Link href="/lien7">
+                    <p>Lien 7</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/lien8">
+                    <p>Lien 8</p>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/lien9">
+                    <p>Lien 9</p>
+                  </Link>
+                </li>
+              </ul>
+              <div
+                className={styles.__copyright}
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  color: "#000",
+                  fontSize: "10px",
+                  width: "100%",
+                  // border: "3px solid blue",
+                  alignItems: "center",
+                }}
+              >
+                &#169; Copyright {currentYear} | Tako Dev
+              </div>
+            </div>
+          </span>
         </div>
-        <span
-          className={styles.infos}
-          style={{
-            display: "flex",
-            width: "100%",
-            height: "2rem",
-            position: "absolute",
-            bottom: 0,
-            paddingLeft: "2rem",
-            alignItems: "center",
-          }}
-        >
-          <Link href="/">
-            <p
-              style={{
-                fontSize: "0.5rem",
-                display: "flex",
-                width: "6rem",
-              }}
-            >
-              Mentions Légales
-            </p>
-          </Link>
-          <Link href="/">
-            <p
-              style={{
-                display: "flex",
-                fontSize: "0.5rem",
-                width: "4rem",
-              }}
-            >
-              RGPD
-            </p>
-          </Link>
-          <div
-            className={styles.__copyright}
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              color: "#000",
-              fontSize: "10px",
-              width: "100%",
-              // border: "3px solid blue",
-              alignItems: "center",
-            }}
-          >
-            &#169; Copyright {currentYear} | Tako Dev
-          </div>
-        </span>
       </div>
     </>
   );

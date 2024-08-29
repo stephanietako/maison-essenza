@@ -223,6 +223,14 @@ const Section1 = () => {
                 molestiae quas vel sint commodi repudiandae consequuntur
                 voluptatum laborum numquam blanditiis harum
               </p>
+              <p>
+                molestiae quas vel sint commodi repudiandae consequuntur
+                voluptatum laborum numquam blanditiis harum
+              </p>
+              <p>
+                molestiae quas vel sint commodi repudiandae consequuntur
+                voluptatum laborum numquam blanditiis harum
+              </p>
             </span>
           </div>
         </div>
