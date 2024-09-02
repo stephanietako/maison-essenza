@@ -16,7 +16,6 @@
     height: 90vh;
     position: relative;
     overflow-y: hidden;
-    background-color: blue;
 
     .section1__bloc {
       display: flex;
@@ -31,12 +30,14 @@
       .section1__image_logo {
         display: flex;
         width: 100%;
-        max-height: 28rem;
+        height: 30rem;
         justify-content: center;
         align-items: center;
         margin-top: 4rem;
         .__img {
           object-fit: cover;
+          width: auto;
+          height: auto;
         }
       }
 
@@ -155,7 +156,7 @@
       display: flex;
       justify-content: flex-end;
       width: 100%;
-      height: 100%;
+      //height: 100%;
 
       .section1__bloc {
         display: flex;
@@ -165,7 +166,7 @@
         .section1__image_logo {
           display: flex;
           width: 100%;
-          max-height: 28rem;
+          height: 28rem;
           margin-top: 1rem;
         }
 

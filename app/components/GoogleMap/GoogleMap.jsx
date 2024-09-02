@@ -42,7 +42,7 @@ const GoogleMap = () => {
         const googleMap = new Map(mapRef.current, {
           center: defaultCenter,
           zoom: 10,
-          mapId: "YOUR_MAP_ID", // Remplacez ou supprimez si vous n'utilisez pas de style personnalisé
+          mapId: "YOUR_MAP_ID",
         });
 
         // Initialisation de la fenêtre d'information
@@ -158,7 +158,7 @@ const GoogleMap = () => {
 };
 
 export default GoogleMap;
-
+///////////////////////////////////////////////////////////////////////////////////////////
 // "use client";
 
 // import React, { useState, useEffect, useRef } from "react";

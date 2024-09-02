@@ -6,23 +6,18 @@ $background-color: #fff; // Variable pour la couleur de fond
   width: 100%;
   display: flex;
   justify-content: center;
-  // margin: 1rem;
-  border: 4px solid red;
-  //height: 9rem;
-  // h1 {
-  //   font-size: 2rem;
-  //   font-family: var(--nixie_one);
-  //   letter-spacing: 2px;
-  // }
+  //border: 4px solid red;
+
   .link_infos {
     display: flex;
     width: 100%;
-    height: auto;
+    // height: auto;
+    height: 10vh;
     justify-content: center;
     flex-wrap: wrap;
-    // margin-top: 2rem;
     align-self: flex-end;
     padding: 2rem;
+    bottom: 0;
 
     .link_list {
       display: flex;
@@ -34,8 +29,6 @@ $background-color: #fff; // Variable pour la couleur de fond
       .link {
         display: flex;
         align-items: center;
-        //border: 3px solid turquoise;
-        //margin: 2rem;
         justify-content: flex-end;
         width: auto;
         height: auto;
@@ -47,34 +40,34 @@ $background-color: #fff; // Variable pour la couleur de fond
           width: 100%;
           height: 100%;
           p {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             font-family: var(--nixie_one);
           }
           &#phone {
             display: block;
-            width: 17rem;
+            width: 13.5rem;
             text-align: start;
           }
           &#mail {
             display: block;
-            width: 28rem;
+            width: 23.2rem;
             text-align: start;
           }
           &#insta {
             display: block;
-            width: 29rem;
+            width: 24rem;
             text-align: start;
           }
           &#gps {
             display: block;
-            width: 30rem;
+            width: 25rem;
             text-align: start;
           }
         }
+
         .link__img {
           display: flex;
           align-items: center;
-          //border: 3px solid red;
           position: absolute;
           justify-content: flex-end;
           width: 100%;
@@ -93,125 +86,192 @@ $background-color: #fff; // Variable pour la couleur de fond
 
 .footer__container {
   display: flex;
-  //position: relative;
-  // height: $footer-height;
   height: 90vh;
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%); // rectangle
   border: 3px solid blue;
   flex-wrap: wrap;
   background-color: pink;
+  //position: relative;
 
   .footer__bloc {
     position: fixed;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     bottom: 0;
     color: $footer-color;
     background-color: $background-color;
-    color: $footer-color;
     display: flex;
-    border: 5px solid red;
-    top: 0;
+    border: 5px solid green;
+    // top: 0;
+    //position: relative;
+    bottom: 0;
+    padding: 3rem;
 
-    .google {
+    .__bloc_content {
       display: flex;
       width: 100%;
-      height: 100%;
-      border: 3px solid turquoise;
-      padding-bottom: 1rem;
-    }
-
-    .footer_list {
-      display: flex;
-      flex-direction: column;
-      border: 3px solid fuchsia;
-      list-style: none;
-      // width: 24rem;
-      width: 50%;
-      height: auto;
+      height: 50%;
+      border: 3px solid black;
+      //padding-bottom: 1rem;
+      //position: relative;
       justify-content: center;
-
-      p {
-        font-size: 1rem;
-      }
-
-      li {
-        width: 24rem;
-        height: auto;
-        //padding: 2rem;
-        margin: 5px 0;
-        //border: 3px solid pink;
-        display: flex;
-      }
-
-      a {
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
-      }
-    }
-
-    .footer_infos {
-      display: flex;
-      width: 100%;
-      height: auto;
-      position: absolute;
-      bottom: 0;
-      padding-left: 2rem;
       align-items: center;
-      background-color: aliceblue;
-      border: 4px solid red;
 
-      .column {
-        flex: 1;
-        padding: 10px;
+      .google {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        border: 3px solid turquoise;
+        //padding-bottom: 1rem;
+        //position: relative;
+        justify-content: center;
+        align-items: center;
+      }
 
-        h3 {
-          margin-bottom: 10px;
-        }
+      .footer_list__bloc {
+        display: flex;
+        width: 80%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 2rem; */
+        justify-content: center;
 
-        ul {
-          list-style-type: none;
-          padding: 0;
+        .footer_list__border {
+          display: flex;
+          border-top: 4px solid #000;
+          border-bottom: 4px solid #000;
+          border-right: 4px solid #000;
+          width: 100%;
+          /* height: 57%; */
+          padding: 3rem;
+          align-items: center;
+          height: 100%;
 
-          li {
-            margin-bottom: 5px;
+          .footer_list {
             display: flex;
-            width: 100%;
-            height: 100%;
-            border: 3px solid black;
-            align-items: center;
-            cursor: pointer;
+            flex-direction: column;
+            list-style: none;
+            width: 53%;
+            height: 75%;
+            justify-content: center;
+            // position: absolute;
+
+            p {
+              font-size: 1rem;
+            }
+
+            li {
+              width: 24rem;
+              height: auto;
+              margin: 5px 0;
+              display: flex;
+            }
 
             a {
-              display: flex;
-            }
-            .__img {
-              display: flex;
-              width: 100%;
-              height: 100%;
-              // border: 3px solid red;
-              justify-content: center;
-              .__icon {
-                object-fit: contain;
-              }
-              #bubble {
-                margin: 12px 12px 12px 21px;
-              }
-            }
-            .__txt {
-              display: flex;
-              align-items: center;
-              p {
-                font-size: 1rem;
-              }
+              text-decoration: none;
               &:hover {
                 text-decoration: underline;
-                color: rgb(232, 12, 199);
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  .footer_infos {
+    display: flex;
+    width: 100%;
+    height: 20vh;
+    //position: absolute;
+    position: fixed;
+    bottom: 0;
+    padding-left: 2rem;
+    align-items: center;
+    background-color: yellow;
+    //border: 4px solid red;
+
+    .column {
+      flex: 1;
+      padding: 10px;
+      width: 100%;
+      height: 100%;
+
+      .column__title {
+        display: flex;
+        width: auto;
+        height: auto;
+        //border: 3px solid blueviolet;
+        h3 {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      .__info {
+        //margin-bottom: 5px;
+        display: flex;
+        width: 100%;
+        height: 1.2rem;
+
+        //border: 3px solid black;
+        align-items: center;
+        cursor: pointer;
+
+        a {
+          display: flex;
+          //border: 2px solid red;
+          width: auto;
+          height: auto;
+          &:hover {
+            text-decoration: underline;
+            color: rgb(232, 12, 199);
+          }
+        }
+        #number {
+          color: blue;
+          font-size: 1rem;
+          line-height: 1.2;
+        }
+        .__img {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          justify-content: center;
+
+          .__icon {
+            object-fit: contain;
+          }
+
+          #bubble {
+            margin: 12px;
+          }
+        }
+
+        .__txt {
+          display: flex;
+          align-items: center;
+
+          p {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .__info_adress_bloc {
+        display: flex;
+        width: 100%;
+        height: 3rem;
+        border: none;
+
+        #adress {
+          line-height: 1.2;
+          cursor: default;
         }
       }
     }

@@ -67,14 +67,32 @@ const Section1 = () => {
             </div>
             <div className={styles.section1__image_logo}>
               <Link href="/" onClick={handleLogoClick}>
-                <Image
+                {/* <Image
                   className={styles.__img}
                   src={logo}
                   alt="Maison Essenza"
                   placeholder="empty"
                   width={600}
                   height={450}
-                />
+                /> */}
+                <div
+                  style={{
+                    position: "relative",
+                    width: "600px",
+                    height: "500px",
+                  }}
+                >
+                  <Image
+                    src={logo}
+                    alt="Maison Essenza logo fleurs"
+                    sizes="600px"
+                    priority={true}
+                    fill
+                    style={{
+                      objectFit: "contain",
+                    }}
+                  />
+                </div>
               </Link>
             </div>
 
@@ -139,6 +157,7 @@ const Section1 = () => {
               </p>
             </span>
             <span className={styles.__text_bloc__info}>
+              <p style={{ paddingRight: "7px", fontSize: "1.3rem" }}>et</p>
               <p
                 style={{
                   fontFamily: "var(--cormorant_garamond)",
@@ -146,7 +165,7 @@ const Section1 = () => {
                   wordSpacing: "-0.7ch",
                 }}
               >
-                et le Samedi
+                le Samedi
               </p>
               <p
                 style={{
