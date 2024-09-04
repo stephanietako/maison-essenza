@@ -41,7 +41,7 @@ const Section2 = ({ handleExitClick }) => {
             </Link>
             <h1>Quelques-unes de nos marques</h1>
             <div className={styles.section2__image_logo}>
-              <Image
+              {/* <Image
                 className={styles.__img}
                 src={trade}
                 alt="toutes les marques de Maison Essenza"
@@ -49,81 +49,21 @@ const Section2 = ({ handleExitClick }) => {
                 placeholder="empty"
                 width={1100}
                 height={750}
+              /> */}
+              <Image
+                src={trade}
+                alt="Toutes les marques de Maison Essenza"
+                // sizes="600px"
+                layout="intrinsic"
+                width={1100}
+                height={750}
+                priority={false}
+                className={styles.__img}
+                style={{
+                  objectFit: "contain",
+                }}
               />
             </div>
-            {/* Links infos */}
-            {/* <div className={styles.link_infos}>
-              <ul className={styles.link_list}>
-                <li className={styles.link}>
-                  <div className={styles.link__txt} id={styles.insta}>
-                    <p>Retrouvez-nous sur Instagram</p>
-                  </div>
-                  <span className={styles.link__img}>
-                    <a
-                      href="https://www.instagram.com/maison_essenza/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Image
-                        src={insta}
-                        alt="Instagram Icon"
-                        width={100}
-                        height={100}
-                        className={styles.__icon}
-                      />
-                    </a>
-                  </span>
-                </li>
-                <li className={styles.link}>
-                  <div className={styles.link__txt} id={styles.mail}>
-                    <p>Ecrivez-nous quelques lignes</p>
-                  </div>
-                  <span className={styles.link__img}>
-                    <a href="mailto:hello@maison-essenza.com">
-                      <Image
-                        src={mail}
-                        alt="Mail Icon"
-                        width={125}
-                        height={125}
-                        className={styles.__icon}
-                      />
-                    </a>
-                  </span>
-                </li>
-                <li className={styles.link}>
-                  <div className={styles.link__txt} id={styles.gps}>
-                    <p>Nous visiter sans perdre le Nord</p>
-                  </div>
-                  <span className={styles.link__img}>
-                    <a href="#footer">
-                      <Image
-                        src={gps}
-                        alt="GPS Icon"
-                        width={120}
-                        height={120}
-                        className={styles.__icon}
-                      />
-                    </a>
-                  </span>
-                </li>
-                <li className={styles.link}>
-                  <div className={styles.link__txt} id={styles.phone}>
-                    <p>+33(0)4 51 55 51 60</p>
-                  </div>
-                  <span className={styles.link__img}>
-                    <a href="tel:+33451555164">
-                      <Image
-                        src={phone}
-                        alt="Phone Icon"
-                        width={55}
-                        height={55}
-                        className={styles.__icon}
-                      />
-                    </a>
-                  </span>
-                </li>
-              </ul>
-            </div> */}
           </div>
         </div>
       </div>

@@ -67,27 +67,33 @@ const Section1 = () => {
             </div>
             <div className={styles.section1__image_logo}>
               <Link href="/" onClick={handleLogoClick}>
-                {/* <Image
-                  className={styles.__img}
-                  src={logo}
-                  alt="Maison Essenza"
-                  placeholder="empty"
-                  width={600}
-                  height={450}
-                /> */}
                 <div
                   style={{
+                    display: "flex",
                     position: "relative",
-                    width: "600px",
-                    height: "500px",
+                    // width: "600px",
+                    // height: "500px",
                   }}
                 >
+                  {/* <Image
+                    src={logo}
+                    alt="Maison Essenza logo fleurs"
+                    // sizes="600px"
+                    sizes="(min-width: 200px) 50vw,  (min-width: 600px)  100vw"
+                    priority={true}
+                    fill
+                    style={{
+                      objectFit: "contain",
+                    }}
+                  /> */}
                   <Image
                     src={logo}
                     alt="Maison Essenza logo fleurs"
-                    sizes="600px"
+                    // sizes="600px"
+                    layout="intrinsic"
+                    width={600}
+                    height={500}
                     priority={true}
-                    fill
                     style={{
                       objectFit: "contain",
                     }}

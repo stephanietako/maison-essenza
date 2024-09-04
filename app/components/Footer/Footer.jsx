@@ -106,7 +106,7 @@ const Footer = () => {
                     <p>Retrouvez-nous chez Maison Essenza au: </p>
                   </li>
                   <li>
-                    <p> 33 rue Marceau - 83 310 Cogolin</p>
+                    <p> 39 rue Marceau - 83310 Cogolin</p>
                   </li>
                   <li>
                     <p>
@@ -116,8 +116,6 @@ const Footer = () => {
                   </li>
                   <li>
                     <p>
-                      {" "}
-                      Email:{" "}
                       <a href="mailto:hello@maison-essenza.com">
                         hello@maison-essenza.com
                       </a>
@@ -133,165 +131,161 @@ const Footer = () => {
               </span>
             </div>
           </div>
-        </div>
-        <div className={styles.footer_infos}>
-          <div className={styles.column}>
-            <span className={styles.column__title}>
-              {" "}
-              <h3>RESTONS CONNECTÉS</h3>
-            </span>
-            <ul>
-              <li className={styles.__info}>
-                <a
-                  href="https://www.instagram.com/maison_essenza/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.__link}
-                >
-                  <span className={styles.__img}>
-                    <Image
-                      src={insta}
-                      alt="Instagram Icon"
-                      width={40}
-                      height={40}
-                      className={styles.__icon}
-                    />
-                  </span>
-                  <div className={styles.__txt}>
-                    <p>Instagram</p>
-                  </div>
-                </a>
-              </li>
-              <li className={styles.__info}>
-                <a href="mailto:hello@maison-essenza.com">
-                  <span className={styles.__img}>
-                    <Image
-                      src={mail}
-                      alt="Mail Icon"
-                      width={40}
-                      height={40}
-                      className={styles.__icon}
-                    />
-                  </span>
-                  <div className={styles.__txt}>
-                    <p>Mail</p>
-                  </div>
-                </a>
-              </li>
-              <li className={styles.__info}>
-                <a href="/">
-                  <span className={styles.__img}>
-                    <Image
-                      src={bulle}
-                      alt="bubble conversation Icon"
-                      width={17}
-                      height={17}
-                      className={styles.__icon}
-                      id={styles.bubble}
-                    />
-                  </span>
-                  <div className={styles.__txt}>
-                    <p>Chat</p>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.column}>
-            <span className={styles.column__title}>
-              {" "}
-              <h3>LIENS UTILES</h3>
-            </span>
+          <div className={styles.footer_infos}>
+            <div className={styles.footer_infos__container}>
+              <div className={styles.column}>
+                <span className={styles.column__title}>
+                  {" "}
+                  <h3>RESTONS CONNECTÉS</h3>
+                </span>
+                <ul>
+                  <li className={styles.__info}>
+                    <a
+                      href="https://www.instagram.com/maison_essenza/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={styles.__link}
+                    >
+                      <span className={styles.__img}>
+                        <Image
+                          src={insta}
+                          alt="Instagram Icon"
+                          width={40}
+                          height={40}
+                          className={styles.__icon}
+                        />
+                      </span>
+                      <div className={styles.__txt}>
+                        <p>Instagram</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li className={styles.__info}>
+                    <a href="mailto:hello@maison-essenza.com">
+                      <span className={styles.__img}>
+                        <Image
+                          src={mail}
+                          alt="Mail Icon"
+                          width={40}
+                          height={40}
+                          className={styles.__icon}
+                        />
+                      </span>
+                      <div className={styles.__txt}>
+                        <p>Mail</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li className={styles.__info}>
+                    <a href="/">
+                      <span className={styles.__img}>
+                        <Image
+                          src={bulle}
+                          alt="bubble conversation Icon"
+                          width={17}
+                          height={17}
+                          className={styles.__icon}
+                          id={styles.bubble}
+                        />
+                      </span>
+                      <div className={styles.__txt}>
+                        <p>Chat</p>
+                      </div>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.column}>
+                <span className={styles.column__title}>
+                  {" "}
+                  <h3>LIENS UTILES</h3>
+                </span>
 
-            <ul>
-              <li className={styles.__info}>
-                <Link href="/">
-                  <div className={styles.__txt}>
-                    <p>Accueil</p>
-                  </div>
-                </Link>
-              </li>
-              <li className={styles.__info}>
-                <Link href="/">
-                  <div className={styles.__txt}>
-                    <p>nos marques</p>
-                  </div>
-                </Link>
-              </li>
-              <li className={styles.__info}>
-                <div className={styles.__txt}>
-                  <a href="tel:+33451555160">
-                    <p>Nous contacter</p>
-                  </a>
-                </div>
-              </li>
-              <li className={styles.__info}>
-                <Link href="/">
-                  <div className={styles.__txt}>
-                    <p>Mentions Légales</p>
-                  </div>
-                </Link>
-              </li>
-              <li className={styles.__info}>
-                <Link href="/">
-                  <div className={styles.__txt}>
-                    <p>RGPD - Politique de confidentialité</p>
-                  </div>
-                </Link>
-              </li>
-              <li className={styles.__info}>
-                <Link href="/">
-                  <div className={styles.__txt}>
-                    <p>Gestion des cookies</p>
-                  </div>
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <div className={styles.column}>
-            <span className={styles.column__title}>
-              {" "}
-              <h3>CONTACT</h3>
-            </span>
+                <ul>
+                  <li className={styles.__info}>
+                    <Link href="/">
+                      <div className={styles.__txt}>
+                        <p>Accueil</p>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className={styles.__info}>
+                    <Link href="/">
+                      <div className={styles.__txt}>
+                        <p>nos marques</p>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className={styles.__info}>
+                    <div className={styles.__txt}>
+                      <a href="tel:+33451555160">
+                        <p>Nous contacter</p>
+                      </a>
+                    </div>
+                  </li>
+                  <li className={styles.__info}>
+                    <Link href="/">
+                      <div className={styles.__txt}>
+                        <p>Mentions Légales</p>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className={styles.__info}>
+                    <Link href="/">
+                      <div className={styles.__txt}>
+                        <p>RGPD - Politique de confidentialité</p>
+                      </div>
+                    </Link>
+                  </li>
+                  <li className={styles.__info}>
+                    <Link href="/">
+                      <div className={styles.__txt}>
+                        <p>Gestion des cookies</p>
+                      </div>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className={styles.column}>
+                <span className={styles.column__title}>
+                  {" "}
+                  <h3>CONTACT</h3>
+                </span>
 
-            <ul>
-              <li className={`${styles.__info} ${styles.__info_adress_bloc}`}>
-                <div className={styles.__txt}>
-                  <p id={styles.adress}>
-                    Maison Essenza <br />
-                    Golfe de Saint-tropez <br />
-                    39 rue Marceau 83 310 Cogolin
-                  </p>
-                </div>
-              </li>
-              <li className={styles.__info}>
-                {" "}
-                <a href="tel:+33451555160">
-                  <div className={styles.__txt}>
-                    <p id={styles.number}>+33(0)451555160</p>
-                  </div>
-                </a>
-              </li>
-              <li className={styles.__info}>
-                <Link href="/">
-                  <div className={styles.__txt}>
-                    <p>Siège social et magasin</p>
-                  </div>
-                </Link>
-              </li>
-            </ul>
-            <div
-              className={styles.__copyright}
-              style={{
-                display: "flex",
-                flexWrap: "wrap",
-                color: "#000",
-                fontSize: "10px",
-                width: "100%",
-                // border: "3px solid blue",
-                alignItems: "center",
-              }}
-            >
+                <ul>
+                  <li
+                    className={`${styles.__info} ${styles.__info_adress_bloc}`}
+                  >
+                    <div className={styles.__txt}>
+                      <p id={styles.adress}>
+                        Maison Essenza <br />
+                        Golfe de Saint-tropez <br />
+                        39 rue Marceau - 83310 Cogolin
+                      </p>
+                    </div>
+                  </li>
+                  <li className={styles.__info}>
+                    {" "}
+                    <a href="tel:+33451555160">
+                      <div className={styles.__txt}>
+                        <p id={styles.number}>+33(0)451555160</p>
+                      </div>
+                    </a>
+                  </li>
+                  <li className={styles.__info}>
+                    <Link href="/">
+                      <div className={styles.__txt}>
+                        <p>Siège social et magasin</p>
+                      </div>
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              {/* <div className={styles.__copyright}>
+              &#169; Copyright {currentYear} | Tako Dev
+            </div> */}
+            </div>
+            <div className={styles.__copyright}>
               &#169; Copyright {currentYear} | Tako Dev
             </div>
           </div>
