@@ -52,80 +52,6 @@
         }
       }
 
-      // .link_infos {
-      //   display: flex;
-      //   width: 100%;
-      //   height: auto;
-      //   justify-content: center;
-      //   flex-wrap: wrap;
-      //   margin-top: 2rem;
-
-      //   .link_list {
-      //     display: flex;
-      //     align-items: center;
-      //     width: 100%;
-      //     height: 100%;
-      //     justify-content: center;
-
-      //     .link {
-      //       display: flex;
-      //       align-items: center;
-      //       //border: 3px solid turquoise;
-      //       //margin: 2rem;
-      //       justify-content: flex-end;
-      //       width: auto;
-      //       height: auto;
-      //       position: relative;
-
-      //       .link__txt {
-      //         display: flex;
-      //         align-items: center;
-      //         width: 100%;
-      //         height: 100%;
-      //         p {
-      //           font-size: 1.5rem;
-      //           font-family: var(--nixie_one);
-      //         }
-      //         &#phone {
-      //           display: block;
-      //           width: 17rem;
-      //           text-align: start;
-      //         }
-      //         &#mail {
-      //           display: block;
-      //           width: 28rem;
-      //           text-align: start;
-      //         }
-      //         &#insta {
-      //           display: block;
-      //           width: 29rem;
-      //           text-align: start;
-      //         }
-      //         &#gps {
-      //           display: block;
-      //           width: 30rem;
-      //           text-align: start;
-      //         }
-      //       }
-      //       .link__img {
-      //         display: flex;
-      //         align-items: center;
-      //         //border: 3px solid red;
-      //         position: absolute;
-      //         justify-content: flex-end;
-      //         width: 100%;
-
-      //         .__icon {
-      //           width: auto;
-      //           height: auto;
-      //           object-fit: cover;
-      //           cursor: pointer;
-      //         }
-      //       }
-      //     }
-      //   }
-      // }
-
       .arrow_see_more {
         display: flex;
         flex-direction: column;
@@ -184,7 +110,6 @@
 
     h1 {
       font-size: 3rem;
-      margin-top: 2rem;
     }
   }
 

@@ -30,13 +30,13 @@
       .section1__image_logo {
         display: flex;
         width: 100%;
-        height: 30rem;
+        //height: 30rem;
         justify-content: center;
         align-items: center;
-        margin-top: 4rem;
+        margin-top: 3rem;
         .__img {
           object-fit: cover;
-          width: auto;
+          max-width: 100%;
           height: auto;
         }
       }
@@ -75,6 +75,24 @@
         display: flex;
         text-align: center;
         // margin-bottom: -0.5rem;
+        #letter {
+          //border: 3px solid green;
+          padding-right: 5px;
+          padding-left: 8px;
+          font-size: 1.3rem;
+        }
+        #day {
+          //border: 3px solid blue;
+          font-family: var(--cormorant_garamond);
+          font-size: 1.5rem;
+          word-spacing: -0.7ch;
+        }
+        #number {
+          //border: 3px solid red;
+          font-size: 1.5rem;
+          font-family: var(--cormorant_garamond);
+          letter-spacing: -5px;
+        }
       }
 
       .__text_bloc__philo {
@@ -167,7 +185,7 @@
         .section1__image_logo {
           display: flex;
           width: 100%;
-          height: 28rem;
+          //height: 28rem;
         }
 
         .section1__text_header {
@@ -175,9 +193,8 @@
           width: 100%;
 
           h1 {
-            font-size: 3.2rem;
+            font-size: 3rem;
             color: blue;
-
             font-weight: bold;
             margin-top: -1.5rem;
             display: flex;
@@ -195,7 +212,29 @@
             margin-bottom: 0.4rem;
           }
         }
-
+        .__text_bloc__info {
+          display: flex;
+          text-align: center;
+          // margin-bottom: -0.5rem;
+          #letter {
+            border: 3px solid green;
+            padding-right: 5px;
+            padding-left: 8px;
+            font-size: 1.3rem;
+          }
+          #day {
+            border: 3px solid blue;
+            font-family: var(--cormorant_garamond);
+            font-size: 1.5rem;
+            word-spacing: -0.7ch;
+          }
+          #number {
+            border: 3px solid red;
+            font-size: 1.5rem;
+            font-family: var(--cormorant_garamond);
+            letter-spacing: -5px;
+          }
+        }
         .__text_bloc__philo {
           text-align: center;
           p {
@@ -281,8 +320,6 @@
         .section1__image_logo {
           display: flex;
           width: 100%;
-          height: 28rem;
-          margin-top: 1rem;
         }
 
         .section1__text_header {
@@ -290,7 +327,7 @@
           width: 100%;
 
           h1 {
-            font-size: 3.2rem;
+            font-size: 2.5rem;
             color: fuchsia;
 
             font-weight: bold;
@@ -310,7 +347,29 @@
             margin-bottom: 0.4rem;
           }
         }
-
+        // .__text_bloc__info {
+        //   display: flex;
+        //   text-align: center;
+        //   // margin-bottom: -0.5rem;
+        //   #letter {
+        //     border: 3px solid green;
+        //     padding-right: 5px;
+        //     padding-left: 8px;
+        //     font-size: 0.8rem;
+        //   }
+        //   #day {
+        //     border: 3px solid blue;
+        //     font-family: var(--cormorant_garamond);
+        //     font-size: 1.5rem;
+        //     word-spacing: -0.7ch;
+        //   }
+        //   #number {
+        //     border: 3px solid red;
+        //     font-size: 1.5rem;
+        //     font-family: var(--cormorant_garamond);
+        //     letter-spacing: -5px;
+        //   }
+        // }
         .__text_bloc__philo {
           text-align: center;
           p {
@@ -389,27 +448,24 @@
       //height: 100%;
 
       .section1__bloc {
-        display: flex;
-        width: 100vw;
-        height: 100vh;
+        padding: 2rem;
 
         .section1__image_logo {
           display: flex;
           width: 100%;
-          height: 28rem;
-          margin-top: 1rem;
+          //height: 28rem;
+          margin-top: 3rem;
         }
 
         .section1__text_header {
           display: flex;
           width: 100%;
+          margin-top: 0.5rem;
 
           h1 {
-            font-size: 3.2rem;
+            font-size: 1.7rem;
             color: green;
-
             font-weight: bold;
-            margin-top: -1.5rem;
             display: flex;
             width: 100%;
             height: 100%;
@@ -420,16 +476,39 @@
           justify-content: center;
 
           p {
-            font-size: 1.5rem;
-            margin-top: -0.4rem;
-            margin-bottom: 0.4rem;
+            font-size: 1rem;
+            margin-top: 0.6rem;
+            text-align: left;
           }
         }
-
+        .__text_bloc__info {
+          display: flex;
+          text-align: center;
+          // margin-bottom: -0.5rem;
+          #letter {
+            border: 3px solid green;
+            padding-right: 5px;
+            padding-left: 5px;
+            font-size: 0.8rem;
+          }
+          #day {
+            border: 3px solid blue;
+            font-family: var(--cormorant_garamond);
+            font-size: 1rem;
+            word-spacing: -0.7ch;
+          }
+          #number {
+            border: 3px solid red;
+            font-size: 1rem;
+            font-family: var(--cormorant_garamond);
+            letter-spacing: -5px;
+          }
+        }
         .__text_bloc__philo {
           text-align: center;
           p {
             font-size: 1rem;
+            text-align: left;
           }
         }
         .__text_bloc__info_adress {
@@ -437,9 +516,10 @@
           //line-height: 1.5;
           p {
             font-family: var(--cormorant_garamond);
-            font-size: 1.3rem;
+            font-size: 1rem;
             word-spacing: -0.5ch;
             //line-height: 1.5;
+            text-align: left;
           }
         }
 
@@ -483,6 +563,7 @@
               font-family: var(--courier_prime);
               font-weight: 700;
               word-spacing: -0.6ch;
+              text-align: left;
             }
           }
         }

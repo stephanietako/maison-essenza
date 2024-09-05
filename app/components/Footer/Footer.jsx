@@ -22,7 +22,7 @@ const Footer = () => {
         <div className={styles.link_infos}>
           <ul className={styles.link_list}>
             <li className={styles.link}>
-              <div className={styles.link__txt} id={styles.insta}>
+              <div className={styles.link__txt}>
                 <p>Retrouvez-nous sur Instagram</p>
               </div>
               <span className={styles.link__img}>
@@ -34,15 +34,16 @@ const Footer = () => {
                   <Image
                     src={insta}
                     alt="Instagram Icon"
-                    width={100}
-                    height={100}
+                    width={70}
+                    height={70}
                     className={styles.__icon}
+                    id={styles.insta}
                   />
                 </a>
               </span>
             </li>
             <li className={styles.link}>
-              <div className={styles.link__txt} id={styles.mail}>
+              <div className={styles.link__txt}>
                 <p>Ecrivez-nous quelques lignes</p>
               </div>
               <span className={styles.link__img}>
@@ -50,15 +51,16 @@ const Footer = () => {
                   <Image
                     src={mail}
                     alt="Mail Icon"
-                    width={125}
-                    height={125}
+                    width={70}
+                    height={70}
                     className={styles.__icon}
+                    id={styles.mail}
                   />
                 </a>
               </span>
             </li>
             <li className={styles.link}>
-              <div className={styles.link__txt} id={styles.gps}>
+              <div className={styles.link__txt}>
                 <p>Nous visiter sans perdre le Nord</p>
               </div>
               <span className={styles.link__img}>
@@ -66,15 +68,16 @@ const Footer = () => {
                   <Image
                     src={gps}
                     alt="GPS Icon"
-                    width={120}
-                    height={120}
+                    width={70}
+                    height={70}
                     className={styles.__icon}
+                    id={styles.gps}
                   />
                 </a>
               </span>
             </li>
             <li className={styles.link}>
-              <div className={styles.link__txt} id={styles.phone}>
+              <div className={styles.link__txt}>
                 <p>+33(0)4 51 55 51 60</p>
               </div>
               <span className={styles.link__img}>
@@ -82,9 +85,10 @@ const Footer = () => {
                   <Image
                     src={phone}
                     alt="Phone Icon"
-                    width={55}
-                    height={55}
+                    width={35}
+                    height={35}
                     className={styles.__icon}
+                    id={styles.phone}
                   />
                 </a>
               </span>

@@ -14,7 +14,7 @@ import styles from "./styles.module.scss";
 const Section1 = () => {
   const [showLogoAnimation, setShowLogoAnimation] = useState(false);
   const [showArrowAnimation, setShowArrowAnimation] = useState(false);
-
+  const css = { maxWidth: "100%", height: "auto" };
   // Déclenchement de l'animation arrow au clic
   const handleArrowClick = () => {
     setShowArrowAnimation(true);
@@ -69,39 +69,31 @@ const Section1 = () => {
               <Link href="/" onClick={handleLogoClick}>
                 <div
                   style={{
-                    display: "flex",
+                    display: "block",
                     position: "relative",
-                    // width: "600px",
-                    // height: "500px",
+                    maxWidth: "600px",
+                    height: "100%",
+                    border: "4px solid blue",
                   }}
                 >
-                  {/* <Image
-                    src={logo}
-                    alt="Maison Essenza logo fleurs"
-                    // sizes="600px"
-                    sizes="(min-width: 200px) 50vw,  (min-width: 600px)  100vw"
-                    priority={true}
-                    fill
-                    style={{
-                      objectFit: "contain",
-                    }}
-                  /> */}
                   <Image
                     src={logo}
                     alt="Maison Essenza logo fleurs"
-                    // sizes="600px"
-                    layout="intrinsic"
-                    width={600}
+                    sizes="(max-width: 800px) 100vw, 750px 50wv"
+                    width={700}
                     height={500}
                     priority={true}
+                    className="test_image "
                     style={{
-                      objectFit: "contain",
+                      objectFit: "cover",
+                      width: "100%",
+                      height: "auto",
                     }}
                   />
                 </div>
               </Link>
             </div>
-
+            {/* bloc text */}
             <div className={styles.section1__text_header}>
               <h1>BIENTÔT EN LIGNE</h1>
               <span className={styles.__text_bloc__info_subtitle}>
@@ -111,108 +103,28 @@ const Section1 = () => {
                 </p>
               </span>
             </div>
-            <span
-              className={styles.__text_bloc__info}
-              // style={{ display: "flex" }}
-            >
-              <p style={{ paddingRight: "7px", fontSize: "1.3rem" }}>du</p>
-              <p
-                style={{
-                  fontFamily: "var(--cormorant_garamond)",
-                  fontSize: "1.5rem",
-                  wordSpacing: "-0.7ch",
-                }}
-              >
-                Mardi au Vendredi
-              </p>
-              <p
-                style={{
-                  paddingLeft: "7px",
-                  paddingRight: "4px",
-                  fontSize: "1.3rem",
-                }}
-              >
-                de
-              </p>
-              <p
-                style={{
-                  fontSize: "1.5rem",
-                  fontFamily: "var(--cormorant_garamond)",
-                  letterSpacing: "-5px",
-                }}
-              >
-                10.00
-              </p>
-              <p
-                style={{
-                  paddingRight: "5px",
-                  paddingLeft: "8px",
-                  fontSize: "1.3rem",
-                }}
-              >
-                à
-              </p>
-              <p
-                style={{
-                  fontSize: "1.5rem",
-                  fontFamily: "var(--cormorant_garamond)",
-                  letterSpacing: "-5px",
-                }}
-              >
-                19.00
-              </p>
+            <span className={styles.__text_bloc__info}>
+              <p id={styles.letter}>du</p>
+              <p id={styles.day}>Mardi</p>
+              <p id={styles.letter}>au</p>
+              <p id={styles.day}>Vendredi</p>
+              <p id={styles.letter}>de</p>
+              <p id={styles.number}>10.00</p>
+              <p id={styles.letter}>à</p>
+              <p id={styles.number}>19.00</p>
             </span>
             <span className={styles.__text_bloc__info}>
-              <p style={{ paddingRight: "7px", fontSize: "1.3rem" }}>et</p>
-              <p
-                style={{
-                  fontFamily: "var(--cormorant_garamond)",
-                  fontSize: "1.5rem",
-                  wordSpacing: "-0.7ch",
-                }}
-              >
-                le Samedi
-              </p>
-              <p
-                style={{
-                  paddingLeft: "7px",
-                  paddingRight: "4px",
-                  fontSize: "1.3rem",
-                }}
-              >
-                de
-              </p>
-              <p
-                style={{
-                  fontSize: "1.5rem",
-                  fontFamily: "var(--cormorant_garamond)",
-                  letterSpacing: "-5px",
-                }}
-              >
-                10.00
-              </p>
-              <p
-                style={{
-                  paddingRight: "5px",
-                  paddingLeft: "8px",
-                  fontSize: "1.3rem",
-                }}
-              >
-                à
-              </p>
-              <p
-                style={{
-                  fontSize: "1.5rem",
-                  fontFamily: "var(--cormorant_garamond)",
-                  letterSpacing: "-5px",
-                }}
-              >
-                16.00
-              </p>
+              <p id={styles.letter}>et</p>
+              <p id={styles.day}>le Samedi</p>
+              <p id={styles.letter}>de</p>
+              <p id={styles.number}>10.00</p>
+              <p id={styles.letter}>à</p>
+              <p id={styles.number}>16.00</p>
             </span>
             <span className={styles.__text_bloc__info_adress}>
               <p>33 Rue Marceau - Cogolin</p>
             </span>
+            {/* fin bloc text */}
             <br />
             <span className={styles.__text_bloc__philo}>
               <p>
