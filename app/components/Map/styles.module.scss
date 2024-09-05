@@ -7,18 +7,17 @@
 
   .map {
     display: flex;
-    width: 100%;
+    width: 70%;
     height: 100%;
     flex-direction: column;
     align-items: center;
     border: 3px solid pink;
     justify-content: center;
-    padding: 3rem;
+    //padding: 1rem;
 
     .map__container {
-      height: 15rem;
+      height: 19rem;
       width: 100%;
-      // position: relative;
       overflow: hidden;
       justify-content: center;
       display: flex;
@@ -112,7 +111,7 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        color: #ffffff;
+        color: #fff;
       }
 
       .property .icon svg {
@@ -132,7 +131,7 @@
       }
 
       .property.highlight {
-        background-color: #ffffff;
+        background-color: #fff;
         border-radius: 8px;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
         height: 80px;
@@ -141,7 +140,7 @@
       }
 
       .property.highlight::after {
-        border-top: 9px solid #ffffff;
+        border-top: 9px solid #fff;
       }
 
       .property.highlight .details {
@@ -157,12 +156,12 @@
 }
 
 // ##############   ###############
-@media (max-width: 600px) {
-  .__btn_box {
-    button {
-      &.__btnPosition {
-        flex-basis: 40%;
-      }
-    }
-  }
-}
+// @media (max-width: 600px) {
+//   .__btn_box {
+//     button {
+//       &.__btnPosition {
+//         flex-basis: 40%;
+//       }
+//     }
+//   }
+// }

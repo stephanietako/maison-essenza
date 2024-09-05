@@ -1,5 +1,4 @@
 import React from "react";
-//import GoogleMap from "../GoogleMap/GoogleMap";
 import Map from "../Map/Map";
 import Image from "next/image";
 import Link from "next/link";
