@@ -331,10 +331,18 @@
 
 @media screen and (max-width: 1270px) {
   .footer__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    background-color: aqua;
+    z-index: 1;
     .link_infos {
+      width: 50%;
       .link_list {
         //flex-direction: row;
-        flex-wrap: wrap;
+        //flex-wrap: wrap;
 
         .link {
           flex: 1 1 50px;
