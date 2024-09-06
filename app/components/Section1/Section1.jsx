@@ -10,11 +10,12 @@ import logo from "@/public/assets/essenza-logo.png";
 import arrowRight from "@/public/assets/arrow-right.png";
 // Styles
 import styles from "./styles.module.scss";
+export const dynamic = "force-dynamic";
 
 const Section1 = () => {
   const [showLogoAnimation, setShowLogoAnimation] = useState(false);
   const [showArrowAnimation, setShowArrowAnimation] = useState(false);
-  const css = { maxWidth: "100%", height: "auto" };
+
   // Déclenchement de l'animation arrow au clic
   const handleArrowClick = () => {
     setShowArrowAnimation(true);
@@ -58,6 +59,7 @@ const Section1 = () => {
                   display: "block",
                   objectFit: "cover",
                   cursor: "pointer",
+                  marginRight: "2rem",
                 }}
                 onClick={handleArrowClick}
               />
@@ -65,22 +67,15 @@ const Section1 = () => {
                 <p>Un peu plus</p>
               </span>
             </div>
+
             <div className={styles.section1__image_logo}>
               <Link href="/" onClick={handleLogoClick}>
-                <div
-                  style={{
-                    display: "block",
-                    position: "relative",
-                    maxWidth: "600px",
-                    height: "100%",
-                    border: "4px solid blue",
-                  }}
-                >
+                <div className={styles.__image_logo__bloc}>
                   <Image
                     src={logo}
                     alt="Maison Essenza logo fleurs"
-                    sizes="(max-width: 800px) 100vw, 750px 50wv"
-                    width={700}
+                    sizes="(max-width: 800px) 100vw, 300px 50wv, 400px 70wv"
+                    width={800}
                     height={500}
                     priority={true}
                     className="test_image "
@@ -142,16 +137,6 @@ const Section1 = () => {
                 bien plus; sans que le processus n’avale ni leurs économies, ni
                 leur patience.
               </p>
-              <br />
-              <p>
-                Nous avons plus de 10.500 références diverses pour tous styles,
-                envies et budgets.
-              </p>
-              <br />
-              <p>
-                Osez donc être vous-même et nous vous aiderons à trouver tout ce
-                qu&apos;il vous faut pour un projet qui vous ressemble.
-              </p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia
@@ -167,6 +152,16 @@ const Section1 = () => {
               <p>
                 molestiae quas vel sint commodi repudiandae consequuntur
                 voluptatum laborum numquam blanditiis harum
+              </p>
+              <br />
+              <p>
+                Nous avons plus de 10.500 références diverses pour tous styles,
+                envies et budgets.
+              </p>
+              <br />
+              <p>
+                Osez donc être vous-même et nous vous aiderons à trouver tout ce
+                qu&apos;il vous faut pour un projet qui vous ressemble.
               </p>
             </span>
           </div>
