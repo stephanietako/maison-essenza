@@ -14,6 +14,7 @@
     align-self: flex-end;
     //padding: 2rem;
     bottom: 0;
+    border: 3px solid turquoise;
 
     .link_list {
       display: flex;
@@ -68,7 +69,7 @@
   display: flex;
   height: 90vh;
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0 100%);
-  //background-color: pink;
+  border: 3px solid rgb(244, 9, 9);
 
   .footer__bloc {
     height: auto;
@@ -77,6 +78,7 @@
     display: flex;
     bottom: 0;
     padding: 3rem;
+    height: auto;
 
     .__bloc_content {
       display: flex;
@@ -85,6 +87,7 @@
       justify-content: center;
       align-items: center;
       background-color: #fff;
+      border: 3px solid blue;
 
       .google {
         display: flex;
@@ -200,7 +203,7 @@
       height: auto;
       bottom: 0;
       background-color: #fff;
-      //border: 4px solid red;
+      border: 5px solid green;
       justify-content: center;
       flex-direction: column;
       //pour desk position: fixed
@@ -386,7 +389,8 @@
       .__bloc_content {
         display: flex;
         width: 100%;
-        height: 100%;
+        //height: 100%;
+        //height: 100vh;
         flex-direction: column;
         padding: 1rem;
 
