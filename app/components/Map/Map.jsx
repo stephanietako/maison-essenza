@@ -3,8 +3,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
 import styles from "./styles.module.scss";
-// Assets
-//import icon from "@/public/assets/essenza-icon.jpeg";
+// Importez l'image
+import icon from "@/public/assets/essenza-icon.jpeg";
 
 const properties = [
   {
@@ -23,6 +23,16 @@ const Map = () => {
   const [userMarker, setUserMarker] = useState(null);
   const [infoWindow, setInfoWindow] = useState(null);
 
+  const toggleHighlight = (marker) => {
+    if (marker.content.classList.contains(styles.highlight)) {
+      marker.content.classList.remove(styles.highlight);
+      marker.zIndex = null;
+    } else {
+      marker.content.classList.add(styles.highlight);
+      marker.zIndex = 1;
+    }
+  };
+
   useEffect(() => {
     const initMap = async () => {
       const loader = new Loader({
@@ -32,8 +42,9 @@ const Map = () => {
       });
 
       const { Map } = await loader.importLibrary("maps");
-      const { AdvancedMarkerElement, PinElement } =
-        await google.maps.importLibrary("marker");
+      const { AdvancedMarkerElement } = await google.maps.importLibrary(
+        "marker"
+      );
 
       const position = {
         lat: 43.251496859869185,
@@ -48,16 +59,6 @@ const Map = () => {
       // setup the map
       const map = new Map(mapRef.current, mapOptions);
       setMap(map);
-      // color of the marker
-      // const pinBackground = new PinElement({
-      //   background: "green",
-      // });
-      // put up the marker
-      new AdvancedMarkerElement({
-        map: map,
-        position: position,
-        content: pinBackground.element,
-      });
 
       // Initialisation de la fenêtre d'information
       const infoWindow = new google.maps.InfoWindow();
@@ -65,29 +66,21 @@ const Map = () => {
 
       const buildContent = (property) => {
         const content = document.createElement("div");
-        content.classList.add("property");
+        content.classList.add(styles.property); // Utilisation de styles.module.scss
+
         content.innerHTML = `
-        //    <div class="icon" src={./public/assets/essenza-icon.jpeg}>
-        // <span${property.type}" title="${property.type}"></span>
-      
-    </div>
-          <div class="details">
-            <span title="${property.title}">${property.title}</span>
+          <div>
+            <div className="${styles.icon}" dangerouslySetInnerHTML={{ __html: property.icon }} />
+            <img src="${icon.src}" alt=" Maison essenza marqueur sur la carte" />
+          </div>
+          <div class="${styles.details}">
+            <span class="${styles.title}" title="${property.title}">${property.title}</span>
             <span>${property.description}</span>
           </div>
         `;
         return content;
       };
 
-      const toggleHighlight = (marker) => {
-        if (marker.content.classList.contains("highlight")) {
-          marker.content.classList.remove("highlight");
-          marker.zIndex = null;
-        } else {
-          marker.content.classList.add("highlight");
-          marker.zIndex = 1;
-        }
-      };
       // Ajout des markers pour chaque propriété
       properties.forEach((property) => {
         const content = buildContent(property);
@@ -98,7 +91,6 @@ const Map = () => {
           position: property.position,
           title: property.title,
         });
-
         marker.addListener("click", () => {
           toggleHighlight(marker);
           infoWindow.setContent(`
@@ -107,11 +99,6 @@ const Map = () => {
               <p>${property.description}</p>
             </div>
           `);
-          infoWindow.open({
-            anchor: marker,
-            map,
-            shouldFocus: false,
-          });
         });
       });
       setMap(map);
@@ -121,6 +108,10 @@ const Map = () => {
   }, []);
 
   const centerMyLocation = () => {
+    // A marker with a with a URL pointing to a PNG.
+    const user = document.createElement("img");
+    user.src =
+      "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
     if (navigator.geolocation && map) {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -137,6 +128,7 @@ const Map = () => {
               new google.maps.marker.AdvancedMarkerElement({
                 map: map,
                 position: userLocation,
+                content: user,
                 title: "Vous êtes ici",
               });
 
@@ -145,16 +137,12 @@ const Map = () => {
             userLocationMarker.addListener("click", () => {
               if (infoWindow) {
                 infoWindow.setContent(`
-                  <div>
-                    <h3>Vous êtes ici</h3>
-                    <p>Votre position actuelle.</p>
-                  </div>
+                  <div class="${styles["custom_info_window"]}">
+                  <h3>Vous êtes ici</h3>
+                </div>
+              
                 `);
-                infoWindow.open({
-                  anchor: userLocationMarker,
-                  map,
-                  shouldFocus: false,
-                });
+                infoWindow.open(map, userLocationMarker);
               }
             });
           }
