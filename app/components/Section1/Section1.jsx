@@ -137,22 +137,22 @@ const Section1 = () => {
                 bien plus; sans que le processus n’avale ni leurs économies, ni
                 leur patience.
               </p>
-              <p>
+              {/* <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
                 mollitia
-              </p>
-              <p>
+              </p> */}
+              {/* <p>
                 molestiae quas vel sint commodi repudiandae consequuntur
                 voluptatum laborum numquam blanditiis harum
-              </p>
-              <p>
+              </p> */}
+              {/* <p>
                 molestiae quas vel sint commodi repudiandae consequuntur
                 voluptatum laborum numquam blanditiis harum
-              </p>
-              <p>
+              </p> */}
+              {/* <p>
                 molestiae quas vel sint commodi repudiandae consequuntur
                 voluptatum laborum numquam blanditiis harum
-              </p>
+              </p> */}
               <br />
               <p>
                 Nous avons plus de 10.500 références diverses pour tous styles,

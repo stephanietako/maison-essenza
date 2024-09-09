@@ -10,6 +10,7 @@ import phone from "@/public/assets/phone.png";
 import bulle from "@/public/assets/bulle.png";
 // Styles
 import styles from "./styles.module.scss";
+export const dynamic = "force-dynamic";
 
 const Footer = () => {
   const date = new Date();

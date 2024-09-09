@@ -11,7 +11,6 @@
     height: 100%;
     flex-direction: column;
     align-items: center;
-    //border: 3px solid pink;
     justify-content: center;
 
     .map__container {
@@ -30,6 +29,7 @@
       height: auto;
       justify-content: space-around;
       margin: 17px;
+
       p {
         font-size: 1rem;
       }
@@ -74,24 +74,24 @@
           }
         }
       }
+    }
 
-      .property {
-        align-items: center;
-        background-color: #fff;
-        border-radius: 50%;
-        color: #263238;
-        display: flex;
-        font-size: 14px;
-        gap: 15px;
-        height: 30px;
-        justify-content: center;
-        padding: 4px;
-        position: relative;
-        transition: all 0.3s ease-out;
-        width: 30px;
-      }
+    .property {
+      align-items: center;
+      background-color: #fff;
+      border-radius: 50%;
+      color: #263238;
+      display: flex;
+      font-size: 14px;
+      gap: 15px;
+      height: 30px;
+      justify-content: center;
+      padding: 4px;
+      position: relative;
+      transition: all 0.3s ease-out;
+      width: 30px;
 
-      .property::after {
+      &::after {
         border-left: 9px solid transparent;
         border-right: 9px solid transparent;
         border-top: 9px solid #fff;
@@ -106,30 +106,24 @@
         z-index: 1;
       }
 
-      .property .icon {
+      .icon {
         align-items: center;
         display: flex;
         justify-content: center;
-        color: #fff;
       }
 
-      .property .icon svg {
-        height: 20px;
-        width: auto;
-      }
-
-      .property .details {
+      .details {
         display: none;
         flex-direction: column;
         flex: 1;
       }
 
-      .property .title {
+      .title {
         font-size: 12px;
         font-weight: bold;
       }
 
-      .property.highlight {
+      &.highlight {
         background-color: #fff;
         border-radius: 8px;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
@@ -138,15 +132,15 @@
         width: auto;
       }
 
-      .property.highlight::after {
-        border-top: 9px solid #fff;
+      &.highlight::after {
+        border-top: 9px solid red;
       }
 
-      .property.highlight .details {
+      &.highlight .details {
         display: flex;
       }
 
-      .property.highlight .icon svg {
+      &.highlight .icon {
         width: 50px;
         height: 50px;
       }
