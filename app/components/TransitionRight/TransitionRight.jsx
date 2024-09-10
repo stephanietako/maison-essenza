@@ -47,29 +47,10 @@ const TransitionRight = ({ onComplete, keyTrigger }) => {
             animate="center"
             exit="exit"
             variants={variants}
+            className={styles.transition_bloc}
             transition={{ duration: 1, ease: "easeInOut" }}
-            style={{
-              position: "absolute",
-              top: 0,
-              left: 0,
-              width: "100%",
-              height: "90vh",
-              backgroundColor: "rebeccapurple",
-              zIndex: 10,
-            }}
           >
-            <div
-              className={styles.content}
-              style={{
-                color: "white",
-                textAlign: "center",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                height: "100%",
-                fontSize: "24px",
-              }}
-            >
+            <div className={styles.content}>
               <Section2 handleExitClick={handleExitClick} />
             </div>
           </motion.div>

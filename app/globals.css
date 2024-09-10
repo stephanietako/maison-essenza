@@ -73,12 +73,7 @@ ul {
 li {
   text-decoration: none;
 }
-.teaser_header {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  /* border: 3px solid red; */
-}
+
 .content_horizontal {
   position: relative;
   overflow: hidden;
@@ -95,19 +90,72 @@ li {
   height: 100%;
 } */
 
-/* pour le bg video */
-#myVideo {
+/* #myVideo {
   display: flex;
   position: absolute;
-  /* top: 50%;
-  left: 50%; */
+ 
   right: 0;
-  /* bottom: 0; */
+
   min-height: 100vh;
   min-width: 100vw;
-  /* transform: translate(-50%, -50%); */
+ 
   position: absolute;
-  /* border: 7px solid red; */
+
   z-index: -1;
   object-fit: cover;
+} */
+#hero {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-width: 1024px) {
+  #hero {
+    display: flex;
+    width: 100vw;
+    height: 45vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 820px) {
+  #hero {
+    display: flex;
+    width: 95vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+}
+@media (max-width: 768px) {
+  #hero {
+    display: flex;
+    width: 95vw;
+    height: 40vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+}
+
+@media (max-width: 500px) {
+  #hero {
+    display: flex;
+    width: 95vw;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
 }

@@ -7,15 +7,15 @@ const Hero = () => {
     <div
       className="hero"
       id="hero"
-      style={{
-        display: "flex",
-        width: "100vw",
-        height: "100vh",
-        justifyContent: "center",
-        alignItems: "center",
-        overflow: "hidden",
-        position: "relative",
-      }}
+      // style={{
+      //   display: "flex",
+      //   width: "100vw",
+      //   height: "100vh",
+      //   justifyContent: "center",
+      //   alignItems: "center",
+      //   overflow: "hidden",
+      //   position: "relative",
+      // }}
     >
       {/* Ajoutez la vidéo comme arrière-plan */}
       <video

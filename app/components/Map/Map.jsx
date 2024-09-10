@@ -5,11 +5,14 @@ import { Loader } from "@googlemaps/js-api-loader";
 import styles from "./styles.module.scss";
 // Importez l'image
 import icon from "@/public/assets/essenza-icon.jpeg";
+import geo from "@/public/assets/geolocalisation.png";
+export const dynamic = "force-dynamic";
 
 const properties = [
   {
     title: "Maison Essenza",
-    description: "Show Room Boutique",
+    description: `Du Mardi au Vendredi de 10h00 à 19h00 <br />
+                  Le samedi de 10h00 à 16h00`,
     position: {
       lat: 43.251496859869185,
       lng: 6.532052481579163,
@@ -60,7 +63,7 @@ const Map = () => {
       const map = new Map(mapRef.current, mapOptions);
       setMap(map);
 
-      // Initialisation de la fenêtre d'information
+      // Initialisez l'infoWindow ici
       const infoWindow = new google.maps.InfoWindow();
       setInfoWindow(infoWindow);
 
@@ -70,8 +73,8 @@ const Map = () => {
 
         content.innerHTML = `
           <div>
-            <div className="${styles.icon}" dangerouslySetInnerHTML={{ __html: property.icon }} />
-            <img src="${icon.src}" alt=" Maison essenza marqueur sur la carte" />
+            <div class="${styles.icon} class="${styles.iconImage}"">
+            <img src="${icon.src}" alt="Maison essenza marqueur sur la carte" />
           </div>
           <div class="${styles.details}">
             <span class="${styles.title}" title="${property.title}">${property.title}</span>
@@ -93,12 +96,16 @@ const Map = () => {
         });
         marker.addListener("click", () => {
           toggleHighlight(marker);
-          infoWindow.setContent(`
-            <div>
-              <h3>${property.title}</h3>
-              <p>${property.description}</p>
-            </div>
-          `);
+          if (infoWindow) {
+            // Vérifiez que infoWindow n'est pas null
+            infoWindow.setContent(`
+              <div>
+                <h3>${property.title}</h3>
+                <p>${property.description}</p>
+              </div>
+            `);
+            // infoWindow.open(map, marker);
+          }
         });
       });
       setMap(map);
@@ -110,8 +117,11 @@ const Map = () => {
   const centerMyLocation = () => {
     // A marker with a with a URL pointing to a PNG.
     const user = document.createElement("img");
-    user.src =
-      "https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png";
+    user.src = geo.src; // Utilisation correcte de l'image importée
+    // Définir les dimensions de l'image
+    user.style.width = "40px"; // Ajustez cette valeur selon vos besoins
+    user.style.height = "40px"; // Ajustez cette valeur selon vos besoins
+
     if (navigator.geolocation && map) {
       navigator.geolocation.getCurrentPosition(
         (position) => {

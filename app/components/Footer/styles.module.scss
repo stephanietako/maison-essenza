@@ -89,6 +89,7 @@
       align-items: center;
       background-color: #fff;
       //border: 3px solid blue;
+      //margin-bottom: 2rem;
 
       .google {
         display: flex;
@@ -102,12 +103,12 @@
 
       .footer_list__bloc {
         display: flex;
-        width: 100%;
+        width: 70%;
         height: auto;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        margin: 2rem;
         .footer_list__border {
           display: flex;
           transition: border-width ease-in;
@@ -117,7 +118,7 @@
           height: 100%;
           position: relative;
           border: 2px solid transparent;
-          padding: 2rem;
+          padding: 1rem;
 
           &::before,
           &::after {
@@ -338,9 +339,11 @@
     position: fixed;
     top: 0;
     //background-color: aqua;
-    z-index: 1;
+    z-index: 999;
+
     .link_infos {
       width: 50%;
+
       .link_list {
         //flex-direction: row;
         //flex-wrap: wrap;
@@ -382,6 +385,7 @@
     //position: relative;
     background-color: #fff;
     //position: relative;
+    margin-top: 2rem;
 
     .footer__bloc {
       width: 100vw;
@@ -513,7 +517,7 @@
                 }
 
                 #number {
-                  font-size: 0.7rem;
+                  font-size: 0.5rem;
                   line-height: 1.2;
                 }
                 .__img {
