@@ -89,39 +89,45 @@ const Section1 = () => {
               </Link>
             </div>
             {/* bloc text */}
-            <div className={styles.section1__text_header}>
-              <h1>BIENTÔT EN LIGNE</h1>
-              <span className={styles.__text_bloc__info_subtitle}>
-                <p>
-                  Dans l&apos;intervalle retrouvez-nous dans notre
-                  Showroom/Boutique
-                </p>
+            <div className={styles.section1_text__header_bloc}>
+              <div className={styles.section1_text__header}>
+                <div className={styles.section1_text__header_title}>
+                  <span className={styles.responsive_title}>
+                    <h1>BIENTÔT EN LIGNE</h1>
+                  </span>
+                </div>
+                <span className={styles.__bloc_info_subtitle}>
+                  <p>
+                    Dans l&apos;intervalle retrouvez-nous dans notre
+                    Showroom/Boutique
+                  </p>
+                </span>
+              </div>
+              <span className={styles.__bloc_info__shop}>
+                <p id={styles.letter}>du</p>
+                <p id={styles.day}>Mardi</p>
+                <p id={styles.letter}>au</p>
+                <p id={styles.day}>Vendredi</p>
+                <p id={styles.letter}>de</p>
+                <p id={styles.number}>10.00</p>
+                <p id={styles.letter}>à</p>
+                <p id={styles.number}>19.00</p>
+              </span>
+              <span className={styles.__bloc_info__shop}>
+                <p id={styles.letter}>et</p>
+                <p id={styles.day}>le Samedi</p>
+                <p id={styles.letter}>de</p>
+                <p id={styles.number}>10.00</p>
+                <p id={styles.letter}>à</p>
+                <p id={styles.number}>16.00</p>
+              </span>
+              <span className={styles.__bloc_info__adress}>
+                <p>33 Rue Marceau - Cogolin</p>
               </span>
             </div>
-            <span className={styles.__text_bloc__info}>
-              <p id={styles.letter}>du</p>
-              <p id={styles.day}>Mardi</p>
-              <p id={styles.letter}>au</p>
-              <p id={styles.day}>Vendredi</p>
-              <p id={styles.letter}>de</p>
-              <p id={styles.number}>10.00</p>
-              <p id={styles.letter}>à</p>
-              <p id={styles.number}>19.00</p>
-            </span>
-            <span className={styles.__text_bloc__info}>
-              <p id={styles.letter}>et</p>
-              <p id={styles.day}>le Samedi</p>
-              <p id={styles.letter}>de</p>
-              <p id={styles.number}>10.00</p>
-              <p id={styles.letter}>à</p>
-              <p id={styles.number}>16.00</p>
-            </span>
-            <span className={styles.__text_bloc__info_adress}>
-              <p>33 Rue Marceau - Cogolin</p>
-            </span>
             {/* fin bloc text */}
             <br />
-            <span className={styles.__text_bloc__philo}>
+            <span className={styles.__bloc_info__philo}>
               <p>
                 Bien au-delà de la simple vocation de boutique/showroom, nous
                 aspirons à aider nos clients, amis et lecteurs à faire de leur
@@ -137,22 +143,7 @@ const Section1 = () => {
                 bien plus; sans que le processus n’avale ni leurs économies, ni
                 leur patience.
               </p>
-              {/* <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
-                mollitia
-              </p> */}
-              {/* <p>
-                molestiae quas vel sint commodi repudiandae consequuntur
-                voluptatum laborum numquam blanditiis harum
-              </p> */}
-              {/* <p>
-                molestiae quas vel sint commodi repudiandae consequuntur
-                voluptatum laborum numquam blanditiis harum
-              </p> */}
-              {/* <p>
-                molestiae quas vel sint commodi repudiandae consequuntur
-                voluptatum laborum numquam blanditiis harum
-              </p> */}
+
               <br />
               <p>
                 Nous avons plus de 10.500 références diverses pour tous styles,

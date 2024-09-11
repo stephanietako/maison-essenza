@@ -169,157 +169,17 @@
 // ##############   ###############
 @media (max-width: 600px) {
   .googlemap {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: flex-start;
-    align-items: center;
-
     .map {
       display: flex;
       width: 100%;
       height: auto;
       flex-direction: column;
       align-items: center;
-      //border: 3px solid pink;
       justify-content: flex-end;
-
-      .map__container {
-        height: 15rem;
-        width: 100%;
-        overflow: hidden;
-        justify-content: center;
-        display: flex;
-      }
-
       .__btn_box {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        width: 100%;
-        height: auto;
-        justify-content: space-around;
-        margin: 17px;
         p {
           font-size: 0.7rem;
         }
-
-        button {
-          &.__btnPosition,
-          &.__btn_googlemap {
-            justify-content: center;
-            display: flex;
-            padding: 9px;
-            cursor: pointer;
-            background-color: transparent;
-            font-weight: bold;
-            border: none;
-            position: relative;
-            overflow: hidden;
-            color: gray;
-
-            &:hover {
-              color: #000;
-            }
-
-            &::before {
-              content: "";
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 100%;
-              height: 2px;
-              background-color: #000;
-              transform: scaleX(0);
-              transform-origin: left;
-              transition: transform 0.3s ease;
-            }
-
-            &:hover::before {
-              transform: scaleX(1); /* Le trait apparaît au survol */
-            }
-
-            img {
-              width: 21px;
-            }
-          }
-        }
-
-        // .property {
-        //   align-items: center;
-        //   background-color: #fff;
-        //   border-radius: 50%;
-        //   color: #263238;
-        //   display: flex;
-        //   font-size: 14px;
-        //   gap: 15px;
-        //   height: 30px;
-        //   justify-content: center;
-        //   padding: 4px;
-        //   position: relative;
-        //   transition: all 0.3s ease-out;
-        //   width: 30px;
-        // }
-
-        // .property::after {
-        //   border-left: 9px solid transparent;
-        //   border-right: 9px solid transparent;
-        //   background-color: #fff;
-        //   content: "";
-        //   height: 0;
-        //   left: 50%;
-        //   position: absolute;
-        //   top: 95%;
-        //   transform: translate(-50%, 0);
-        //   transition: all 0.3s ease-out;
-        //   width: 0;
-        //   z-index: 1;
-        // }
-
-        // .property .icon {
-        //   align-items: center;
-        //   display: flex;
-        //   justify-content: center;
-        //   color: #fff;
-        // }
-
-        // .property .icon svg {
-        //   height: 20px;
-        //   width: auto;
-        // }
-
-        // .property .details {
-        //   display: none;
-        //   flex-direction: column;
-        //   flex: 1;
-        // }
-
-        // .property .title {
-        //   font-size: 12px;
-        //   font-weight: bold;
-        // }
-
-        // .property.highlight {
-        //   background-color: #fff;
-        //   border-radius: 8px;
-        //   box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
-        //   height: 80px;
-        //   padding: 8px 15px;
-        //   width: auto;
-        // }
-
-        // .property.highlight::after {
-        //   border-top: 9px solid #fff;
-        // }
-
-        // .property.highlight .details {
-        //   display: flex;
-        // }
-
-        // .property.highlight .icon  {
-        //   width: 50px;
-        //   height: 50px;
-        // }
       }
     }
   }

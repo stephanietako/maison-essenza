@@ -7,19 +7,19 @@ import Section1 from "../Section1/Section1";
 import Section2 from "../Section2/Section2";
 
 export default function ComponentHorztl() {
-  const [activeSection, setActiveSection] = useState(1); // Déclaration d'un état local activeSection initialisé à 1 et d'une fonction setActiveSection pour le mettre à jour.
-  const [isSmallScreen, setIsSmallScreen] = useState(false); // État pour gérer si l'écran est petit (moins de 768px).
+  const [activeSection, setActiveSection] = useState(1); // Déclaration d'un état local activeSection initialisé à 1 et d'une fonction setActiveSection pour le mettre à jour
+  const [isSmallScreen, setIsSmallScreen] = useState(false); // État pour gérer si l'écran
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 950); // Met à jour isSmallScreen en fonction de la taille de la fenêtre.
+      setIsSmallScreen(window.innerWidth <= 1024); // Met à jour isSmallScreen en fonction de la taille de la fenêtre.
     };
 
     window.addEventListener("resize", handleResize); // Ajouter un écouteur d'événement pour les redimensionnements de la fenêtre.
     handleResize(); // Appeler une fois pour définir l'état initial.
 
     return () => {
-      window.removeEventListener("resize", handleResize); // Nettoyer l'écouteur d'événement lors du démontage du composant.
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -27,7 +27,7 @@ export default function ComponentHorztl() {
     <div className={styles.content_horizontal}>
       {isSmallScreen ? (
         <div>
-          {/* Affichage vertical pour les petits écrans */}
+          {/* Affichage pour les petits écrans */}
           <div className={styles.section1}>
             <Section1 onNextSection={() => setActiveSection(2)} />
           </div>
@@ -37,7 +37,7 @@ export default function ComponentHorztl() {
         </div>
       ) : (
         <AnimatePresence>
-          {/* Transitions horizontales pour les grands écrans */}
+          {/* Transitions pour les grands écrans */}
           {activeSection === 1 && (
             <motion.div
               key="section1"
