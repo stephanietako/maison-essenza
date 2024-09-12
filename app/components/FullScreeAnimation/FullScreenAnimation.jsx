@@ -52,15 +52,16 @@ const FullScreenAnimation = ({ onComplete }) => {
           animate={isAnimatingOut ? "exit" : "visible"}
           variants={variants}
           transition={{ duration: 1, ease: "easeInOut" }}
-          style={{
-            position: "fixed",
-            top: 0,
-            left: 0,
-            width: "100vw",
-            height: "100vh",
-            backgroundColor: "rebeccapurple",
-            zIndex: 10,
-          }}
+          className={styles.full_screen_animation}
+          // style={{
+          //   position: "fixed",
+          //   top: 0,
+          //   left: 0,
+          //   width: "100vw",
+          //   height: "100vh",
+          //   backgroundColor: "#fff",
+          //   zIndex: 10,
+          // }}
         >
           <div className={styles.content}>
             <Hero />
