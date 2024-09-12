@@ -276,13 +276,13 @@ const Footer = () => {
                       </div>
                     </a>
                   </li>
-                  <li className={styles.__info}>
+                  {/* <li className={styles.__info}>
                     <Link href="/">
                       <div className={styles.__txt}>
                         <p>Siège social et magasin</p>
                       </div>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               {/* <div className={styles.__copyright}>
