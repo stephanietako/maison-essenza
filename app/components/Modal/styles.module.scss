@@ -1,0 +1,123 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 90vw;
+
+  .modalBody {
+    margin-top: 20px;
+
+    .section2__container {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      //border: 7px solid blue;
+
+      .section2__bloc {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        //border: 7px solid rgb(201, 18, 234);
+        h1 {
+          //color: blue;
+          font-size: 3.5rem;
+        }
+
+        .section2__image_logo {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          height: auto;
+
+          .__image_logo__bloc {
+            display: flex;
+            max-width: 970px;
+            height: 100%;
+            //border: 4px solid yellow;
+            //justify-content: center;
+          }
+        }
+      }
+    }
+  }
+
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+}
+
+/// ////////////////RESPONSIVE/////////////////
+@media screen and (max-width: 1024px) {
+  .modalContent {
+    .modalBody {
+      .section2__container {
+        .section2__bloc {
+          h1 {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modalContent {
+    .modalBody {
+      .section2__container {
+        .section2__bloc {
+          h1 {
+            display: block;
+            width: auto;
+            height: auto;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .modalContent {
+    .modalBody {
+      .section2__container {
+        .section2__bloc {
+          h1 {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}

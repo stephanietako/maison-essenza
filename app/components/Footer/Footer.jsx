@@ -1,13 +1,17 @@
-import React from "react";
-import Map from "../Map/Map";
+// Footer.js
+import React, { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import Modal from "../Modal/Modal";
 import Image from "next/image";
 import Link from "next/link";
+import Map from "../Map/Map";
 // Assets
 import insta from "@/public/assets/insta.png";
 import mail from "@/public/assets/mail.png";
 import gps from "@/public/assets/gps.png";
 import phone from "@/public/assets/phone.png";
 import bulle from "@/public/assets/bulle.png";
+import logo from "@/public/assets/essenza-icon.jpeg";
 // Styles
 import styles from "./styles.module.scss";
 export const dynamic = "force-dynamic";
@@ -15,6 +19,16 @@ export const dynamic = "force-dynamic";
 const Footer = () => {
   const date = new Date();
   const currentYear = date.getFullYear();
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleBrandClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <div className={styles.footer__header}>
@@ -214,11 +228,9 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li className={styles.__info}>
-                    <Link href="/">
-                      <div className={styles.__txt}>
-                        <p>nos marques</p>
-                      </div>
-                    </Link>
+                    <div className={styles.__txt} onClick={handleBrandClick}>
+                      <p>nos marques</p>
+                    </div>
                   </li>
                   <li className={styles.__info}>
                     <div className={styles.__txt}>
@@ -276,25 +288,51 @@ const Footer = () => {
                       </div>
                     </a>
                   </li>
-                  {/* <li className={styles.__info}>
-                    <Link href="/">
-                      <div className={styles.__txt}>
-                        <p>Siège social et magasin</p>
-                      </div>
-                    </Link>
-                  </li> */}
                 </ul>
               </div>
-              {/* <div className={styles.__copyright}>
-              &#169; Copyright {currentYear} | Tako Dev
-            </div> */}
             </div>
+
             <div className={styles.__copyright}>
-              &#169; Copyright {currentYear} | Tako Dev
+              <span
+                className={styles.__copyright__img}
+                style={{
+                  display: "block",
+                  width: "auto",
+                  height: "auto",
+                  padding: "0.5rem",
+                  border: "2px solid red",
+                }}
+              >
+                {" "}
+                <Image
+                  src={logo}
+                  alt="Maison Essenza logo"
+                  width={20}
+                  height={20}
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                    height: "auto",
+                  }}
+                />
+              </span>
+              &#169; Copyright {currentYear} |
+              <a
+                href="https://www.takodev.studio"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Tako Dev
+              </a>
             </div>
           </div>
         </div>
       </div>
+      <AnimatePresence>
+        {isModalOpen && (
+          <Modal isOpen={isModalOpen} onClose={handleCloseModal} />
+        )}
+      </AnimatePresence>
     </>
   );
 };

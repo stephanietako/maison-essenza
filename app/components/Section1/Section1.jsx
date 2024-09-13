@@ -144,19 +144,21 @@ const Section1 = () => {
             {isResponsive ? (
               <span className={styles.__bloc_info__philo_responsive}>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                  irure dolor in reprehenderit in voluptate velit esse cillum
-                  dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                  cupidatat non proident, sunt in culpa qui officia deserunt
-                  mollit anim id est laborum.
+                  Bien au-delà de la simple vocation de boutique/showroom, nous
+                  aspirons à aider nos clients, amis et lecteurs à faire de leur
+                  espace de vie un véritable sanctuaire pour une bonne qualité
+                  de vie, en proposant judicieusement des matériaux
+                  exceptionnels, agencements, sanitaires, cuisines, placards,
+                  finitions décoratives uniques, mobilier, linge de maison, et
+                  bien plus; sans que le processus n’avale ni leurs économies,
+                  ni leur patience.
                 </p>
                 <br />
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  <p>
+                    Nous avons plus de 10.500 références diverses pour tous
+                    styles, envies et budgets.
+                  </p>
                 </p>
                 <br />
                 <p>
