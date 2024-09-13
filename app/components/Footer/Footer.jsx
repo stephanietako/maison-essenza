@@ -124,7 +124,7 @@ const Footer = () => {
                     <p>Retrouvez-nous chez Maison Essenza au: </p>
                   </li>
                   <li>
-                    <p> 39 rue Marceau - 83310 Cogolin</p>
+                    <p> 33 rue Marceau - 83310 Cogolin</p>
                   </li>
                   <li>
                     <p>
@@ -194,7 +194,7 @@ const Footer = () => {
                       </div>
                     </a>
                   </li>
-                  <li className={styles.__info}>
+                  {/* <li className={styles.__info}>
                     <a href="/">
                       <span className={styles.__img}>
                         <Image
@@ -210,7 +210,7 @@ const Footer = () => {
                         <p>Chat</p>
                       </div>
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className={styles.column}>
@@ -269,7 +269,7 @@ const Footer = () => {
                       <p id={styles.adress}>
                         Maison Essenza <br />
                         Golfe de Saint-tropez <br />
-                        39 rue Marceau - 83310 Cogolin
+                        33 rue Marceau - 83310 Cogolin
                       </p>
                     </div>
                   </li>
@@ -293,7 +293,6 @@ const Footer = () => {
                   width: "auto",
                   height: "auto",
                   padding: "0.5rem",
-                  border: "2px solid red",
                 }}
               >
                 {" "}

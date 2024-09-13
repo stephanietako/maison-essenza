@@ -155,11 +155,10 @@ const Section1 = () => {
                 </p>
                 <br />
                 <p>
-                  <p>
-                    Nous avons plus de 10.500 références diverses pour tous
-                    styles, envies et budgets.
-                  </p>
+                  Nous avons plus de 10.500 références diverses pour tous
+                  styles, envies et budgets.
                 </p>
+
                 <br />
                 <p>
                   Osez donc être vous-même et nous vous aiderons à trouver tout

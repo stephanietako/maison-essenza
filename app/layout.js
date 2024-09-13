@@ -1,6 +1,5 @@
 import { Courier_Prime, Cormorant_Garamond, Nixie_One } from "next/font/google";
 import "./globals.css";
-//import { motion } from "framer-motion";
 
 export const dynamic = "force-dynamic";
 
@@ -9,11 +8,11 @@ const courier_prime_init = Courier_Prime({
   subsets: ["latin"],
   variable: "--courier_prime",
 });
-const cormorant_garamond_init = Cormorant_Garamond({
-  weight: ["300"],
-  subsets: ["latin"],
-  variable: "--cormorant_garamond",
-});
+// const cormorant_garamond_init = Cormorant_Garamond({
+//   weight: ["300"],
+//   subsets: ["latin"],
+//   variable: "--cormorant_garamond",
+// });
 const nixie_one_init = Nixie_One({
   weight: ["400"],
   subsets: ["latin"],
@@ -28,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body
-        className={`${courier_prime_init.variable} ${nixie_one_init.variable} ${courier_prime_init.variable}`}
+        className={`${nixie_one_init.variable} ${courier_prime_init.variable}`}
       >
         {children}
       </body>
