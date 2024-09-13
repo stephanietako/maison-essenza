@@ -240,23 +240,16 @@ const Footer = () => {
                     </div>
                   </li>
                   <li className={styles.__info}>
-                    <Link href="/">
+                    <Link href="/mentions">
                       <div className={styles.__txt}>
                         <p>Mentions Légales</p>
                       </div>
                     </Link>
                   </li>
                   <li className={styles.__info}>
-                    <Link href="/">
+                    <Link href="/rgpd">
                       <div className={styles.__txt}>
                         <p>RGPD - Politique de confidentialité</p>
-                      </div>
-                    </Link>
-                  </li>
-                  <li className={styles.__info}>
-                    <Link href="/">
-                      <div className={styles.__txt}>
-                        <p>Gestion des cookies</p>
                       </div>
                     </Link>
                   </li>

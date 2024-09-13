@@ -61,7 +61,7 @@ h2 {
   font-family: var(--nixie_one);
 }
 p {
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: lighter;
   font-family: var(--nixie_one);
   /* line-height: 1.5; */
