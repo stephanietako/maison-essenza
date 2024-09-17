@@ -4,20 +4,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div
-      className="hero"
-      id="hero"
-      // style={{
-      //   display: "flex",
-      //   width: "100vw",
-      //   height: "100vh",
-      //   justifyContent: "center",
-      //   alignItems: "center",
-      //   overflow: "hidden",
-      //   position: "relative",
-      // }}
-    >
-      {/* Ajoutez la vidéo comme arrière-plan */}
+    <div className="hero" id="hero">
       <video
         style={{
           position: "absolute",
