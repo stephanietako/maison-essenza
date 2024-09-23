@@ -174,27 +174,28 @@ const Section1 = () => {
             ) : (
               <span className={styles.__bloc_info__philo}>
                 <p>
-                  Bien au-delà de la simple vocation de boutique/showroom, nous
-                  aspirons à aider nos clients, amis et lecteurs à faire de leur
-                  espace de vie un véritable
+                  Bien au-delà de la simple vocation de boutique / showroom,
+                  nous aspirons à aider nos clients, amis et lecteurs à faire de
+                  leur espace de vie un véritable sanctuaire pour la meilleure
+                  qualité de vie possible, en proposant judicieusement des
+                  matériaux exceptionnels, agencement, carrelages, sanitaires,
+                  robinetteries, cuisines sur-mesure ou demi-mesure, placards /
+                  dressings
                 </p>
+                <br />
                 <p>
-                  sanctuaire pour une bonne qualité de vie, en proposant
-                  judicieusement des matériaux exceptionnels, agencements,
-                  sanitaires, cuisines, placards,
-                </p>
-                <p>
-                  finitions décoratives uniques, mobilier, linge de maison, et
-                  bien plus; sans que le processus n’avale ni leurs économies,
-                  ni leur patience.
+                  finitions décoratives uniques, mobilier, linge de maison,
+                  rideaux sur mesure avec les collections de tissus DEDAR ou
+                  encore THEVENON, confections personnalisées et bien plus
+                  encore ; sans que pour autant le processus n’avale leurs
+                  économies, ni leur patience….
                 </p>
 
                 <br />
                 <p>
-                  Nous avons plus de 10.500 références diverses pour tous
-                  styles, envies et budgets.
+                  Nous avons des milliers de références pour tous styles, envies
+                  et budgets
                 </p>
-                <br />
                 <p>
                   Osez donc être vous-même et nous vous aiderons à trouver tout
                   ce qu&apos;il vous faut pour un projet qui vous ressemble.

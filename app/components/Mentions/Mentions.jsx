@@ -59,14 +59,20 @@ const Mentions = () => {
             </a>
           </li>
           <li>
-            <strong>Société :</strong> Maison Essenza, 33, rue Marceau - 83310;
-            SAS au capital social de 7 500,00 Euros
+            <strong>Société :</strong> Maison Essenza, 33, rue Marceau - 83310
+            COGOLIN; SAS au capital social de 10 800,00 Euros
           </li>
           <li>
-            <strong>Siret :</strong> 49878741500021
+            <strong>Siren :</strong> 977 925 411
           </li>
           <li>
-            <strong>Numéro de TVA intracommunautaire :</strong> FR02498787415
+            <strong>Siret :</strong> 977 925 411 00018
+          </li>
+          <li>
+            <strong>Numéro de TVA intracommunautaire :</strong> FR90977925411
+          </li>
+          <li>
+            <strong>RCS :</strong> Frejus B 977 925 411
           </li>
         </ul>
       </section>
@@ -182,7 +188,7 @@ const Mentions = () => {
           .
         </p>
         <p>
-          LG Partenaires s&apos;efforce de fournir sur le site
+          Maison Essenza s&apos;efforce de fournir sur le site
           www.maison-essenza.com des informations aussi précises que possible.
           Les renseignements figurant sur le site www.maison-essenza.com ne sont
           pas exhaustifs et les photos non contractuelles. Ils sont donnés sous
@@ -210,15 +216,19 @@ const Mentions = () => {
         <p>
           Tout contenu téléchargé se fait aux risques et périls de
           l&apos;utilisateur et sous sa seule responsabilité. En conséquence,
-          nous ne saurions être tenus responsables d&apos;un quelconque dommage
-          subi par l&apos;ordinateur de l&apos;utilisateur ou d&apos;une
-          quelconque perte de données consécutives au téléchargement. De plus,
-          l&apos;utilisateur du site s&apos;engage à accéder au site en
+          Maison Essenza ne saurait être tenu responsable d&apos;un quelconque
+          dommage subi par l&apos;ordinateur de l&apos;utilisateur ou d&apos;une
+          quelconque perte de données consécutives au téléchargement.
+        </p>
+        <p>
+          De plus, l&apos;utilisateur du site s&apos;engage à accéder au site en
           utilisant un matériel récent, ne contenant pas de virus et avec un
-          navigateur de dernière génération mis à jour. Les liens hypertextes
-          mis en place dans le cadre du présent site internet en direction
-          d&apos;autres ressources présentes sur le réseau Internet ne sauraient
-          engager la responsabilité de Loft75.
+          navigateur de dernière génération mis-à-jour.
+        </p>
+        <p>
+          Les liens hypertextes mis en place dans le cadre du présent site
+          internet en direction d&apos;autres ressources présentes sur le réseau
+          Internet ne sauraient engager la responsabilité de Maison Essenza.
         </p>
       </section>
 
@@ -232,6 +242,30 @@ const Mentions = () => {
           marques, logos ou contenus appartenant à d&apos;autres sociétés
           partenaires ou auteurs.
         </p>
+        <p>
+          Toute reproduction, distribution, modification, adaptation,
+          retransmission ou publication, même partielle, de ces différents
+          éléments est strictement interdite sans l&apos;accord exprès par écrit
+          de Maison Essenza. Cette représentation ou reproduction, par quelque
+          procédé que ce soit, constitue une contrefaçon sanctionnée par les
+          articles L.335-2 et suivants du Code de la propriété intellectuelle.
+        </p>
+        <p>
+          Le non-respect de cette interdiction constitue une contrefaçon pouvant
+          engager la responsabilité civile et pénale du contrefacteur. En outre,
+          les propriétaires des Contenus copiés pourraient intenter une action
+          en justice à votre encontre.
+        </p>
+        <p>
+          Les utilisateurs et visiteurs du site internet peuvent mettre en place
+          un hyperlien en direction de ce site, mais uniquement en direction de
+          la page d&apos;accueil, accessible à l&apos;URL suivante :
+          www.maison-essenza.com, à condition que ce lien s&apos;ouvre dans une
+          nouvelle fenêtre. En particulier un lien vers une sous page
+          (&quot;liens profonds&quot;) est interdit, ainsi que l&apos;ouverture
+          du présent site au sein d&apos;un cadre (&quot;framing&quot;), sauf
+          l&apos;autorisation expresse et préalable de Maison Essenza.
+        </p>
       </section>
 
       <section>
@@ -241,85 +275,29 @@ const Mentions = () => {
           2004-801 du 6 août 2004 relative à la protection des personnes
           physiques à l&apos;égard des traitements de données à caractère
           personnel) relative à l&apos;informatique, aux fichiers et aux
-          libertés, les informations recueillies sur nos formulaires sont
-          enregistrées dans un fichier informatisé par Maison Essenza pour la
-          gestion commerciale ou la gestion du service recrutement.
-        </p>
-        <p>
-          Elles sont conservées pendant 3 ans et sont destinées soit au service
-          commercial, soit au service recrutement. Conformément à la loi «
-          informatique et libertés », vous pouvez exercer votre droit
-          d&apos;accès aux données vous concernant et les faire rectifier en
-          contactant notre DPO : Dominique Roussel par email{" "}
-          <a href="mailto:dpo@coming-web.com">dpo@coming-web.com</a>.
-        </p>
-        <p>
-          Nous vous informons de l&apos;existence de la liste d&apos;opposition
-          au démarchage téléphonique « Bloctel », sur laquelle vous pouvez vous
-          inscrire ici :{" "}
+          libertés, ce site n&apos;a pas fait l&apos;objet d&apos;une
+          déclaration auprès de la Commission nationale de l&apos;informatique
+          et des libertés (
           <a
-            href="https://conso.bloctel.fr/"
+            href="https://www.cnil.fr"
             target="_blank"
             rel="noopener noreferrer"
           >
-            https://conso.bloctel.fr/
+            www.cnil.fr
           </a>
+          ).
         </p>
       </section>
 
       <section>
         <h2>Litiges</h2>
         <p>
-          Les présentes conditions du site www.loft75.com sont régies par les
-          lois françaises et toute contestation ou litiges qui pourraient naître
-          de l&apos;interprétation ou de l&apos;exécution de celles-ci seront de
-          la compétence exclusive des tribunaux dont dépend le siège social de
-          la société. La langue de référence, pour le règlement de contentieux
-          éventuels, est le français.
-        </p>
-      </section>
-
-      <section>
-        <h2>Données personnelles</h2>
-        <p>
-          De manière générale, vous n&apos;êtes pas tenu de nous communiquer vos
-          données personnelles lorsque vous visitez notre site Internet{" "}
-          <a
-            href="https://www.maison-essenza.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            www.maison-essenza.com
-          </a>
-          . Cependant, ce principe comporte certaines exceptions.
-        </p>
-        <p>
-          En effet, pour certains services proposés par notre site, vous pouvez
-          être amené à nous communiquer certaines données telles que : votre
-          nom, votre fonction, le nom de votre société, votre adresse
-          électronique, et votre numéro de téléphone. Tel est le cas lorsque
-          vous remplissez le formulaire qui vous est proposé en ligne, dans la
-          rubrique « contact ». Dans tous les cas, vous pouvez refuser de
-          fournir vos données personnelles.
-        </p>
-        <p>
-          Dans ce cas, vous ne pourrez pas utiliser les services du site,
-          notamment celui de solliciter des renseignements sur notre société, ou
-          de recevoir les lettres d&apos;information. Enfin, nous pouvons
-          collecter de manière automatique certaines informations vous
-          concernant lors d&apos;une simple navigation sur notre site Internet,
-          notamment : des informations concernant l&apos;utilisation de notre
-          site, comme les zones que vous visitez et les services auxquels vous
-          accédez, votre adresse IP, le type de votre navigateur, vos temps
-          d&apos;accès.
-        </p>
-        <p>
-          De telles informations sont utilisées exclusivement à des fins de
-          statistiques internes, de manière à améliorer la qualité des services
-          qui vous sont proposés. Les bases de données sont protégées par les
-          dispositions de la loi du 1er juillet 1998 transposant la directive
-          96/9 du 11 mars 1996 relative à la protection juridique des bases de
-          données.
+          Les présentes conditions du site www.maison-essenza.com sont régies
+          par les lois françaises et toute contestation ou litiges qui
+          pourraient naître de l&apos;interprétation ou de l&apos;exécution de
+          celles-ci seront de la compétence exclusive des tribunaux dont dépend
+          le siège social de la société. La langue de référence, pour le
+          règlement de contentieux éventuels, est le français.
         </p>
       </section>
     </div>
