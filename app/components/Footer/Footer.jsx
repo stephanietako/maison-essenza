@@ -149,6 +149,7 @@ const Footer = () => {
               </span>
             </div>
           </div>
+          {/* footer bottom bloc */}
           <div className={styles.footer_infos}>
             <div className={styles.footer_infos__container}>
               <div className={styles.column}>
@@ -194,23 +195,6 @@ const Footer = () => {
                       </div>
                     </a>
                   </li>
-                  {/* <li className={styles.__info}>
-                    <a href="/">
-                      <span className={styles.__img}>
-                        <Image
-                          src={bulle}
-                          alt="bubble conversation Icon"
-                          width={17}
-                          height={17}
-                          className={styles.__icon}
-                          id={styles.bubble}
-                        />
-                      </span>
-                      <div className={styles.__txt}>
-                        <p>Chat</p>
-                      </div>
-                    </a>
-                  </li> */}
                 </ul>
               </div>
               <div className={styles.column}>
@@ -218,7 +202,6 @@ const Footer = () => {
                   {" "}
                   <h3>LIENS UTILES</h3>
                 </span>
-
                 <ul>
                   <li className={styles.__info}>
                     <Link href="/">
