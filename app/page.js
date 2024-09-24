@@ -76,6 +76,7 @@ export default function Home() {
         }}
       />
       <div
+        className="home"
         style={{
           overflow: "hidden",
           position: "relative",

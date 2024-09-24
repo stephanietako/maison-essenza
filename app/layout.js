@@ -1,9 +1,4 @@
-import {
-  Courier_Prime,
-  Cormorant_Garamond,
-  Nixie_One,
-  Mulish,
-} from "next/font/google";
+import { Courier_Prime, Nixie_One, Mulish, Lato } from "next/font/google";
 import "./globals.css";
 
 export const dynamic = "force-dynamic";
@@ -17,6 +12,11 @@ const mulish_init = Mulish({
   weight: ["200", "300", "400", "700", "800", "900", "1000"],
   subsets: ["latin"],
   variable: "--mulish",
+});
+const lato_init = Lato({
+  weight: ["100", "300", "400", "700", "900"],
+  subsets: ["latin"],
+  variable: "--lato",
 });
 const nixie_one_init = Nixie_One({
   weight: ["400"],
@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body
-        className={`${mulish_init.variable} ${nixie_one_init.variable} ${courier_prime_init.variable}`}
+        className={`${mulish_init.variable} ${nixie_one_init.variable} ${courier_prime_init.variable} ${lato_init.variable}`}
       >
         {children}
       </body>
