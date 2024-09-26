@@ -150,16 +150,20 @@ const Section1 = () => {
                   qualité de vie possible, en proposant judicieusement des
                   matériaux exceptionnels, agencement, carrelages, sanitaires,
                   robinetteries, cuisines sur-mesure ou demi-mesure, placards /
-                  dressings
+                  dressings finitions décoratives uniques, mobilier, linge de
+                  maison, rideaux sur mesure avec les collections de tissus
+                  DEDAR ou encore THEVENON, confections personnalisées et bien
+                  plus encore ; sans que pour autant le processus n’avale leurs
+                  économies, ni leur patience….
                 </p>
-                <br />
-                <p>
+
+                {/* <p>
                   finitions décoratives uniques, mobilier, linge de maison,
                   rideaux sur mesure avec les collections de tissus DEDAR ou
                   encore THEVENON, confections personnalisées et bien plus
                   encore ; sans que pour autant le processus n’avale leurs
                   économies, ni leur patience….
-                </p>
+                </p> */}
 
                 <br />
                 <p>
