@@ -112,8 +112,8 @@ const Footer = () => {
         {/* end banner  */}
       </div>
 
-      <div className={styles.footer__container}>
-        <div className={styles.footer__bloc} id="footer">
+      <div className={styles.footer__container} id="footer">
+        <div className={styles.footer__bloc}>
           <div className={styles.__bloc_container}>
             <div className={styles.__bloc_content}>
               <div className={styles.google}>
@@ -272,28 +272,16 @@ const Footer = () => {
             </div>
 
             <div className={styles.__copyright}>
-              <span
-                className={styles.__copyright__img}
-                // style={{
-                //   display: "flex",
-                //   width: "100%",
-                //   height: "100%",
-                //   padding: "0.5rem",
-                //   border: "2px solid blue",
-                //   alignItems: "center",
-                // }}
-              >
-                {" "}
+              <span className={styles.__copyright__img}>
                 <Image
                   src={logo}
                   alt="Maison Essenza logo"
-                  width={20}
+                  width={15}
                   height={20}
                   style={{
                     objectFit: "cover",
-                    width: "100%",
+                    width: "auto",
                     height: "100%",
-                    alignItems: "center",
                   }}
                 />
               </span>

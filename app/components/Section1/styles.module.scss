@@ -21,10 +21,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 100vw;
-      height: 100%;
+      width: 100%;
+      height: 100vh;
       overflow-y: auto;
       text-align: center;
+      margin-top: 10vh;
 
       .arrow_see_more {
         display: flex;
@@ -71,15 +72,12 @@
         justify-content: center;
         align-items: center;
         height: auto;
-        //border: 4px solid red;
-        // position: relative;
 
         .__image_logo__bloc {
           display: flex;
           position: relative;
           max-width: 600px;
           height: 100%;
-          //border: 4px solid turquoise;
           align-content: center;
         }
       }
@@ -91,7 +89,6 @@
         height: auto;
         text-align: center;
         align-items: center;
-        //border: 3px solid purple;
 
         .section1_text__header {
           display: flex;
@@ -100,20 +97,17 @@
           height: 100%;
           justify-content: center;
           align-items: center;
-          //border: 3px solid blue;
 
           .section1_text__header_title {
             display: flex;
             width: 100%;
             height: auto;
             justify-content: center;
-            //border: 3px solid rgb(225, 11, 240);
 
             h1 {
-              font-size: 3.2rem;
+              font-size: 2.8rem;
               color: #000;
               font-weight: bold;
-              //word-spacing: -0.5ch;
             }
           }
 
@@ -122,10 +116,8 @@
             width: 100%;
             height: auto;
             justify-content: center;
-            //border: 3px solid green;
 
             p {
-              // display: flex;
               font-size: 1.5rem;
               margin-top: -0.4rem;
               margin-bottom: 0.4rem;
@@ -139,24 +131,21 @@
           width: 100%;
           height: auto;
           justify-content: center;
-          // margin-bottom: -0.5rem;
+
           #letter {
-            //border: 3px solid green;
             padding-right: 5px;
             padding-left: 8px;
             font-size: 1.3rem;
           }
           #day {
-            //border: 3px solid blue;
             font-family: var(--courier_prime);
             font-size: 1.5rem;
             word-spacing: -0.7ch;
           }
           #number {
-            //border: 3px solid red;
             font-size: 1.5rem;
             font-family: var(--courier_prime);
-            letter-spacing: -5px;
+            letter-spacing: -2px;
           }
         }
 
@@ -169,12 +158,11 @@
           width: 100%;
           height: auto;
           justify-content: center;
-          //line-height: 1.5;
+
           p {
             font-family: var(--courier_prime);
             font-size: 1.3rem;
             word-spacing: -0.5ch;
-            //line-height: 1.5;
           }
         }
       }
@@ -184,7 +172,6 @@
         line-height: 1.3;
         margin-bottom: 4rem;
         padding: 1rem;
-        //border: 3px solid red;
 
         p {
           font-size: 1.2rem;
@@ -194,7 +181,6 @@
   }
 }
 /// ////////////////RESPONSIVE/////////////////
-///inferieur ou egale
 @media screen and (max-width: 1440px) {
   .section1 {
     .section1__container {
@@ -211,8 +197,8 @@
 @media screen and (max-width: 1024px) {
   .section1 {
     .section1__container {
-      height: 100vh;
       .section1__bloc {
+        height: auto;
         .arrow_see_more {
           display: none;
           &.right {
@@ -221,6 +207,9 @@
           .__arrow_right__text {
             display: none;
           }
+        }
+        .section1__image_logo {
+          margin-top: 2rem;
         }
         .section1_text__header_bloc {
           .section1_text__header {
@@ -236,29 +225,28 @@
             }
           }
         }
+
         .__bloc_info__philo_responsive {
-          //border: 3px solid rgb(18, 199, 30);
           text-align: left;
-          line-height: 1.3;
-          //margin-bottom: 4rem;
+          line-height: 1.5;
           padding: 2rem;
           p {
-            display: inline;
             text-align: left;
-            font-size: 1rem;
+            font-size: 1.2rem;
           }
         }
       }
     }
   }
 }
-//inferieur ou egale
+
 @media screen and (max-width: 768px) {
   .section1 {
     .section1__container {
       height: auto;
       margin-top: 10vh;
       .section1__bloc {
+        margin-top: 0;
         .arrow_see_more {
           display: none;
           &.right {
@@ -274,9 +262,23 @@
               display: flex;
               width: 100%;
               justify-content: center;
-              //border: 3px solid rgb(225, 11, 240);
               h1 {
                 font-size: 2.3rem;
+              }
+            }
+            .__bloc_info_subtitle {
+              p {
+                font-size: 1.3rem;
+              }
+              .__bloc_info__shop {
+                display: flex;
+                text-align: center;
+                width: 100%;
+                height: auto;
+                justify-content: center;
+                #letter {
+                  font-size: 15px;
+                }
               }
             }
           }
@@ -286,7 +288,6 @@
   }
 }
 
-///inferieur ou egale
 @media screen and (max-width: 500px) {
   .section1 {
     .section1__container {
@@ -304,56 +305,50 @@
         .section1_text__header_bloc {
           .section1_text__header {
             .section1_text__header_title {
+              display: flex;
+              width: 100%;
+              height: 3.5rem;
               h1 {
-                font-size: 2rem;
+                font-size: 1.8rem;
                 color: #000;
                 font-weight: bold;
               }
             }
             .__bloc_info_subtitle {
               p {
-                font-size: 1rem;
+                font-size: 0.8rem;
+                padding: 0.5rem;
               }
             }
           }
           .__bloc_info__shop {
             display: flex;
             text-align: center;
-            // margin-bottom: -0.5rem;
             #letter {
-              //border: 3px solid green;
-              padding-right: 5px;
-              padding-left: 5px;
-              font-size: 0.8rem;
+              font-size: 0.9rem;
             }
             #day {
-              //border: 3px solid blue;
               font-family: var(--courier_prime);
               font-size: 1rem;
               word-spacing: -0.7ch;
             }
             #number {
-              //border: 3px solid red;
               font-size: 1rem;
               font-family: var(--courier_prime);
-              letter-spacing: -5px;
             }
           }
           .__bloc_info__adress {
             display: flex;
-            //line-height: 1.5;
             p {
               font-family: var(--courier_prime);
               font-size: 1rem;
               word-spacing: -0.5ch;
-              //line-height: 1.5;
             }
           }
         }
         .__bloc_info__philo_responsive {
-          //border: 3px solid rgb(234, 20, 24);
           text-align: left;
-          line-height: 1.3;
+          line-height: 1.5;
           margin-bottom: 0;
           padding: 1rem;
           p {

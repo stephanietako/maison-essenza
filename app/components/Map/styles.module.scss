@@ -3,29 +3,20 @@
   width: 100%;
   align-items: flex-start;
   height: 100%;
-  border: 4px solid rgb(11, 245, 31);
-  //padding: 1rem;
 
   .map {
-    border: 7px solid violet;
     display: flex;
     width: 100%;
     height: 100%;
     flex-direction: column;
     align-items: center;
-    //border: 4px solid limegreen;
-    //justify-content: flex-end;
-    //justify-content: center;
-    //padding: 2rem;
 
     .map__container {
       height: 20rem;
       width: 100%;
-      // width: 35rem;
       overflow: hidden;
       justify-content: center;
       display: flex;
-      //margin-right: 2rem;
     }
 
     .__btn_box {
@@ -35,8 +26,6 @@
       width: 100%;
       height: 2rem;
       justify-content: space-around;
-      //margin: 17px;
-      border: 3px solid red;
 
       p {
         font-size: 0.7rem;
@@ -47,7 +36,6 @@
         &.__btn_googlemap {
           justify-content: center;
           display: flex;
-          //padding: 9px;
           cursor: pointer;
           background-color: transparent;
           font-weight: bold;
@@ -74,7 +62,7 @@
           }
 
           &:hover::before {
-            transform: scaleX(1); /* Le trait apparaît au survol */
+            transform: scaleX(1);
           }
 
           img {
@@ -90,8 +78,6 @@
       border-radius: 50%;
       color: #000;
       display: flex;
-      //font-size: 14px;
-      //gap: 45px;
       height: 40px;
       justify-content: center;
       padding: 4px;
@@ -115,12 +101,12 @@
       }
 
       .icon {
-        //border: 4px solid red;
         align-items: center;
         display: flex;
         justify-content: center;
         object-fit: cover;
       }
+
       img {
         width: 25px;
         object-fit: cover;
@@ -160,12 +146,14 @@
         display: flex;
       }
     }
+
     .custom_info_window {
       background-color: #fff;
       border-radius: 8px;
       height: auto;
       width: auto;
       transition: all 0.3s ease-out;
+
       h3 {
         text-align: center;
         font-size: 1rem;
@@ -174,7 +162,7 @@
   }
 }
 
-/////////////////// Responsive ////////////////
+/////////////////// RESPONSIVE ////////////////
 @media (max-width: 1024px) {
   .googlemap {
     padding: 0;
@@ -185,14 +173,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      // .map__container {
-      //   height: 20rem;
-      //   width: 35rem;
-      //   overflow: hidden;
-      //   justify-content: center;
-      //   display: flex;
-      //   margin-right: 0;
-      // }
       .__btn_box {
         flex-flow: column;
         height: 3rem;
@@ -215,14 +195,6 @@
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
-      // .map__container {
-      //   height: 15rem;
-      //   width: 20rem;
-      //   overflow: hidden;
-      //   justify-content: center;
-      //   display: flex;
-      //   margin-right: 0;
-      // }
       .__btn_box {
         p {
           font-size: 0.7rem;

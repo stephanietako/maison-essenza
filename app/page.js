@@ -53,8 +53,8 @@ export default function Home() {
   return (
     <>
       <Script
+        id="xbees_chat"
         src={`${process.env.NEXT_PUBLIC_BASE_URL}/kite/widget.js`}
-        strategy="lazyOnload"
         onLoad={() => {
           window.wxSDK.run({
             kiteId: process.env.NEXT_PUBLIC_KITE_ID,
@@ -75,15 +75,8 @@ export default function Home() {
           });
         }}
       />
-      <div
-        className="home"
-        style={{
-          overflow: "hidden",
-          position: "relative",
-          minHeight: "100vh",
-          border: "4px solid red",
-        }}
-      >
+
+      <div className="home">
         <AnimatePresence>
           {showHeader ? (
             <Header key="header" onComplete={handleAnimationComplete} />

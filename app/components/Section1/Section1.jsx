@@ -91,9 +91,9 @@ const Section1 = () => {
                   <Image
                     src={logo}
                     alt="Maison Essenza logo fleurs"
-                    sizes="(max-width: 600px) 100vw, 600px 70vw, 450px 50wv"
+                    sizes="(max-width: 600px) 100vw, 550px 70vw, 250px 50wv"
                     width={600}
-                    height={500}
+                    height={400}
                     priority={true}
                     style={{
                       objectFit: "cover",
@@ -140,7 +140,7 @@ const Section1 = () => {
               </span>
             </div>
             {/* fin bloc text */}
-            <br />
+            {/* <br /> */}
             {isResponsive ? (
               <span className={styles.__bloc_info__philo_responsive}>
                 <p>
@@ -156,20 +156,12 @@ const Section1 = () => {
                   plus encore ; sans que pour autant le processus n’avale leurs
                   économies, ni leur patience….
                 </p>
-
-                {/* <p>
-                  finitions décoratives uniques, mobilier, linge de maison,
-                  rideaux sur mesure avec les collections de tissus DEDAR ou
-                  encore THEVENON, confections personnalisées et bien plus
-                  encore ; sans que pour autant le processus n’avale leurs
-                  économies, ni leur patience….
-                </p> */}
-
                 <br />
                 <p>
                   Nous avons des milliers de références pour tous styles, envies
-                  et budgets
+                  et budgets.
                 </p>
+                <br />
                 <p>
                   Osez donc être vous-même et nous vous aiderons à trouver tout
                   ce qu&apos;il vous faut pour un projet qui vous ressemble.
@@ -194,7 +186,6 @@ const Section1 = () => {
                   encore ; sans que pour autant le processus n’avale leurs
                   économies, ni leur patience….
                 </p>
-
                 <br />
                 <p>
                   Nous avons des milliers de références pour tous styles, envies
