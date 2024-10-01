@@ -4,9 +4,8 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Hero from "../Hero/Hero";
 
-export default function Header() {
+export default function Header({ style }) {
   const [isVisible, setIsVisible] = useState(true); // Gère la visibilité du header
-  //const [isAnimatingOut, setIsAnimatingOut] = useState(false);
 
   // Variants pour l'animation
   const variants = {
@@ -40,18 +39,8 @@ export default function Header() {
         animate="visible" // visible de suite donc pas d'animation d'entrée
         exit="exit" // Animation de sortie après 12 secondes
         variants={variants}
-        style={{
-          position: "fixed",
-          top: 0,
-          left: 0,
-          width: "100vw",
-          height: "100vh",
-          backgroundColor: "#fff",
-          zIndex: 10,
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
+        className="header"
+        style={style}
       >
         <Hero />
       </motion.div>

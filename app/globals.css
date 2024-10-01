@@ -49,6 +49,10 @@ a {
   text-decoration: none;
   color: inherit;
   list-style-type: none;
+  color: #000;
+}
+a:hover {
+  color: gray;
 }
 
 h1 {
@@ -69,7 +73,7 @@ p {
   font-size: 1rem;
   font-weight: lighter;
   font-family: var(--nixie_one);
-  /* line-height: 1.5; */
+  line-height: 1.5;
   color: #000;
 }
 
@@ -87,6 +91,7 @@ li {
   position: relative;
   min-height: 100vh;
 }
+
 .content_horizontal {
   position: relative;
   overflow: hidden;
@@ -104,12 +109,41 @@ li {
   position: relative;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#xbees_chat {
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 /* //////////// RESPONSIVE //////////////// */
 @media (max-width: 1024px) {
   #hero {
     display: flex;
-    width: 100vw;
-    height: 45vh;
+    width: 95vw;
+    height: 35vh;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -120,7 +154,7 @@ li {
   #hero {
     display: flex;
     width: 95vw;
-    height: 40vh;
+    height: 35vh;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -143,7 +177,7 @@ li {
   #hero {
     display: flex;
     width: 95vw;
-    height: 32vh;
+    height: 25vh;
     justify-content: center;
     align-items: center;
     overflow: hidden;

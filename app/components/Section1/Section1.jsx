@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useTheme } from "@/app/animationProvider";
 import { AnimatePresence } from "framer-motion";
 import FullScreenAnimation from "../FullScreeAnimation/FullScreenAnimation";
 import TransitionRight from "../TransitionRight/TransitionRight";
@@ -16,7 +17,7 @@ const Section1 = () => {
   const [showLogoAnimation, setShowLogoAnimation] = useState(false);
   const [showArrowAnimation, setShowArrowAnimation] = useState(false);
   const [isResponsive, setIsResponsive] = useState(false);
-
+  const theme = useTheme();
   // Déclenchement de l'animation arrow au clic
   const handleArrowClick = () => {
     setShowArrowAnimation(true);
@@ -86,7 +87,7 @@ const Section1 = () => {
             </div>
 
             <div className={styles.section1__image_logo}>
-              <Link href="/" onClick={handleLogoClick}>
+              <div onClick={handleLogoClick}>
                 <div className={styles.__image_logo__bloc}>
                   <Image
                     src={logo}
@@ -102,7 +103,7 @@ const Section1 = () => {
                     }}
                   />
                 </div>
-              </Link>
+              </div>
             </div>
             {/* bloc text */}
             <div className={styles.section1_text__header_bloc}>
@@ -200,21 +201,23 @@ const Section1 = () => {
           </div>
         </div>
       </div>
-
       <AnimatePresence>
         {showLogoAnimation && (
           <FullScreenAnimation
             key="full_screen_animation_logo"
             onComplete={handleAnimationComplete}
+            style={{ display: theme.display.on }}
           />
         )}
       </AnimatePresence>
+
       <AnimatePresence>
         {showArrowAnimation && (
           <TransitionRight
             key="full_screen_animation_section"
             onComplete={handleAnimationComplete}
-            triggerReset={showArrowAnimation} // Passer la clé pour réinitialiser l'animation
+            triggerReset={showArrowAnimation}
+            // Passer la clé pour réinitialiser l'animation
           />
         )}
       </AnimatePresence>

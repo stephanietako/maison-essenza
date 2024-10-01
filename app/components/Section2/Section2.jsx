@@ -13,7 +13,7 @@ const Section2 = ({ handleExitClick }) => {
         <div className={styles.section2__container}>
           <div className={styles.section2__bloc}>
             {/* Flèche gauche */}
-            <Link href="/" onClick={handleExitClick}>
+            <Link href="sectionHome" onClick={handleExitClick}>
               <div className={`${styles.arrow_see_more} ${styles.left}`}>
                 <Image
                   className={styles.__arrow_left}

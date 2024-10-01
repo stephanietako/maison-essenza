@@ -1,4 +1,4 @@
-"use client"; // Directive qui indique que ce code doit être exécuté côté client.
+"use client";
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";

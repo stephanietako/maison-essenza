@@ -1,10 +1,12 @@
-// Footer.js
+"use client";
 import React, { useState } from "react";
+import { useRouter } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 import Modal from "../Modal/Modal";
 import Image from "next/image";
 import Link from "next/link";
 import Map from "../Map/Map";
+
 // Assets
 import insta from "@/public/assets/insta.png";
 import mail from "@/public/assets/mail.png";
@@ -14,12 +16,15 @@ import phone from "@/public/assets/phone.png";
 import logo from "@/public/assets/essenza-icon.jpeg";
 // Styles
 import styles from "./styles.module.scss";
+
 export const dynamic = "force-dynamic";
 
 const Footer = () => {
   const date = new Date();
   const currentYear = date.getFullYear();
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const router = useRouter();
 
   const handleBrandClick = () => {
     setIsModalOpen(true);
@@ -29,6 +34,9 @@ const Footer = () => {
     setIsModalOpen(false);
   };
 
+  const handleIconClick = () => {
+    router.push("sectionHome");
+  };
   return (
     <>
       <div className={styles.footer__header}>
@@ -177,7 +185,7 @@ const Footer = () => {
                             className={styles.__icon}
                           />
                         </span>
-                        <p>Instagram</p>
+                        Instagram
                       </div>
                     </a>
                   </li>
@@ -193,7 +201,7 @@ const Footer = () => {
                             className={styles.__icon}
                           />
                         </span>
-                        <p>Mail</p>
+                        Mail
                       </div>
                     </a>
                   </li>
@@ -207,34 +215,32 @@ const Footer = () => {
                 <ul>
                   <li className={styles.__info}>
                     <Link href="/">
-                      <div className={styles.__txt}>
-                        <p>Accueil</p>
-                      </div>
+                      <div className={styles.__txt}>Accueil</div>
                     </Link>
                   </li>
                   <li className={styles.__info}>
-                    <div className={styles.__txt} onClick={handleBrandClick}>
-                      <p id={styles.__brand}>Nos marques</p>
+                    <div
+                      className={styles.__txt}
+                      id={styles.brand}
+                      onClick={handleBrandClick}
+                    >
+                      Nos marques
                     </div>
                   </li>
                   <li className={styles.__info}>
-                    <div className={styles.__txt} id={styles.__call}>
-                      <a href="tel:+33451555160">
-                        <p>Nous contacter</p>
-                      </a>
+                    <div className={styles.__txt}>
+                      <a href="tel:+33451555160"> Nous contacter</a>
                     </div>
                   </li>
                   <li className={styles.__info}>
                     <Link href="/mentions">
-                      <div className={styles.__txt}>
-                        <p>Mentions Légales</p>
-                      </div>
+                      <div className={styles.__txt}>Mentions Légales</div>
                     </Link>
                   </li>
                   <li className={styles.__info}>
                     <Link href="/rgpd">
                       <div className={styles.__txt}>
-                        <p>RGPD - Politique de confidentialité</p>
+                        RGPD - Politique de confidentialité
                       </div>
                     </Link>
                   </li>
@@ -262,9 +268,7 @@ const Footer = () => {
                   <li className={styles.__info}>
                     {" "}
                     <a href="tel:+33451555160">
-                      <div className={styles.__txt}>
-                        <p id={styles.number}>+33 (0)4 51 55 51 60</p>
-                      </div>
+                      <div className={styles.__txt}>+33 (0)4 51 55 51 60</div>
                     </a>
                   </li>
                 </ul>
@@ -272,19 +276,21 @@ const Footer = () => {
             </div>
 
             <div className={styles.__copyright}>
-              <span className={styles.__copyright__img}>
-                <Image
-                  src={logo}
-                  alt="Maison Essenza logo"
-                  width={15}
-                  height={20}
-                  style={{
-                    objectFit: "cover",
-                    width: "auto",
-                    height: "100%",
-                  }}
-                />
-              </span>
+              <div onClick={handleIconClick}>
+                <span className={styles.__copyright__img}>
+                  <Image
+                    src={logo}
+                    alt="Maison Essenza logo"
+                    width={15}
+                    height={20}
+                    style={{
+                      objectFit: "cover",
+                      width: "auto",
+                      height: "100%",
+                    }}
+                  />
+                </span>
+              </div>
               &#169; Copyright {currentYear} |
               <a
                 href="https://www.takodev.studio"

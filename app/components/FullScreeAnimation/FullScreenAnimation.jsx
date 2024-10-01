@@ -3,13 +3,15 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Hero from "../Hero/Hero";
+import { useTheme } from "@/app/animationProvider";
 // Styles
 import styles from "./styles.module.scss";
 
-const FullScreenAnimation = ({ onComplete }) => {
+const FullScreenAnimation = ({ onComplete, style }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
-
+  const theme = useTheme();
+  //x: "-100%" : L'élément est positionné en dehors de l'écran, à gauche, avec un décalage de 100% de sa largeur.
   const variants = {
     hidden: { x: "-100%", y: 0 },
     visible: { x: 0, y: 0 },
@@ -17,17 +19,16 @@ const FullScreenAnimation = ({ onComplete }) => {
       x: 0,
       y: "-100%",
       width: "100%",
-
       opacity: 1,
       transition: { duration: 2, ease: [0.76, 0, 0.24, 1] },
     },
   };
 
   useEffect(() => {
-    //  Set Timer to trigger la sortie del'animation après 12 seconds
+    //  Set Timer to trigger la sortie de l'animation après 8 seconds
     const timer = setTimeout(() => {
       setIsAnimatingOut(true); // Start l'animation de sortie
-    }, 8000); //ne pas oublier de remettre 12000s
+    }, 8000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -45,7 +46,7 @@ const FullScreenAnimation = ({ onComplete }) => {
   }, [isAnimatingOut, onComplete]);
 
   return (
-    <>
+    <div className="fullScreen" style={style}>
       {isVisible && (
         <motion.div
           initial="hidden"
@@ -53,22 +54,13 @@ const FullScreenAnimation = ({ onComplete }) => {
           variants={variants}
           transition={{ duration: 1, ease: "easeInOut" }}
           className={styles.full_screen_animation}
-          // style={{
-          //   position: "fixed",
-          //   top: 0,
-          //   left: 0,
-          //   width: "100vw",
-          //   height: "100vh",
-          //   backgroundColor: "#fff",
-          //   zIndex: 10,
-          // }}
         >
           <div className={styles.content}>
             <Hero />
           </div>
         </motion.div>
       )}
-    </>
+    </div>
   );
 };
 

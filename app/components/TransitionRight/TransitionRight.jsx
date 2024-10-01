@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import styles from "./styles.module.scss";
 import Section2 from "../Section2/Section2";
 
-const TransitionRight = ({ onComplete, keyTrigger }) => {
+const TransitionRight = ({ onComplete, keyTrigger, style }) => {
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
 
   const variants = {
@@ -38,7 +38,7 @@ const TransitionRight = ({ onComplete, keyTrigger }) => {
   }, [isAnimatingOut, onComplete]);
 
   return (
-    <div id="transition">
+    <div id="transition" style={style}>
       <AnimatePresence>
         {!isAnimatingOut && (
           <motion.div

@@ -197,8 +197,9 @@
 @media screen and (max-width: 1024px) {
   .section1 {
     .section1__container {
+      height: auto;
       .section1__bloc {
-        height: auto;
+        height: 80%;
         .arrow_see_more {
           display: none;
           &.right {

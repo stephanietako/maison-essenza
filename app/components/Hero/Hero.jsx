@@ -1,12 +1,9 @@
-"use client";
-
-import React from "react";
-
-const Hero = () => {
+const Hero = ({ style }) => {
   return (
-    <div className="hero" id="hero">
+    <div className="hero" id="hero" style={style}>
       <video
         style={{
+          display: "flex",
           position: "absolute",
           top: 0,
           left: 0,

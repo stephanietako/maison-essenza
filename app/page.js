@@ -2,24 +2,20 @@
 
 import { useState, useEffect } from "react";
 import Script from "next/script";
-import { AnimatePresence } from "framer-motion";
-import Header from "./components/Header/Header";
-import ComponentHorztl from "./components/ContentHorztl/ContentHorztl";
-import Footer from "./components/Footer/Footer";
+import Home from "./components/Home/Home";
+import { AnimationProvider } from "./animationProvider";
 
-export default function Home() {
-  const [showHeader, setShowHeader] = useState(true);
+export default function App() {
+  const [loadScript, setLoadScript] = useState(false);
 
   useEffect(() => {
+    // Le timer chargement du script après 12s
     const timer = setTimeout(() => {
-      setShowHeader(false);
-    }, 8000);
+      setLoadScript(true);
+    }, 10000);
+
     return () => clearTimeout(timer);
   }, []);
-
-  const handleAnimationComplete = () => {
-    setShowHeader(false);
-  };
 
   useEffect(() => {
     const hour = 60 * 60 * 1000; // une heure en millisecondes
@@ -52,40 +48,35 @@ export default function Home() {
 
   return (
     <>
-      <Script
-        id="xbees_chat"
-        src={`${process.env.NEXT_PUBLIC_BASE_URL}/kite/widget.js`}
-        onLoad={() => {
-          window.wxSDK.run({
-            kiteId: process.env.NEXT_PUBLIC_KITE_ID,
-            baseUrl: process.env.NEXT_PUBLIC_BASE_URL,
-            onReady: () => {
-              window.wxSDK
-                .connectAnonymousUser()
-                .then(() => {
-                  console.log("Utilisateur connecté anonymement");
-                })
-                .catch((error) => {
-                  console.error(
-                    "Erreur lors de la connexion de l'utilisateur:",
-                    error
-                  );
-                });
-            },
-          });
-        }}
-      />
+      <AnimationProvider>
+        {loadScript && (
+          <Script
+            id="xbees_chat"
+            src={`${process.env.NEXT_PUBLIC_BASE_URL}/kite/widget.js`}
+            onLoad={() => {
+              window.wxSDK.run({
+                kiteId: process.env.NEXT_PUBLIC_KITE_ID,
+                baseUrl: process.env.NEXT_PUBLIC_BASE_URL,
+                onReady: () => {
+                  window.wxSDK
+                    .connectAnonymousUser()
+                    .then(() => {
+                      console.log("Utilisateur connecté anonymement");
+                    })
+                    .catch((error) => {
+                      console.error(
+                        "Erreur lors de la connexion de l'utilisateur:",
+                        error
+                      );
+                    });
+                },
+              });
+            }}
+          />
+        )}
 
-      <div className="home">
-        <AnimatePresence>
-          {showHeader ? (
-            <Header key="header" onComplete={handleAnimationComplete} />
-          ) : (
-            <ComponentHorztl key="component" />
-          )}
-        </AnimatePresence>
-        <Footer />
-      </div>
+        <Home />
+      </AnimationProvider>
     </>
   );
 }
