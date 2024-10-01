@@ -160,6 +160,7 @@
     .footer_infos {
       display: flex;
       width: 100%;
+      height: 30%;
       bottom: 0;
       background-color: #fff;
       align-items: center;
@@ -172,7 +173,7 @@
         display: flex;
         width: 100%;
         height: auto;
-        width: 50%;
+        width: 70%;
         height: auto;
         justify-content: space-evenly;
         //border: 4px solid rgb(13, 0, 255);
@@ -183,14 +184,17 @@
           display: flex;
           flex-direction: column;
           position: relative;
+          margin-bottom: 1.5rem;
           //border: 4px solid rgb(55, 255, 0);
 
           .column__title {
             display: flex;
             width: 100%;
-            height: 1.5rem;
+            height: auto;
+            //height: 1.5rem;
             justify-content: center;
             text-align: center;
+            //border: 2px solid red;
 
             h3 {
               font-size: 1.3rem;
@@ -207,9 +211,10 @@
             padding: 0.5rem;
             text-align: center;
             //border: 4px solid rgb(217, 0, 255);
-            justify-content: center;
+            //justify-content: center;
             align-content: center;
             align-items: center;
+            font-family: var(--nixie_one);
 
             .__info {
               display: flex;
@@ -232,7 +237,7 @@
                 justify-content: flex-start;
                 //border: 4px solid rgb(0, 247, 255);
                 justify-content: flex-start;
-                width: 50%;
+                width: 31%;
               }
 
               .__txt {
@@ -241,7 +246,7 @@
                 width: 100%;
                 height: 100%;
                 justify-content: center;
-                line-height: 2;
+                line-height: 1.7;
 
                 &#__text_insta,
                 &#__text_mail {
@@ -330,13 +335,12 @@
           justify-content: center;
           width: 80%;
           .column {
-            width: auto;
+            width: 100%;
             ul {
-              .__info_adress_bloc {
-                #adress {
-                  line-height: 1.5;
-                  cursor: default;
-                  font-size: 0.7rem;
+              .__info {
+                &#__info_insta,
+                &#__info_mail {
+                  width: 45%;
                 }
               }
             }
@@ -387,14 +391,14 @@
   }
   .footer__container {
     display: flex;
-    height: auto;
+    height: 100vh;
     background-color: #fff;
     //margin-top: 2rem;
     // width: 100%;
     .footer__bloc {
       padding: 0;
       flex-direction: column;
-      margin-top: 5vh;
+      margin-top: 3vh;
       .__bloc_container {
         width: auto;
         //justify-content: center;
@@ -414,30 +418,27 @@
           }
         }
       }
-      ///////////////
       .footer_infos {
-        overflow: hidden;
-        display: flex;
-        width: 100%;
-        bottom: 0;
-        background-color: #fff;
-        position: relative;
-        margin-top: 10vh;
+        height: auto;
         .footer_infos__container {
-          // flex-direction: column;
+          height: auto;
           width: 100%;
-          position: relative;
           .column {
-            width: auto;
-            height: 100%;
-            display: flex;
-            .column__title {
-              h3 {
-                font-size: 1.2rem;
-              }
-            }
+            width: 100%;
             ul {
-              // align-items: center;
+              list-style-type: none;
+              padding: 0;
+              display: flex;
+              flex-direction: column;
+              //width: 100%;
+              height: 100%;
+              padding: 0.5rem;
+              text-align: center;
+              //border: 4px solid rgb(217, 0, 255);
+              //justify-content: center;
+              align-content: center;
+              align-items: center;
+
               .__info {
                 display: flex;
                 width: 100%;
@@ -446,24 +447,96 @@
                 cursor: pointer;
                 position: relative;
                 justify-content: center;
-                flex-direction: column;
+                align-items: flex-start;
+                //color: aqua;
+                //border: 4px solid rgb(238, 255, 0);
+
                 &#__info_insta,
                 &#__info_mail {
-                  width: 50%;
-                  align-items: flex-start;
+                  display: flex;
+                  align-items: center;
+                  width: 100%;
+                  height: auto;
+                  justify-content: flex-start;
+                  //border: 4px solid rgb(0, 247, 255);
+                  justify-content: flex-start;
+                  width: 36%;
                 }
+
                 .__txt {
                   display: flex;
+                  align-items: center;
                   width: 100%;
                   height: 100%;
-                  align-items: center;
+                  justify-content: center;
+                  line-height: 1.7;
+
                   &#__text_insta,
                   &#__text_mail {
                     width: 100%;
+                    height: auto;
+                    display: flex;
+                  }
+
+                  p {
+                    font-size: 0.7rem;
+                    text-align: center;
+
+                    &#adress {
+                      cursor: default;
+                      font-size: 0.8rem;
+                      line-height: 1.4;
+                    }
+                  }
+
+                  .__img {
+                    display: flex;
+                    justify-content: center;
+                    width: 2rem;
+                    height: 100%;
+                    align-items: center;
+
+                    .__icon {
+                      object-fit: contain;
+                    }
+                  }
+
+                  .__info_adress_bloc {
+                    display: flex;
+                    width: 100%;
+                    height: 4rem;
+                    border: none;
+                  }
+                  &#brand {
+                    color: #000;
+                    &:hover {
+                      color: gray;
+                    }
                   }
                 }
               }
             }
+          }
+        }
+
+        .__copyright {
+          display: flex;
+          font-size: 10px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+          bottom: 0;
+          padding: 1rem;
+          height: 3rem;
+          position: relative;
+
+          .__copyright__img {
+            display: flex;
+            justify-content: center;
+            width: auto;
+            height: auto;
+            align-items: center;
+            cursor: pointer;
           }
         }
       }
@@ -527,7 +600,7 @@
             display: flex;
             width: 100%;
             padding: 0;
-            //margin: 2rem 0;
+            margin-top: 1rem;
             .footer_list__border {
               padding: 1rem;
               p {
@@ -538,6 +611,7 @@
         }
       }
       .footer_infos {
+        margin-top: 2rem;
         position: relative;
         .footer_infos__container {
           //flex-direction: column;
@@ -551,7 +625,6 @@
             }
             ul {
               .__info {
-                flex-direction: column;
                 &#__info_insta,
                 &#__info_mail {
                   width: 69%;
@@ -564,7 +637,7 @@
     }
   }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .footer__container {
     margin-top: 4vh;
     // margin-top: 20vh;
@@ -572,7 +645,7 @@
       padding: 0;
       margin-top: 0;
       .__bloc_container {
-        margin-top: 10vh;
+        margin-top: 7vh;
         .__bloc_content {
           .google {
             display: flex;
@@ -594,10 +667,9 @@
             }
             ul {
               .__info {
-                flex-direction: column;
                 &#__info_insta,
                 &#__info_mail {
-                  width: 31%;
+                  width: 32%;
                   //border: 4px solid blue;
                 }
               }

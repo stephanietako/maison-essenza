@@ -127,6 +127,25 @@ li {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
+/* App.module.css */
+.customButton {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 64px;
+  height: 64px;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.hiddenWidget {
+  display: none !important;
+}
 
 @keyframes fadeInAnimation {
   0% {

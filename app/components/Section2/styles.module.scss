@@ -109,7 +109,7 @@
       .section2__bloc {
         display: flex;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         .link_infos {
           display: flex;
           width: 100%;
@@ -165,9 +165,9 @@
       height: 100%;
       .section2__bloc {
         display: flex;
-        margin: 10vh 0 10vh;
+        margin: 0;
         width: 100vw;
-        height: auto;
+        height: 100%;
         .link_infos {
           display: flex;
           width: 100%;
@@ -236,7 +236,7 @@
         display: flex;
         width: 100vw;
         height: auto;
-        margin: 10vh 0 10vh;
+        margin: 0;
         .link_infos {
           display: flex;
           width: 100%;
@@ -326,8 +326,9 @@
         display: flex;
         width: 100vw;
         height: auto;
+        margin-top: 2vh;
         // margin-top: 20vh;
-        margin-top: 10vh;
+        margin: 1rem;
         .link_infos {
           display: flex;
           width: 100%;

@@ -136,14 +136,13 @@ const Mentions = () => {
       <section>
         <h2>Cookies</h2>
         <p>
-          Le site maison-essenza.com peut être amené à vous demander
-          l&apos;acceptation des cookies pour des besoins de statistiques et
-          d&apos;affichage. Un cookie est une information déposée sur votre
-          disque dur par le serveur du site que vous visitez. Il contient
-          plusieurs données qui sont stockées sur votre ordinateur dans un
-          simple fichier texte auquel un serveur accède pour lire et enregistrer
-          des informations. Certaines parties de ce site ne peuvent être
-          fonctionnelles sans l&apos;acceptation de cookies.
+          Ce site n&apos;utilise pas de cookies non essentiels et ne collecte
+          aucune donnée personnelle. Il n&apos;y a pas de formulaires, de
+          comptes utilisateurs ou de sessions sur ce site. Votre visite est
+          entièrement anonyme et ne nécessite aucune action de votre part
+          concernant la gestion des cookies. Si des modifications venaient à
+          être apportées à cette politique, nous nous engageons à vous en
+          informer.
         </p>
       </section>
 

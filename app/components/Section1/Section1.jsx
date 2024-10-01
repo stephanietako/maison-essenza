@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
+//import Link from "next/link";
 import { useTheme } from "@/app/animationProvider";
 import { AnimatePresence } from "framer-motion";
 import FullScreenAnimation from "../FullScreeAnimation/FullScreenAnimation";
@@ -92,7 +92,7 @@ const Section1 = () => {
                   <Image
                     src={logo}
                     alt="Maison Essenza logo fleurs"
-                    sizes="(max-width: 600px) 100vw, 550px 70vw, 250px 50wv"
+                    sizes="(max-width: 600px) 100vw, 550px 70vw, 450px 50wv"
                     width={600}
                     height={400}
                     priority={true}
@@ -138,6 +138,17 @@ const Section1 = () => {
               </span>
               <span className={styles.__bloc_info__adress}>
                 <p>33 Rue Marceau - Cogolin</p>
+              </span>
+              <span className={styles.__infos_shop_subtitle}>
+                {" "}
+                <p>
+                  à proximité de La Tarte Tropézienne Beausoleil en plein cœur
+                  du Golfe de Saint-Tropez
+                </p>
+                <p>
+                  Nous pouvons également vous recevoir dans cet espace dédié à
+                  l’univers de la maison le lundi, mais exclusivement sur RDV{" "}
+                </p>
               </span>
             </div>
             {/* fin bloc text */}
