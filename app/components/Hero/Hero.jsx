@@ -1,22 +1,10 @@
 "use client";
-
-import { useEffect, useRef } from "react";
+import React from "react";
 
 const Hero = ({ style }) => {
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch((error) => {
-        console.error("Error attempting to play", error);
-      });
-    }
-  }, []);
-
   return (
     <div className="hero" id="hero" style={style}>
       <video
-        ref={videoRef}
         style={{
           display: "flex",
           position: "absolute",
