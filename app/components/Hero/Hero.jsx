@@ -19,6 +19,7 @@ const Hero = ({ style }) => {
         autoplay="autoplay"
         muted
         loop
+        controls
       />
     </div>
   );
