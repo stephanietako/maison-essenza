@@ -497,19 +497,16 @@
                       line-height: 1.4;
                     }
                   }
-
                   .__img {
                     display: flex;
                     justify-content: center;
                     width: 2rem;
                     height: 100%;
                     align-items: center;
-
                     .__icon {
                       object-fit: contain;
                     }
                   }
-
                   .__info_adress_bloc {
                     display: flex;
                     width: 100%;
@@ -527,7 +524,6 @@
             }
           }
         }
-
         .__copyright {
           display: flex;
           font-size: 10px;
@@ -609,7 +605,7 @@
             display: flex;
             width: 100%;
             padding: 0;
-            margin-top: 1rem;
+            margin-top: 2rem;
             .footer_list__border {
               padding: 1rem;
               p {
