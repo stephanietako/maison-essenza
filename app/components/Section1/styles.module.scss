@@ -173,7 +173,7 @@
           height: auto;
           justify-content: center;
           flex-direction: column;
-          padding: 1rem;
+          padding: 1rem 2rem 0;
           p {
             line-height: 1.5;
           }
@@ -276,6 +276,11 @@
       margin-top: 10vh;
       .section1__bloc {
         margin-top: 0;
+        .__infos_shop_subtitle {
+          p {
+            font-size: 1rem;
+          }
+        }
         .arrow_see_more {
           display: none;
           &.right {

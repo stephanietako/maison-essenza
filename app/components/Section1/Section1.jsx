@@ -92,7 +92,7 @@ const Section1 = () => {
                   <Image
                     src={logo}
                     alt="Maison Essenza logo fleurs"
-                    sizes="(max-width: 600px) 100vw, 550px 70vw, 450px 50wv"
+                    sizes="(max-width: 600px) 100vw, 1200px 70vw  1200px 50vw"
                     width={600}
                     height={400}
                     priority={true}
