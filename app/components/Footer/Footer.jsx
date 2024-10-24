@@ -268,7 +268,9 @@ const Footer = () => {
                   <li className={styles.__info}>
                     {" "}
                     <a href="tel:+33451555160">
-                      <div className={styles.__txt}>+33 (0)4 51 55 51 60</div>
+                      <div className={styles.__txt} id={styles.number_phone}>
+                        +33 (0)4 51 55 51 60
+                      </div>
                     </a>
                   </li>
                 </ul>
