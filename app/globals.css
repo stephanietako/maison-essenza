@@ -196,10 +196,11 @@ li {
   #hero {
     display: flex;
     width: 95vw;
-    height: 25vh;
+    height: 35vh;
     justify-content: center;
     align-items: center;
     overflow: hidden;
     position: relative;
+    /* border: 7px solid turquoise; */
   }
 }
