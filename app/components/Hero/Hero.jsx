@@ -16,10 +16,9 @@ const Hero = ({ style }) => {
         }}
         src="/video/herovideo.mp4"
         type="video/mp4"
-        autoPlay
-        loop
+        autoplay="autoplay"
         muted
-        playsInline
+        loop
       />
     </div>
   );
