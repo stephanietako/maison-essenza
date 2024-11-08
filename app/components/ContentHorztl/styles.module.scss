@@ -1,20 +1,16 @@
 .content_horizontal {
   width: 100%;
   height: 100%;
-  //background-color: lightblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  //border: 3px solid red;
   flex-direction: column;
 
   .section_wrapper {
     display: flex;
-    //overflow-x: auto;
     white-space: nowrap;
     height: 100vh;
     scroll-behavior: smooth;
-    // overflow-y: hidden;
 
     .item {
       min-width: 100vw;

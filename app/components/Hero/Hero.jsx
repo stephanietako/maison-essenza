@@ -1,27 +1,3 @@
-// "use client";
-// import React from "react";
-// // Styles
-// import styles from "./styles.module.scss";
-// const Hero = ({ style }) => {
-//   return (
-//     <div className="hero" id="hero" style={style}>
-//       <video
-//         id={styles.video}
-//         autoPlay
-//         muted
-//         playsInline
-//         loop
-//         className="video"
-//       >
-//         <source src={"/video/herovideo.mp4"} />
-//         Your browser does not support the video tag.
-//       </video>
-//     </div>
-//   );
-// };
-
-// export default Hero;
-//////////////:
 "use client";
 import React, { useEffect, useState } from "react";
 // Importation du composant Image de Next.js
@@ -32,19 +8,15 @@ import styles from "./styles.module.scss";
 const Hero = ({ style }) => {
   const [isMobile, setIsMobile] = useState(false);
 
-  // Fonction pour vérifier la taille de l'écran
   const handleResize = () => {
     setIsMobile(window.innerWidth < 768);
   };
 
   useEffect(() => {
-    // Vérifiez la taille de l'écran lors du premier rendu
     handleResize();
 
-    // Écoutez les changements de taille de l'écran
     window.addEventListener("resize", handleResize);
 
-    // Nettoyez l'écouteur d'événements
     return () => {
       window.removeEventListener("resize", handleResize);
     };

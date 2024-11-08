@@ -7,16 +7,16 @@ import Section1 from "../Section1/Section1";
 import Section2 from "../Section2/Section2";
 
 export default function ComponentHorztl() {
-  const [activeSection, setActiveSection] = useState(1); // Déclaration d'un état local activeSection initialisé à 1 et d'une fonction setActiveSection pour le mettre à jour
-  const [isSmallScreen, setIsSmallScreen] = useState(false); // État pour gérer si l'écran
+  const [activeSection, setActiveSection] = useState(1);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsSmallScreen(window.innerWidth <= 1024); // Met à jour isSmallScreen en fonction de la taille de la fenêtre.
+      setIsSmallScreen(window.innerWidth <= 1024);
     };
 
-    window.addEventListener("resize", handleResize); // Ajouter un écouteur d'événement pour les redimensionnements de la fenêtre.
-    handleResize(); // Appeler une fois pour définir l'état initial.
+    window.addEventListener("resize", handleResize);
+    handleResize();
 
     return () => {
       window.removeEventListener("resize", handleResize);

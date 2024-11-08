@@ -40,7 +40,7 @@ const Section2 = ({ handleExitClick }) => {
                 <Image
                   src={trade}
                   alt="Toutes les marques de Maison Essenza"
-                  sizes="(max-width: 1100px) 100vw, 1100px 70vw, 550px 50wv"
+                  sizes="(max-width: 1100px) 100vw, 1100px 70vw, 768px 50wv"
                   width={1100}
                   height={750}
                   priority={true}

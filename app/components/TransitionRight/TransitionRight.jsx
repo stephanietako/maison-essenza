@@ -2,8 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import styles from "./styles.module.scss";
 import Section2 from "../Section2/Section2";
+// Styles
+import styles from "./styles.module.scss";
 
 const TransitionRight = ({ onComplete, keyTrigger, style }) => {
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);

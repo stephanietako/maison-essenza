@@ -1,4 +1,5 @@
 import Home from "../components/Home/Home";
+
 const SectionHome = () => {
   return (
     <div id="sectionHome">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+// Styles
 import styles from "./styles.module.scss";
 
 const NavItem = ({ name, href, active }) => {

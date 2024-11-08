@@ -11,7 +11,7 @@ const FullScreenAnimation = ({ onComplete, style }) => {
   const [isVisible, setIsVisible] = useState(true);
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
   const theme = useTheme();
-  //x: "-100%" : L'élément est positionné en dehors de l'écran, à gauche, avec un décalage de 100% de sa largeur.
+
   const variants = {
     hidden: { x: "-100%", y: 0 },
     visible: { x: 0, y: 0 },

@@ -127,7 +127,7 @@ li {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
-/* App.module.css */
+
 .customButton {
   position: fixed;
   bottom: 30px;
@@ -201,6 +201,5 @@ li {
     align-items: center;
     overflow: hidden;
     position: relative;
-    /* border: 7px solid turquoise; */
   }
 }

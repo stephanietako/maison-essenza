@@ -30,7 +30,6 @@
       align-items: center;
       width: 100%;
       height: 100%;
-      //border: 7px solid blue;
 
       .section2__bloc {
         display: flex;
@@ -39,9 +38,8 @@
         justify-content: center;
         align-items: center;
         height: 100%;
-        //border: 7px solid rgb(201, 18, 234);
+
         h1 {
-          //color: blue;
           font-size: 3.5rem;
         }
 
@@ -56,8 +54,6 @@
             display: flex;
             max-width: 970px;
             height: 100%;
-            //border: 4px solid yellow;
-            //justify-content: center;
           }
         }
       }

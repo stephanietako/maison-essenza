@@ -24,10 +24,10 @@ export default function Header({ style }) {
   };
 
   useEffect(() => {
-    //  Set Timer to trigger la sortie del'animation après 12 seconds
+    //  Set Timer pour trigger la sortie del'animation après 12 seconds
     const timer = setTimeout(() => {
       setIsAnimatingOut(true); // Start l'animation de sortie
-    }, 12000); //ne pas oublier de remettre 12000s
+    }, 12000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -35,7 +35,7 @@ export default function Header({ style }) {
   return (
     <div id="header">
       <motion.div
-        initial="visible" // Visible de suite
+        initial="visible"
         animate="visible" // visible de suite donc pas d'animation d'entrée
         exit="exit" // Animation de sortie après 12 secondes
         variants={variants}

@@ -12,7 +12,6 @@ import insta from "@/public/assets/insta.png";
 import mail from "@/public/assets/mail.png";
 import gps from "@/public/assets/gps.png";
 import phone from "@/public/assets/phone.png";
-//import bulle from "@/public/assets/bulle.png";
 import logo from "@/public/assets/essenza-icon.jpeg";
 // Styles
 import styles from "./styles.module.scss";
@@ -100,7 +99,7 @@ const Footer = () => {
             </li>
             <li className={styles.link}>
               <div className={styles.link__txt}>
-                <p>+33(0)4 51 55 51 60</p>
+                <p>+33 (0)4 51 55 51 60</p>
               </div>
               <span className={styles.link__img}>
                 <a href="tel:+33451555164">

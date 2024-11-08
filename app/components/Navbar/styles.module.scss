@@ -27,12 +27,10 @@
 
   .__menu_list {
     display: flex;
-    // flex-direction: column;
     position: fixed;
     top: 100px;
     width: 288px;
     row-gap: 24px;
-
     padding: 24px 16px;
     transition: all 0.2s;
     min-height: calc(100vh - 60px);
@@ -69,12 +67,12 @@
       width: 100%;
     }
   }
+
   ////////////////RESPONSIVE/////////////////
   @media screen and (min-width: 1200px) {
     .__menu_bar {
       display: none;
     }
-
     .__menu_list {
       position: unset;
       flex-direction: row;

@@ -2,10 +2,11 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import { Loader } from "@googlemaps/js-api-loader";
-import styles from "./styles.module.scss";
-// Importez l'image
 import icon from "@/public/assets/essenza-icon.jpeg";
 import geo from "@/public/assets/geolocalisation.png";
+// STYLES
+import styles from "./styles.module.scss";
+
 export const dynamic = "force-dynamic";
 
 const properties = [
@@ -69,7 +70,7 @@ const Map = () => {
 
       const buildContent = (property) => {
         const content = document.createElement("div");
-        content.classList.add(styles.property); // Utilisation de styles.module.scss
+        content.classList.add(styles.property);
 
         content.innerHTML = `
           <div>
@@ -104,7 +105,6 @@ const Map = () => {
                 <p>${property.description}</p>
               </div>
             `);
-            // infoWindow.open(map, marker);
           }
         });
       });
@@ -114,13 +114,12 @@ const Map = () => {
     initMap();
   }, []);
 
+  // Fonction pour centrer la carte sur la position de l'utilisateur
   const centerMyLocation = () => {
-    // A marker with a with a URL pointing to a PNG.
     const user = document.createElement("img");
-    user.src = geo.src; // Utilisation correcte de l'image importée
-    // Définir les dimensions de l'image
-    user.style.width = "40px"; // Ajustez cette valeur selon vos besoins
-    user.style.height = "40px"; // Ajustez cette valeur selon vos besoins
+    user.src = geo.src;
+    user.style.width = "40px";
+    user.style.height = "40px";
 
     if (navigator.geolocation && map) {
       navigator.geolocation.getCurrentPosition(

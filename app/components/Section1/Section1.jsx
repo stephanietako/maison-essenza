@@ -11,6 +11,7 @@ import logo from "@/public/assets/essenza-logo.png";
 import arrowRight from "@/public/assets/arrow-right.png";
 // Styles
 import styles from "./styles.module.scss";
+
 export const dynamic = "force-dynamic";
 
 const Section1 = () => {
@@ -53,7 +54,7 @@ const Section1 = () => {
     };
 
     window.addEventListener("resize", handleResize);
-    handleResize(); // Check initial width
+    handleResize();
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
@@ -152,7 +153,7 @@ const Section1 = () => {
               </span>
             </div>
             {/* fin bloc text */}
-            {/* <br /> */}
+
             {isResponsive ? (
               <span className={styles.__bloc_info__philo_responsive}>
                 <p>
