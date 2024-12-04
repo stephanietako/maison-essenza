@@ -1,37 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<img title="maison essenza" alt="maison essenza" style="width:170px;" src="public/assets/essenza-logo.png" >
 
-## Getting Started
+## ## Bienvenue sur MAISON ESSENZA 🌸
 
-First, run the development server:
+## PALM TREES AFFAIR 🌸
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+> Un projet de site vitrine moderne construit avec **Next.js 14**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### 🏠 **Description**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+**MAISON ESSENZA** est un site vitrine professionnel dédié à l'univers du mobilier design.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+### ✨ **Fonctionnalités clés**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Interface utilisateur réactive et performante grâce à **Next.js 14**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+### 🛠️ Technologies utilisées
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Frontend** :
+  - [Next.js 14](https://nextjs.org/) : Framework React moderne.
+- [Framer Motion](https://www.framer.com/motion/) : Pour des animations 2D fluides et interactives.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# maison-essenza
+- **Styling** : SCSS.
+
+---
+
+### 📊 Progression du projet
+
+Le projet est fonctionnel, mais il continuera d'évoluer au fil du temps avec des améliorations régulières et l'ajout de nouvelles fonctionnalités pour offrir une expérience utilisateur toujours plus optimale.
