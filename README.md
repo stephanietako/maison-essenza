@@ -2,7 +2,7 @@
 
 ## ## Bienvenue sur MAISON ESSENZA 🌸
 
-## PALM TREES AFFAIR 🌸
+## MAISON ESSENZA 🌸
 
 > Un projet de site vitrine moderne construit avec **Next.js 14**
 
