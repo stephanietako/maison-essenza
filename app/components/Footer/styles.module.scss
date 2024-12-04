@@ -407,15 +407,12 @@
     display: flex;
     height: 100vh;
     background-color: #fff;
-    //margin-top: 2rem;
-    // width: 100%;
     .footer__bloc {
       padding: 0;
       flex-direction: column;
       margin-top: 3vh;
       .__bloc_container {
         width: auto;
-        //justify-content: center;
         flex-direction: column;
         align-items: center;
         .__bloc_content {
@@ -444,15 +441,11 @@
               padding: 0;
               display: flex;
               flex-direction: column;
-              //width: 100%;
               height: 100%;
               padding: 0.5rem;
               text-align: center;
-              //border: 4px solid rgb(217, 0, 255);
-              //justify-content: center;
               align-content: center;
               align-items: center;
-
               .__info {
                 display: flex;
                 width: 100%;
@@ -462,9 +455,7 @@
                 position: relative;
                 justify-content: center;
                 align-items: flex-start;
-                //color: aqua;
-                //border: 4px solid rgb(238, 255, 0);
-
+                font-size: 0.8rem;
                 &#__info_insta,
                 &#__info_mail {
                   display: flex;
@@ -624,8 +615,6 @@
         margin-top: 2rem;
         position: relative;
         .footer_infos__container {
-          // margin-bottom: 1.5rem;
-          //flex-direction: column;
           width: 100%;
           .column {
             margin-bottom: 2rem;
@@ -652,7 +641,6 @@
 @media screen and (max-width: 500px) {
   .footer__container {
     margin-top: 4vh;
-    // margin-top: 20vh;
     .footer__bloc {
       padding: 0;
       margin-top: 0;
@@ -680,10 +668,10 @@
             }
             ul {
               .__info {
+                font-size: 0.7rem;
                 &#__info_insta,
                 &#__info_mail {
                   width: 32%;
-                  //border: 4px solid blue;
                 }
               }
             }

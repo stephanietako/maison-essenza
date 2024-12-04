@@ -19,6 +19,7 @@ const Section1 = () => {
   const [showArrowAnimation, setShowArrowAnimation] = useState(false);
   const [isResponsive, setIsResponsive] = useState(false);
   const theme = useTheme();
+
   // Déclenchement de l'animation arrow au clic
   const handleArrowClick = () => {
     setShowArrowAnimation(true);
@@ -142,14 +143,14 @@ const Section1 = () => {
               </span>
               <span className={styles.__infos_shop_subtitle}>
                 {" "}
+                <p>A proximité de La Tarte Tropézienne Beausoleil</p>
+                <p>en plein cœur du Golfe de Saint-Tropez</p>
                 <p>
-                  à proximité de La Tarte Tropézienne Beausoleil en plein cœur
-                  du Golfe de Saint-Tropez
-                </p>
-                <p>
+                  {" "}
                   Nous pouvons également vous recevoir dans cet espace dédié à
-                  l’univers de la maison le lundi, mais exclusivement sur RDV{" "}
+                  l’univers de la maison
                 </p>
+                <p>le lundi, mais exclusivement sur RDV</p>
               </span>
             </div>
             {/* fin bloc text */}

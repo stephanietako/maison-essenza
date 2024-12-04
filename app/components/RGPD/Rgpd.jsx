@@ -7,7 +7,7 @@ const Rgpd = () => {
   return (
     <div className={styles.container}>
       <h1>RGPD – Politique de Confidentialité</h1>
-      <Link href="/">
+      <Link href="/sectionHome">
         <h2>Accueil </h2>
       </Link>
 
@@ -89,6 +89,32 @@ const Rgpd = () => {
         </p>
       </section>
 
+      <section>
+        <h3>Utilisation de Google Maps</h3>
+        <p>
+          Ce site utilise Google Maps pour afficher la localisation de notre
+          entreprise et pour permettre aux utilisateurs de localiser leur propre
+          position. En utilisant cette fonctionnalité, vous acceptez les
+          conditions d&rsquo;utilisation de Google et la politique de
+          confidentialité de Google. Google peut collecter des données de
+          géolocalisation lorsque vous interagissez avec cette fonctionnalité.
+          Vous pouvez désactiver la géolocalisation en ajustant les paramètres
+          de votre appareil ou navigateur.
+        </p>
+        <p>
+          Pour plus d&rsquo;informations sur la manière dont Google traite vos
+          données personnelles, veuillez consulter la politique de
+          confidentialité de Google :{" "}
+          <a
+            href="https://policies.google.com/privacy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            https://policies.google.com/privacy
+          </a>
+          .
+        </p>
+      </section>
       <section>
         <h3>4. Quelles données sont obligatoires ou facultatives</h3>
         <p>

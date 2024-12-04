@@ -7,10 +7,10 @@ const Mentions = () => {
   return (
     <div className={styles.container}>
       <h1>Mentions Légales</h1>
-      <Link href="/">
+      <Link href="/sectionHome">
         <h2>Accueil </h2>
       </Link>
-      <section>
+      <section className={styles.mentions_section}>
         <p>
           Merci de lire avec attention les différentes modalités
           d&apos;utilisation du présent site avant d&apos;y parcourir ses pages.
@@ -19,7 +19,7 @@ const Mentions = () => {
         </p>
       </section>
 
-      <section>
+      <section className={styles.mentions_section}>
         <h2>Responsables du site</h2>
         <p>
           Conformément à l&apos;Article n°6 de la Loi n°2004-575 du 21 Juin 2004
@@ -77,7 +77,7 @@ const Mentions = () => {
         </ul>
       </section>
 
-      <section>
+      <section className={styles.mentions_section}>
         <h2>Création et Hébergement</h2>
         <p>
           <strong>Création :</strong> Tako Dev
@@ -87,7 +87,7 @@ const Mentions = () => {
         </p>
       </section>
 
-      <section>
+      <section className={styles.mentions_section}>
         <h2>Conditions d&apos;utilisation</h2>
         <p>
           Ce site (www.maison-essenza.com) est proposé en différents langages
@@ -98,7 +98,7 @@ const Mentions = () => {
         </p>
       </section>
 
-      <section>
+      <section className={styles.mentions_section}>
         <h2>Responsabilité de l&apos;éditeur</h2>
         <p>
           Les informations et/ou documents figurant sur ce site et/ou
@@ -133,7 +133,7 @@ const Mentions = () => {
         </p>
       </section>
 
-      <section>
+      <section className={styles.mentions_section}>
         <h2>Cookies</h2>
         <p>
           Ce site n&apos;utilise pas de cookies non essentiels et ne collecte
@@ -146,7 +146,7 @@ const Mentions = () => {
         </p>
       </section>
 
-      <section>
+      <section className={styles.mentions_section}>
         <h2>Liens hypertextes</h2>
         <p>
           Le site www.maison-essenza.com peut contenir des liens hypertextes
@@ -172,7 +172,7 @@ const Mentions = () => {
         </p>
       </section>
 
-      <section>
+      <section className={styles.mentions_section}>
         <h2>Services fournis</h2>
         <p>
           L&apos;ensemble des activités de la société ainsi que ses informations
@@ -198,7 +198,7 @@ const Mentions = () => {
         </p>
       </section>
 
-      <section>
+      <section className={styles.mentions_section}>
         <h2>Limitation contractuelles sur les données</h2>
         <p>
           Les informations contenues sur ce site sont aussi précises que
@@ -230,8 +230,23 @@ const Mentions = () => {
           Internet ne sauraient engager la responsabilité de Maison Essenza.
         </p>
       </section>
-
-      <section>
+      <section className={styles.mentions_section}>
+        <h2>Utilisation de Google Maps</h2>
+        <p>
+          Ce site utilise Google Maps pour afficher la localisation de notre
+          entreprise et pour permettre aux utilisateurs de localiser leur propre
+          position. En utilisant cette fonctionnalité, vous acceptez les
+          conditions d&apos;utilisation de Google et la politique de
+          confidentialité de Google. Google peut collecter des données de
+          géolocalisation lorsque vous interagissez avec cette fonctionnalité.
+          Vous pouvez désactiver la géolocalisation en ajustant les paramètres
+          de votre appareil ou navigateur. Pour plus d&apos;informations sur la
+          manière dont Google traite vos données personnelles, veuillez
+          consulter la politique de confidentialité de Google :
+          https://policies.google.com/privacy.
+        </p>
+      </section>
+      <section className={styles.mentions_section}>
         <h2>Propriété intellectuelle</h2>
         <p>
           Tout le contenu du présent site www.maison-essenza.com, incluant, de
@@ -267,7 +282,7 @@ const Mentions = () => {
         </p>
       </section>
 
-      <section>
+      <section className={styles.mentions_section}>
         <h2>Déclaration à la CNIL</h2>
         <p>
           Conformément à la loi 78-17 du 6 janvier 1978 (modifiée par la loi
@@ -288,7 +303,7 @@ const Mentions = () => {
         </p>
       </section>
 
-      <section>
+      <section className={styles.mentions_section}>
         <h2>Litiges</h2>
         <p>
           Les présentes conditions du site www.maison-essenza.com sont régies

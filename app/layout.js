@@ -26,7 +26,7 @@ const nixie_one_init = Nixie_One({
 export const metadata = {
   title: "Maison Essenza ",
   description:
-    "Showroom Boutique Maison Essenza Saint-Tropez. Transformez votre espace de vie avec nos matériaux et aménagements exceptionnels, cuisines sur-mesure, placards, finitions décoratives, et plus. Découvrez des références pour tous les styles et budgets. Osez être vous-même, nous vous aidons à réaliser un projet unique ",
+    "Showroom Boutique Maison Essenza Saint-Tropez. Transformez votre espace de vie avec nos matériaux et aménagements exceptionnels. ",
 };
 
 export default function RootLayout({ children }) {
