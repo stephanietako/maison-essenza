@@ -1,35 +1,36 @@
 <img title="maison essenza" alt="maison essenza" style="width:170px;" src="public/assets/essenza-logo.png" >
 
-## ## Bienvenue sur MAISON ESSENZA 🌸
+## Welcome to MAISON ESSENZA 🌸
 
 ## MAISON ESSENZA 🌸
 
-> Un projet de site vitrine moderne construit avec **Next.js 14**
+> A modern showcase site project built with **Next.js 14**
 
 ---
 
 ### 🏠 **Description**
 
-**MAISON ESSENZA** est un site vitrine professionnel dédié à l'univers du mobilier design.
+**MAISON ESSENZA** is a professional showcase website dedicated to the world of design furniture.
 
 ---
 
-### ✨ **Fonctionnalités clés**
+### ✨ **Key Features**
 
-- Interface utilisateur réactive et performante grâce à **Next.js 14**.
+- Responsive and performant user interface built with **Next.js 14**.
 
 ---
 
-### 🛠️ Technologies utilisées
+### 🛠️ Technologies Used
 
 - **Frontend** :
-  - [Next.js 14](https://nextjs.org/) : Framework React moderne.
-- [Framer Motion](https://www.framer.com/motion/) : Pour des animations 2D fluides et interactives.
+
+  - [Next.js 14](https://nextjs.org/) : A modern React framework.
+  - [Framer Motion](https://www.framer.com/motion/) : For smooth and interactive 2D animations.
 
 - **Styling** : SCSS.
 
 ---
 
-### 📊 Progression du projet
+### 📊 Project Progress
 
-Le projet est fonctionnel, mais il continuera d'évoluer au fil du temps avec des améliorations régulières et l'ajout de nouvelles fonctionnalités pour offrir une expérience utilisateur toujours plus optimale.
+The project is functional, but it will continue to evolve over time with regular improvements and the addition of new features to provide an ever-optimizing user experience.
